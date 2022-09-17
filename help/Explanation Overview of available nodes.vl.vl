@@ -140,7 +140,7 @@
             <Pin Id="JdVikuicYJ1NB5GSat5acj" Name="Mouse" Kind="OutputPin" />
             <Pin Id="QYS36Fqf5R8LDGVJLVaqI3" Name="Keyboard And Mouse" Kind="OutputPin" />
           </Node>
-          <Pad Id="SCiYcdyghJZPlD07LeSf12" Bounds="86,70,353,36" ShowValueBox="true" isIOBox="true" Value="Fore more info please refer to:">
+          <Pad Id="SCiYcdyghJZPlD07LeSf12" Bounds="86,70,353,36" ShowValueBox="true" isIOBox="true" Value="For more info please refer to:">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
