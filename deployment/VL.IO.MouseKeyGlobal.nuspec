@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
-    <id>VVL.IO.MouseKeyGlobal</id>
-    <version>0.1.0</version>
+    <id>VL.IO.MouseKeyGlobal</id>
+    <version>1.0.0</version>
     <title>VL.IO.MouseKeyGlobal</title>
     <authors>bj-rn</authors>
     <owners>bj-rn</owners>
