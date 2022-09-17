@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Gx98fNvLSJYNrZbG7niDUr" LanguageVersion="2021.4.11.1112" Version="0.128">
+  <Patch Id="Ab3dmylYdW1L2zhxOWvzJE">
+    <Canvas Id="PeaDrlczPysMa7Cz4YKl6o" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="L9lgS1pwatCMWmwE0cGQBs">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JYRJMvkcVxRM9JwaeqhAOr">
+        <Canvas Id="UNR0ukkkTcWLY9YNitpp8V" CanvasType="Group">
+          <Node Bounds="97,100,59,19" Id="T4uaEkFiFnDPyIJf3kEI1O">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Keyboard" />
+              <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Egzuhci3oSjLdPt3X7lI6v" Name="Key Notifications" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="97,172,81,19" Id="EhxeKQ0Aos6PmfPbGevT6r">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="KeyboardState" />
+              <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="AFFiFWDVbkaMOqTcbIZ5sQ" Name="Keyboard Notifications" Kind="InputPin" />
+            <Pin Id="U6ohQjq1M9zOfFBCadH1pb" Name="Pressed Keys" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Hz8VL4kZbp1O9SGGKaARuF" Comment="" Bounds="99,247,190,132" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="VUSwrSZE77gNsaXq85i2XM" Name="Create" />
+        <Patch Id="R6RdhbOBF9xMCxZNUhKjk2" Name="Update" />
+        <ProcessDefinition Id="G6kgpl8yxTYMzAi8TQiN1b">
+          <Fragment Id="FgpDAh86aSsLxBSg7bdaYT" Patch="VUSwrSZE77gNsaXq85i2XM" Enabled="true" />
+          <Fragment Id="PcehyxvkMKDLBUOGBGJOSA" Patch="R6RdhbOBF9xMCxZNUhKjk2" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="KfhTurypjmULmbtwZliUMk" Ids="U6ohQjq1M9zOfFBCadH1pb,Hz8VL4kZbp1O9SGGKaARuF" />
+        <Link Id="Pp5JRbMBjGrNUpt4glOpXj" Ids="Egzuhci3oSjLdPt3X7lI6v,AFFiFWDVbkaMOqTcbIZ5sQ" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Kq46WwJgQ5jMDUoeOBRGg1" Location="VL.CoreLib" Version="2021.4.11-1112-g53848a3676" />
+  <NugetDependency Id="JTF2GOfIHDBN2MDqWYD5fm" Location="VL.Skia" Version="2021.4.11-1112-g53848a3676" />
+  <DocumentDependency Id="S6GnSegr1a8QWS84WOvY7s" Location="../VL.IO.MouseKeyGlobal.vl" />
+</Document>

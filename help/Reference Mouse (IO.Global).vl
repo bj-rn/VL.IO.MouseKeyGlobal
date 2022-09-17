@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Pg78bTRmRoUNDBJbLOT7pa" LanguageVersion="2021.4.11.1112" Version="0.128">
+  <Patch Id="RwKWSBa6RgSOn8YEKiqJOn">
+    <Canvas Id="AmSpC1ysFZJNQJMwYqnQ71" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="REETW7rSIJ4LpxbsbU1EN2">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="FnxbwIB44bGQNE66Jfay6J">
+        <Canvas Id="O8aUKVcd7fkMAsyzTMsBo8" CanvasType="Group">
+          <Node Bounds="451,103,46,19" Id="Rjngw3b2tSVPPO0NN77jsg">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="GlobalHook.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Mouse" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="OmZEwYSuqUbLTrbKktr09J" Name="Mouse Notifications" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="451,170,58,19" Id="TbDHPloH1SoMtojEDF9z8S">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToMouse" />
+            </p:NodeReference>
+            <Pin Id="KeD5UmqECMTOVg1JjVAe83" Name="Notifications" Kind="InputPin" />
+            <Pin Id="GG1Nt92bcE7PQgTu5BLaAu" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="451,210,185,19" Id="G4zZnf1VR99QOVfpmN3U6a">
+            <p:NodeReference LastCategoryFullName="IO.Mouse" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MouseState" />
+            </p:NodeReference>
+            <Pin Id="Pdzb99tJuchQZ8Z12GkI3H" Name="Mouse Device" Kind="InputPin" />
+            <Pin Id="IdlE6jJ1vWzLvZEmni3UJj" Name="Position In World" Kind="OutputPin" />
+            <Pin Id="JT2YVheNAjyN9lBBlqG68K" Name="Position In Projection" Kind="OutputPin" />
+            <Pin Id="GAdvRFZzUP7M64qbkwChgl" Name="Position" Kind="OutputPin" />
+            <Pin Id="RFkaheqw5LXQDQyueSxc1M" Name="Left Pressed" Kind="OutputPin" />
+            <Pin Id="MEJluhXFR9RL71wVLbNn3c" Name="Middle Pressed" Kind="OutputPin" />
+            <Pin Id="T3Lz1whRmSTLpkrKBsNZ9k" Name="Right Pressed" Kind="OutputPin" />
+            <Pin Id="KcYSaElhuyoMr0bafYQUts" Name="Normalized Position" Kind="OutputPin" />
+            <Pin Id="V7nLaGZWNcrNnJcAZDVWdE" Name="WheelDelta" Kind="OutputPin" />
+            <Pin Id="IiBJmwNpSWrOH4SxZHVX3L" Name="Client Area" Kind="OutputPin" />
+            <Pin Id="MCWjGZKF2lmLNPNY1fs1u3" Name="Sender" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UKAGnFaDkhWQSOXG3EM2lm" Comment="WheelDelta" Bounds="593,280,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KuBI7hDBscBM2Nip1apFcc" Comment="Position" Bounds="493,450,65,28" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">0</p:precision>
+              <p:stepsize p:Type="Single">1</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N6UFmEQq6l4PVXZrUiPJMS" Comment="Left Pressed" Bounds="513,402,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KiOOtqTFvreQJyc7N3mnKk" Comment="Middle Pressed" Bounds="533,355,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IRLjHUvvme4OCHtxBXJnzO" Comment="Right Pressed" Bounds="553,306,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="152,220,126,75" Id="RnnUpil0iZCODFxLTmOVQv">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="ProcessAppFlag" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+            </p:NodeReference>
+            <Pin Id="SzYHJbzzK6WOr9Bdbq882A" Name="Messages" Kind="InputPin" />
+            <Pin Id="QIrWO4kCTeNP4KJxuWOXFd" Name="Reset" Kind="InputPin" />
+            <Pin Id="PApDtKFrSviMlTyeVyOy78" Name="Result" Kind="OutputPin" />
+            <Patch Id="RX4R9SqLwsaPSmfKQ0HuEy" ManuallySortedPins="true">
+              <Patch Id="EIOjpD0nHPlLkSxMmumv2X" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="O2kpskHnBIgLBuCXVfhMLh" Name="Update" ManuallySortedPins="true">
+                <Pin Id="VbEptjJJKSfMPOJjht9FzL" Name="Input 1" Kind="InputPin" />
+                <Pin Id="VWj8zxknOvCLq9I1CsWnRR" Name="Output" Kind="OutputPin" />
+              </Patch>
+              <ControlPoint Id="QXgxojoDtxyLfOnnxCukrz" Bounds="166,228" />
+              <ControlPoint Id="LttFSziAfxpLC61UDbyEz1" Bounds="167,288" />
+              <Node Bounds="164,245,102,26" Id="OytbA2SpVaTOh2xK0leDp5">
+                <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationWithPosition" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="Notifications" />
+                  <CategoryReference Kind="RecordType" Name="NotificationWithPosition" />
+                  <Choice Kind="OperationCallFlag" Name="Position" />
+                </p:NodeReference>
+                <Pin Id="BebqUve1UPDP8kBatGYGOt" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TIARzNfX73zNX0rCIV60J5" Name="Position" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Node Bounds="152,335,65,19" Id="DNGdcuEGSqKM6doJ4nZLiX">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="TUZxHBvLP7JOFbVkJxpFCb" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="SyrwFHdDeHHPAGDXl1jrEn" Name="Reset" Kind="InputPin" />
+            <Pin Id="CMTTAorvqcgQA9FzxDiecy" Name="Value" Kind="OutputPin" />
+            <Pin Id="R8jW17lRViUQICf6oQhbv9" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PpgkAEhrQDbLZqd7xmK4Lm" Comment="" Bounds="153,391,50,26" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">0</p:precision>
+              <p:stepsize p:Type="Single">1</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RxCuD59dLz4ML5FcqAisgd" Bounds="281,219,146,74" ShowValueBox="true" isIOBox="true" Value="Peek inside to see --&gt;&#xD;&#xA;how all the notifications are used">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UJVznyxoyXgQQrLW1FtTOu" Name="Create" />
+        <Patch Id="FOnpnGj1O50MbYqdWRH87c" Name="Update" />
+        <ProcessDefinition Id="QQvCi8pqYCoN1k1fxRVEWT">
+          <Fragment Id="K40pOyrJd4dOSTSh3bdrxL" Patch="UJVznyxoyXgQQrLW1FtTOu" Enabled="true" />
+          <Fragment Id="Czay9IcXTwXPZH6hldv2ZA" Patch="FOnpnGj1O50MbYqdWRH87c" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="BjvIf3L5HSENGQzVOWnhiE" Ids="OmZEwYSuqUbLTrbKktr09J,KeD5UmqECMTOVg1JjVAe83" />
+        <Link Id="S2ZNAZLJZyGL0sAOCghriC" Ids="GG1Nt92bcE7PQgTu5BLaAu,Pdzb99tJuchQZ8Z12GkI3H" />
+        <Link Id="MKhdAUcWj8cLfXechNe70m" Ids="V7nLaGZWNcrNnJcAZDVWdE,UKAGnFaDkhWQSOXG3EM2lm" />
+        <Link Id="Uz221Ym0yGILncJXZdvRAS" Ids="GAdvRFZzUP7M64qbkwChgl,KuBI7hDBscBM2Nip1apFcc" />
+        <Link Id="FPuAbFIwDleNbhUeIWu5Gd" Ids="RFkaheqw5LXQDQyueSxc1M,N6UFmEQq6l4PVXZrUiPJMS" />
+        <Link Id="MRsKmNkJrwcPGDkhuPP0vm" Ids="MEJluhXFR9RL71wVLbNn3c,KiOOtqTFvreQJyc7N3mnKk" />
+        <Link Id="CzMcauTUseBPIqoOgmbUzO" Ids="T3Lz1whRmSTLpkrKBsNZ9k,IRLjHUvvme4OCHtxBXJnzO" />
+        <Link Id="HPzm76mYfjrPuoRQF3iq4T" Ids="VbEptjJJKSfMPOJjht9FzL,QXgxojoDtxyLfOnnxCukrz" IsHidden="true" />
+        <Link Id="JIpHjOKmWcwLS1F84NkYpS" Ids="LttFSziAfxpLC61UDbyEz1,VWj8zxknOvCLq9I1CsWnRR" IsHidden="true" />
+        <Link Id="E6Jdfv1WrbNLEg7DXZurxR" Ids="OmZEwYSuqUbLTrbKktr09J,SzYHJbzzK6WOr9Bdbq882A" />
+        <Link Id="JSQl3WsxGOZMPKWa5oG5uW" Ids="QXgxojoDtxyLfOnnxCukrz,BebqUve1UPDP8kBatGYGOt" />
+        <Link Id="IOSudyMj3DHL5axLsXu0fL" Ids="TIARzNfX73zNX0rCIV60J5,LttFSziAfxpLC61UDbyEz1" />
+        <Link Id="FMMUHfd3n8yLYHpntqdnwh" Ids="PApDtKFrSviMlTyeVyOy78,TUZxHBvLP7JOFbVkJxpFCb" />
+        <Link Id="S24yDdPMhInOG0dOYne4WE" Ids="CMTTAorvqcgQA9FzxDiecy,PpgkAEhrQDbLZqd7xmK4Lm" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="G0FJU2qDcvpOEkqNtAY89B" Location="VL.CoreLib" Version="2021.4.11-1112-g53848a3676" />
+  <NugetDependency Id="R2V0JjPTL5cOtTA1ZUPRMV" Location="VL.Skia" Version="2021.4.11-1112-g53848a3676" />
+  <DocumentDependency Id="LMnSrzc2sRRNkeJtBVPnfl" Location="../VL.IO.MouseKeyGlobal.vl" />
+</Document>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>MouseKeyGlobal</AssemblyName>
+    <RootNamespace>VL.IO</RootNamespace>
+    <OutputPath>..\lib</OutputPath>   
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Authors>bj-rn</Authors>
+    <PackageProjectUrl>https://github.com/bj-rn/VL.IO.MouseKeyGlobal</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpHook" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
