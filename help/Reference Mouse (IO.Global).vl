@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Pg78bTRmRoUNDBJbLOT7pa" LanguageVersion="2021.4.11.1112" Version="0.128">
+<Document xmlns:p="property" Id="Pg78bTRmRoUNDBJbLOT7pa" LanguageVersion="2021.4.11.1053" Version="0.128">
   <Patch Id="RwKWSBa6RgSOn8YEKiqJOn">
     <Canvas Id="AmSpC1ysFZJNQJMwYqnQ71" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -96,7 +96,7 @@
             <Pin Id="CMTTAorvqcgQA9FzxDiecy" Name="Value" Kind="OutputPin" />
             <Pin Id="R8jW17lRViUQICf6oQhbv9" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="PpgkAEhrQDbLZqd7xmK4Lm" Comment="" Bounds="153,391,50,26" ShowValueBox="true" isIOBox="true">
+          <Pad Id="PpgkAEhrQDbLZqd7xmK4Lm" Comment="" Bounds="154,391,50,28" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:precision p:Type="Int32">0</p:precision>
               <p:stepsize p:Type="Single">1</p:stepsize>
@@ -135,7 +135,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="G0FJU2qDcvpOEkqNtAY89B" Location="VL.CoreLib" Version="2021.4.11-1112-g53848a3676" />
-  <NugetDependency Id="R2V0JjPTL5cOtTA1ZUPRMV" Location="VL.Skia" Version="2021.4.11-1112-g53848a3676" />
+  <NugetDependency Id="G0FJU2qDcvpOEkqNtAY89B" Location="VL.CoreLib" Version="2021.4.11-1053-g097be61f93" />
+  <NugetDependency Id="R2V0JjPTL5cOtTA1ZUPRMV" Location="VL.Skia" Version="2021.4.11-1053-g097be61f93" />
   <DocumentDependency Id="LMnSrzc2sRRNkeJtBVPnfl" Location="../VL.IO.MouseKeyGlobal.vl" />
 </Document>
