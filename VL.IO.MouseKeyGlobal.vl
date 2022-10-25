@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2021.4.11.1053" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2021.4.11-1053-g097be61f93" />
+<Document xmlns:p="property" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2021.4.11.1227" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
@@ -52,10 +52,10 @@
                   <Pin Id="A6vMjZEH8wQOc4Fzmq3aJ6" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="143,272,74,26" Id="NqGbH1RhYVoNmVkvjy1cyZ">
-                  <p:NodeReference LastCategoryFullName="SharpHook.GlobalHookBase" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunAsync" />
-                    <CategoryReference Kind="AssemblyCategory" Name="GlobalHookBase" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="EDHbyFFnETfNnyM6uW6aVJ" Name="Input" Kind="StateInputPin" />
                   <Pin Id="LYBLXFQ2t8aPCK5QSHLUTl" Name="Output" Kind="StateOutputPin" />
@@ -406,7 +406,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
-                  <Choice Kind="OperationCallFlag" Name="ConvertMouseButton" />
+                  <Choice Kind="OperationCallFlag" Name="MouseButtonLookup" />
                 </p:NodeReference>
                 <Pin Id="KFJGQ3HH1x7OEuxRldbEi3" Name="Mouse Button" Kind="InputPin" />
                 <Pin Id="HTOGoqLNCuRO9nnBkGwMz7" Name="Result" Kind="OutputPin" />
@@ -522,7 +522,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
-                  <Choice Kind="OperationCallFlag" Name="ConvertMouseButton" />
+                  <Choice Kind="OperationCallFlag" Name="MouseButtonLookup" />
                 </p:NodeReference>
                 <Pin Id="CGZlBwxbDJYLlZS0DP0Fed" Name="Mouse Button" Kind="InputPin" />
                 <Pin Id="UsasGBURoS6NuTG1QQhCwW" Name="Result" Kind="OutputPin" />
@@ -947,7 +947,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
-                  <Choice Kind="OperationCallFlag" Name="ConvertMouseButton" />
+                  <Choice Kind="OperationCallFlag" Name="MouseButtonLookup" />
                 </p:NodeReference>
                 <Pin Id="F0wbWddiY9JQISXo73uYBG" Name="Mouse Button" Kind="InputPin" />
                 <Pin Id="JeTJeEieVd9LLoIGdWMhM5" Name="Result" Kind="OutputPin" />
@@ -1153,7 +1153,7 @@
               <Node Bounds="-779,1357,111,19" Id="PPLHj7IjMPoQadLrNSdEkS">
                 <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="ConvertKeyboardKey" />
+                  <Choice Kind="OperationCallFlag" Name="KeyboardKeyLookup" />
                 </p:NodeReference>
                 <Pin Id="E2YlFDFwifLQVrkSNaCvcd" Name="Key Code" Kind="InputPin" />
                 <Pin Id="AQyIyrEFpSQMmhx83cnnHh" Name="Result" Kind="OutputPin" />
@@ -1350,7 +1350,7 @@
               <Node Bounds="-200,1357,111,19" Id="FyAT5AEwlRYLtnUcwzhvx6">
                 <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="ConvertKeyboardKey" />
+                  <Choice Kind="OperationCallFlag" Name="KeyboardKeyLookup" />
                 </p:NodeReference>
                 <Pin Id="OLCZF8MDpweMMiway9yxXm" Name="Key Code" Kind="InputPin" />
                 <Pin Id="LbFmfUP7kR9L5FTJ6QcI0l" Name="Result" Kind="OutputPin" />
@@ -1734,7 +1734,7 @@
     ************************ KeyboardInfo ************************
 
 -->
-      <Node Name="KeyboardInfo" Bounds="443,257" Id="M8UblLx6yghPFtkeNNoIyg">
+      <Node Name="KeyboardInfo" Bounds="443,255" Id="M8UblLx6yghPFtkeNNoIyg">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1803,6 +1803,354 @@
           <Link Id="NpF7a08ZrhgNonCic5R6pe" Ids="Pge2cEVTeS1MGVl3W435ct,NPdVZPxMALMOJJBKlCVCEf" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ KeyboardSimulator (Spread) ************************
+
+-->
+      <Node Name="KeyboardSimulator (Spread)" Bounds="850,255" Id="QOj5w8RqsLwQZCPIVi3lIm">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="Fww5WA84KptQZitxvRguYg">
+          <Canvas Id="PeTQWXxsTsKLnLu0pWehIo" CanvasType="Group">
+            <Node Bounds="228,-58,70,26" Id="JLCEFjLdUqqPMFOx5d8IJP">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="PbRTKbX72VdMBGDK0u9GeX" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="DHGWFghQNZ1Lpa4JW2cYj0" SlotId="OyX5dcBYi2UNJIRYyE8D7G" Bounds="230,-14" />
+            <ControlPoint Id="QkfzHAEdtMUQLWyR7TInev" Bounds="500,124" />
+            <ControlPoint Id="JyIgZlm9GImNVl7qMhYwRO" Bounds="167,124" />
+            <Node Bounds="73,202,440,531" Id="AXUIhDddUVXP6SDLs9EOHN">
+              <p:NodeReference>
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="I5EuHOiYod6OGwjMeiWYQs" Name="Condition" Kind="InputPin" DefaultValue="True" />
+              <Patch Id="Lqd79xq7omFN6xAVoP3tjj" ManuallySortedPins="true">
+                <Patch Id="HhY9RxFvDgAPJz3Jhmw6Ca" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MLooOFEiwKGMy2vstSo4Ae" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="193,222,293,206" Id="O0QvFA3EmGpNJwUv9rpSsS">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
+                  </p:NodeReference>
+                  <Pin Id="D3mPc0UHBVqNlv4ckiCuhI" Name="Break" Kind="OutputPin" />
+                  <Patch Id="Cy9g0X6jN7nPUss4ZD79zl" ManuallySortedPins="true">
+                    <Patch Id="LCcMVEWbhzmOTQJ6Gf4Skf" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="GZlcYYVJKlmLe0m28Y0Xns" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="G9bbA0wJ5PDLfy2DVXuPYx" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="216,289,258,102" Id="LB0pofcXkEYO3Zyx6n1jx3">
+                      <p:NodeReference>
+                        <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                        <FullNameCategoryReference ID="Primitive" />
+                      </p:NodeReference>
+                      <Pin Id="A2xZQQRHdnHMaYukO3GYiP" Name="Condition" Kind="InputPin" />
+                      <Patch Id="TY9mwya5qxlP0SDq3M4fCa" ManuallySortedPins="true">
+                        <Patch Id="L81zN5QuFUqN4qjyJxBRv1" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="UVZYyr489z3NcEuHzv0ttD" Name="Then" ManuallySortedPins="true" />
+                        <Node Bounds="228,341,95,26" Id="Ef5nBEhKIJBPO4p4ZLAtN6">
+                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="SimulateKeyPress" />
+                            <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="FW3igWT5DS6OrelSJ7brtt" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="QpgOF6TztUoMOL2z6L8JHL" Name="Key Code" Kind="InputPin" />
+                          <Pin Id="BIu6ByBnm1HNrB3Rw81uRs" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="MvlpHOw3sX7M9IM2Bm2VLU" Name="Result" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="318,312,144,19" Id="QJAhVdQ9HczNXXXBe85yzF">
+                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
+                          </p:NodeReference>
+                          <Pin Id="G5cEtf5eoTLLqsUQAW4xY1" Name="Key Code" Kind="InputPin" />
+                          <Pin Id="DbTl175urQ4PCKnAq4fm5K" Name="Result" Kind="OutputPin" />
+                        </Node>
+                      </Patch>
+                      <ControlPoint Id="SPWEE4EAkB2L2IlDJMR9xK" Bounds="230,317" Alignment="Top" />
+                      <ControlPoint Id="RNba2ylDCDTLjZohsgzB0C" Bounds="230,386" Alignment="Bottom" />
+                      <ControlPoint Id="J8jM6NxFsHZQFZfOSFL0qv" Bounds="320,386" Name="Status" Alignment="Bottom" />
+                      <ControlPoint Id="HGIe3QoO9SnLkUHITegcx9" Bounds="337,317" Name="Status" Alignment="Top" />
+                    </Node>
+                    <Node Bounds="216,262,56,19" Id="NiD3HHmXyrUNJHRaCwv14E">
+                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+                      </p:NodeReference>
+                      <Pin Id="Osbkc3pgrcmLlylsMxCHkW" Name="Value" Kind="InputPin" />
+                      <Pin Id="Hvmtf6FtVY2MEg4KsMjk3f" Name="Up Edge" Kind="OutputPin" />
+                      <Pin Id="HrbmVjhkyLBLuSd0RHRet6" Name="Down Edge" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="VRnEMsiBV7LPNV2lEXA38s" Bounds="320,228" Alignment="Top" />
+                  <ControlPoint Id="HXlBvzt7kH0MlKY77cnkAA" Bounds="230,228" Alignment="Top" />
+                  <ControlPoint Id="AlBeUE27jj0PRPitS0XKH0" Bounds="230,421" Alignment="Bottom" />
+                  <ControlPoint Id="CqZQ2lCRgR4NpZwLxDiyTp" Bounds="218,228" Alignment="Top" />
+                </Node>
+                <Node Bounds="153,500,344,213" Id="UhovODjgAesOs0qSnP0IpI">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
+                  </p:NodeReference>
+                  <Pin Id="GASdPer69QNPELXSVC1u35" Name="Break" Kind="OutputPin" />
+                  <Patch Id="Gn0y6Hc0T6xPdpFynuKCEL" ManuallySortedPins="true">
+                    <Patch Id="P5pJ69HvCL7NTMXNrECrAl" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="LZZ2XdJRxy5OSaUznj40Kw" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="Q7EFBT1ZLJFNjiSZeSTzHR" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="216,573,269,120" Id="AIq28dXM0hCMmi5NQaiufk">
+                      <p:NodeReference>
+                        <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                        <FullNameCategoryReference ID="Primitive" />
+                      </p:NodeReference>
+                      <Pin Id="B6NWsXEDj7lNftMtpzfbVc" Name="Condition" Kind="InputPin" />
+                      <Patch Id="Db6ncsUM6KaPVfeYotX8p5" ManuallySortedPins="true">
+                        <Patch Id="SZWhiVus7SkOBzCUPkOq4m" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="EfCnUuYsIFNMPqm6DXLx3i" Name="Then" ManuallySortedPins="true" />
+                        <Node Bounds="228,631,97,26" Id="PMlSAPGCxpeNbudMNlpFjJ">
+                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
+                            <Choice Kind="OperationCallFlag" Name="SimulateKeyRelease" />
+                          </p:NodeReference>
+                          <Pin Id="IP63TnDLPwtN5EdrOtQGFA" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="CxKmrGM2I6MMWyu7gQZ1CQ" Name="Key Code" Kind="InputPin" />
+                          <Pin Id="JDwWE1QDDIJQahfcWsASHl" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="KwSpcGaY8wcQKcm1HRufse" Name="Result" Kind="OutputPin" />
+                        </Node>
+                        <Node Bounds="329,596,144,19" Id="QIZe7zwAGgPMr4vEZGhyvW">
+                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
+                          </p:NodeReference>
+                          <Pin Id="I3734vQSEdkM3VJCHQQJ0g" Name="Key Code" Kind="InputPin" />
+                          <Pin Id="Sed1dnpVaEdOTUVuD8hLHz" Name="Result" Kind="OutputPin" />
+                        </Node>
+                      </Patch>
+                      <ControlPoint Id="DmnMSzH44GrOEEXyftwZxx" Bounds="230,605" Alignment="Top" />
+                      <ControlPoint Id="TXSKW40v0yPNcvxT0uOTks" Bounds="230,687" Alignment="Bottom" />
+                      <ControlPoint Id="PTPkSHdIJYhQHvAVarB9Hg" Bounds="331,687" Name="Status" Alignment="Bottom" />
+                      <ControlPoint Id="JgrctKWLwGPPAwaaIJeGlu" Bounds="368,605" Name="Status" Alignment="Top" />
+                    </Node>
+                    <Node Bounds="165,545,56,19" Id="EtyRDkpvGeaLeWgjtqie7b">
+                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+                      </p:NodeReference>
+                      <Pin Id="IQECH3kNDfBPP0XSvLXynX" Name="Value" Kind="InputPin" />
+                      <Pin Id="Potue0HHiKcLv5p6pVULqD" Name="Up Edge" Kind="OutputPin" />
+                      <Pin Id="Tzhhi3kEbXHPUSaAJMB73F" Name="Down Edge" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="LMp2q1eL2dGMSpH9fpl4Mi" Bounds="331,506" Alignment="Top" />
+                  <ControlPoint Id="UXhptgYIR92OhNicgKmfIa" Bounds="230,506" Alignment="Top" />
+                  <ControlPoint Id="HcJdSP8vfSPLrb2JwLdiJq" Bounds="230,705" Alignment="Bottom" />
+                  <ControlPoint Id="LaWXMpjm2AMN33Af0gaYjl" Bounds="167,506" Alignment="Top" />
+                </Node>
+                <ControlPoint Id="J7w4unl1HcfMBjJYEe2njr" Bounds="499,436" />
+              </Patch>
+            </Node>
+            <ControlPoint Id="AaWviYSvzDZO6ADNjSbbXJ" Bounds="75,124" />
+          </Canvas>
+          <ProcessDefinition Id="AUDkoHLEpcoPiPFoQWoHQQ">
+            <Fragment Id="Hi6bab7CmrLLh9Dt5KJvna" Patch="J2I16HoyeDNMIpVrvCSzes" Enabled="true" />
+            <Fragment Id="Is6aUdIdTEGOcGML6R2dlC" Patch="HyX1ULWGAlCNlDMjRCrorX" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="OyX5dcBYi2UNJIRYyE8D7G" Name="Simulator" />
+          <Link Id="BAVxJP6ID94M0GNzDFifSV" Ids="PbRTKbX72VdMBGDK0u9GeX,DHGWFghQNZ1Lpa4JW2cYj0" />
+          <Link Id="FkwMdW4k9B9MFxrWobDBpF" Ids="HEFJ4Gp5aBYNffhidncaFp,QkfzHAEdtMUQLWyR7TInev" IsHidden="true" />
+          <Link Id="GoUiYadVRIsPKKJRxrU7IX" Ids="OdZGCgHl48XMEsdGKlocg5,JyIgZlm9GImNVl7qMhYwRO" IsHidden="true" />
+          <Link Id="DmZNT9xLj3SPAs0ogJj8Um" Ids="DHGWFghQNZ1Lpa4JW2cYj0,HXlBvzt7kH0MlKY77cnkAA" />
+          <Link Id="RgDrzTYJ1qpNS7KoYuiJBw" Ids="DbTl175urQ4PCKnAq4fm5K,QpgOF6TztUoMOL2z6L8JHL" />
+          <Link Id="NrCDtVqPerdLR45CVkSUKt" Ids="VRnEMsiBV7LPNV2lEXA38s,G5cEtf5eoTLLqsUQAW4xY1" />
+          <Link Id="Q4bAhrhnLFtLBvJ8xwi74m" Ids="HXlBvzt7kH0MlKY77cnkAA,AlBeUE27jj0PRPitS0XKH0" IsFeedback="true" />
+          <Link Id="R6HFZ33t7OLOaxSFS8RP6f" Ids="SPWEE4EAkB2L2IlDJMR9xK,RNba2ylDCDTLjZohsgzB0C" IsFeedback="true" />
+          <Link Id="HfzcAmglz7WLaNTuarvVWh" Ids="HXlBvzt7kH0MlKY77cnkAA,SPWEE4EAkB2L2IlDJMR9xK" />
+          <Link Id="AAvxRX9mbqqOreO5X7Bt7B" Ids="SPWEE4EAkB2L2IlDJMR9xK,FW3igWT5DS6OrelSJ7brtt" />
+          <Link Id="Etp3v14AfG4OQVPL0N4kTT" Ids="BIu6ByBnm1HNrB3Rw81uRs,RNba2ylDCDTLjZohsgzB0C" />
+          <Link Id="K4LOlmvXMJ1MbwLEHDAbLn" Ids="RNba2ylDCDTLjZohsgzB0C,AlBeUE27jj0PRPitS0XKH0" />
+          <Link Id="R26H2zoGdtEONmkpp5JXeu" Ids="HGIe3QoO9SnLkUHITegcx9,J8jM6NxFsHZQFZfOSFL0qv" IsFeedback="true" />
+          <Link Id="Hgd7mX8yMb6N1sRJdJGJBZ" Ids="MvlpHOw3sX7M9IM2Bm2VLU,J8jM6NxFsHZQFZfOSFL0qv" />
+          <Link Id="VCbsRQwq3OfP6cNbTMeMhP" Ids="Sed1dnpVaEdOTUVuD8hLHz,CxKmrGM2I6MMWyu7gQZ1CQ" />
+          <Link Id="Gy3KDUzPkTsLDi0xoKFjFd" Ids="LMp2q1eL2dGMSpH9fpl4Mi,I3734vQSEdkM3VJCHQQJ0g" />
+          <Link Id="IHShoC2PM9tMh46gJUBiS4" Ids="UXhptgYIR92OhNicgKmfIa,HcJdSP8vfSPLrb2JwLdiJq" IsFeedback="true" />
+          <Link Id="RxSfULj3HKhME9YhqBFXBs" Ids="DmnMSzH44GrOEEXyftwZxx,TXSKW40v0yPNcvxT0uOTks" IsFeedback="true" />
+          <Link Id="AwIVviZU1GQNMw7E8ywqxq" Ids="UXhptgYIR92OhNicgKmfIa,DmnMSzH44GrOEEXyftwZxx" />
+          <Link Id="LPt9ETJRs3bPyRXO4uj6w6" Ids="DmnMSzH44GrOEEXyftwZxx,IP63TnDLPwtN5EdrOtQGFA" />
+          <Link Id="E3txfkVfNIELkNVgSpOXCT" Ids="JDwWE1QDDIJQahfcWsASHl,TXSKW40v0yPNcvxT0uOTks" />
+          <Link Id="LqTwUh2QgUyMJwAl57dPEq" Ids="TXSKW40v0yPNcvxT0uOTks,HcJdSP8vfSPLrb2JwLdiJq" />
+          <Link Id="Fx2zkqeHEZ8N0MOruvJJqn" Ids="JgrctKWLwGPPAwaaIJeGlu,PTPkSHdIJYhQHvAVarB9Hg" IsFeedback="true" />
+          <Link Id="NPvTiujfMbQQJFx27pEUaI" Ids="KwSpcGaY8wcQKcm1HRufse,PTPkSHdIJYhQHvAVarB9Hg" />
+          <Link Id="SB6wWJWU2iaOhFY9HNKMxl" Ids="AlBeUE27jj0PRPitS0XKH0,UXhptgYIR92OhNicgKmfIa" />
+          <Link Id="NGK827Mf279OzCjU4ITrnW" Ids="QkfzHAEdtMUQLWyR7TInev,VRnEMsiBV7LPNV2lEXA38s" />
+          <Link Id="BFLzMfoLJ7WMbWohaqT9fM" Ids="AaWviYSvzDZO6ADNjSbbXJ,I5EuHOiYod6OGwjMeiWYQs" />
+          <Link Id="Khzm85EeCIZNL0mKchQ7oO" Ids="VBueuOiQH9GQBOEuAkJ2cg,AaWviYSvzDZO6ADNjSbbXJ" IsHidden="true" />
+          <Patch Id="J2I16HoyeDNMIpVrvCSzes" Name="Create" ParticipatingElements="BAVxJP6ID94M0GNzDFifSV" />
+          <Patch Id="HyX1ULWGAlCNlDMjRCrorX" Name="Update" ManuallySortedPins="true">
+            <Pin Id="HEFJ4Gp5aBYNffhidncaFp" Name="Key Codes" Kind="InputPin" />
+            <Pin Id="OdZGCgHl48XMEsdGKlocg5" Name="Simulate" Kind="InputPin" Bounds="407,197" />
+            <Pin Id="VBueuOiQH9GQBOEuAkJ2cg" Name="Enable" Kind="InputPin" Bounds="107,107" Visibility="Optional" />
+          </Patch>
+          <Link Id="RluzNyyGnRcOBM1plDNtVB" Ids="QkfzHAEdtMUQLWyR7TInev,J7w4unl1HcfMBjJYEe2njr,LMp2q1eL2dGMSpH9fpl4Mi" />
+          <Link Id="CiS3Wb2Ri63OnUFQOfmsWj" Ids="JyIgZlm9GImNVl7qMhYwRO,CqZQ2lCRgR4NpZwLxDiyTp" />
+          <Link Id="UAZxGeCUD74MOg2gMpLPdu" Ids="JyIgZlm9GImNVl7qMhYwRO,LaWXMpjm2AMN33Af0gaYjl" />
+          <Link Id="E7cttLXrZvGNG9d8FEA23C" Ids="CqZQ2lCRgR4NpZwLxDiyTp,Osbkc3pgrcmLlylsMxCHkW" />
+          <Link Id="ATq0vTu55L7OJSaXuVlMEL" Ids="Hvmtf6FtVY2MEg4KsMjk3f,A2xZQQRHdnHMaYukO3GYiP" />
+          <Link Id="GUYGgbcHMxTLGqFJJpwkRt" Ids="LaWXMpjm2AMN33Af0gaYjl,IQECH3kNDfBPP0XSvLXynX" />
+          <Link Id="SXMAAjUBfD2Mt5A4IlbbWq" Ids="Tzhhi3kEbXHPUSaAJMB73F,B6NWsXEDj7lNftMtpzfbVc" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ KeyboardSimulator ************************
+
+-->
+      <Node Name="KeyboardSimulator" Bounds="644,255" Id="McCkoER7k92OUal8AAS0Oo">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="C3GezOF6GoHLr8Q09QVvdM">
+          <Canvas Id="TbJHuRNYkkWPXKJVv1eWOp" CanvasType="Group">
+            <Node Bounds="203,-60,70,26" Id="BCqBjOWo40uMlgJyuMWac3">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="Q3aKJmk2DdlNVSGgdw0z3F" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="KGTuetHeA5aNPObW5ZaM59" SlotId="EuBGHxarT17NZ27zd6KDGt" Bounds="205,-16" />
+            <ControlPoint Id="TtE83KUeCiuPKTnTHW6TWi" Bounds="451,126" />
+            <ControlPoint Id="SmBQ4FD2HRqNNhDJeAZJzx" Bounds="116,130" />
+            <Node Bounds="102,153,368,389" Id="RSC3YlEwpc9MgB3hMEkBo1">
+              <p:NodeReference>
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="EZ8v35jocTnN124cT37mN6" Name="Condition" Kind="InputPin" DefaultValue="True" />
+              <Patch Id="No28YHIpIDWL6UiAokUZES" ManuallySortedPins="true">
+                <Patch Id="PoTyYpbBjAyQMtkoBCNB8z" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="HdiipscazkOPtlWbr1tydp" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="189,269,258,104" Id="Lwanh3VJGqYNnikDPvcykI">
+                  <p:NodeReference>
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="NaEqfyZboOSQDUVTibahMd" Name="Condition" Kind="InputPin" />
+                  <Patch Id="Bkz6cbqRpMJP2oJlatztiB" ManuallySortedPins="true">
+                    <Patch Id="LUPM9zdtaS4QLGPMBggVfg" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="Br0bphsQzz7PJWzsPTGn78" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="201,322,95,26" Id="Vus0ZTGQeIcMDtKELSUHdm">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SimulateKeyPress" />
+                        <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="IJP4AmepNuZO4FPfZ90YKI" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="HuMST47lMX6LVK5S4qliRO" Name="Key Code" Kind="InputPin" />
+                      <Pin Id="B0SG6AMlENBOITtGtaW4Gg" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="L3zRY2EGfcvMw8fHmBBvyW" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="291,292,144,19" Id="C56puIAYKDrOPkW6A0gN4E">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
+                      </p:NodeReference>
+                      <Pin Id="PO1MEXlXRJgPkbFN2O8F0q" Name="Key Code" Kind="InputPin" />
+                      <Pin Id="QQG4bKwspa6NLS78NS26uM" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="V7XxIIRHvmFOm6B3P6cqBE" Bounds="203,276" Alignment="Top" />
+                  <ControlPoint Id="OEa8RfQLCVfOPuXvAtwi8W" Bounds="203,368" Alignment="Bottom" />
+                </Node>
+                <Node Bounds="114,176,56,19" Id="K5Mo7wvd4fZLpn31oKgcyD">
+                  <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+                  </p:NodeReference>
+                  <Pin Id="AOHT7IqgRI7LyQHcq7m3RO" Name="Value" Kind="InputPin" />
+                  <Pin Id="MDp3EPcUe16Ov2PcupCCoJ" Name="Up Edge" Kind="OutputPin" />
+                  <Pin Id="LjCvv0ERoVWL9GT3UXhNjR" Name="Down Edge" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="189,408,269,114" Id="RLJ0epmUAdmOJc9FMJqDBI">
+                  <p:NodeReference>
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="SgjPGSDGUuQQI9EcKTNBCj" Name="Condition" Kind="InputPin" />
+                  <Patch Id="Bu2VLZaTxBYLtIavsTN6eB" ManuallySortedPins="true">
+                    <Patch Id="MfI7MQuAkaJPAcA2r27anF" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="LqcqzcxfZvsPfFyrVXSy1P" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="201,459,106,26" Id="LcIOtit3mGfPNwVQHc6E6x">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="SimulateKeyRelease" />
+                      </p:NodeReference>
+                      <Pin Id="AfMZS3HwsbCN8W30pdXmNo" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="G999nKupJSrNKGAWMCoxSH" Name="Key Code" Kind="InputPin" />
+                      <Pin Id="MDGc6HzjUugN0BEGVk64oA" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="ToRI35jEvxEOcwiEnbhctE" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="302,431,144,19" Id="S1L30uhBkQWOdqygV8VEzq">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
+                      </p:NodeReference>
+                      <Pin Id="Q57cfQTcLxuO9wzuP7ccSp" Name="Key Code" Kind="InputPin" />
+                      <Pin Id="MByUgxlYCP1OsOw5n82p83" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="BV2lbh7sEb8OZcaC4rC73I" Bounds="203,414" Alignment="Top" />
+                  <ControlPoint Id="NFQKvaZnz4OLMwhAWVlZ5X" Bounds="203,516" Alignment="Bottom" />
+                </Node>
+                <ControlPoint Id="LeA3YucN3FXNHARsZR5ASX" Bounds="116,238" />
+                <ControlPoint Id="La2H3WKJYU6OY7tfEXC17P" Bounds="167,388" />
+                <ControlPoint Id="LygOZ2A9UWRNQXfaBtDsly" Bounds="451,394" />
+              </Patch>
+            </Node>
+            <ControlPoint Id="DAVYDjqKk15Nq1FRebHOCg" Bounds="104,102" />
+          </Canvas>
+          <ProcessDefinition Id="FNmaWaGbPNdOoPzccnLoan">
+            <Fragment Id="OVqCcDAOh8TOolqekdoqZD" Patch="REjZG2onjl2M6NbQfZ0Vpe" Enabled="true" />
+            <Fragment Id="K02DQbz7wEfP953TNS6X3h" Patch="L2yz1YxEBW7PL9bMkbEUan" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="EuBGHxarT17NZ27zd6KDGt" Name="Simulator" />
+          <Link Id="CEqFkAabYfaPELxwrZEB8K" Ids="Q3aKJmk2DdlNVSGgdw0z3F,KGTuetHeA5aNPObW5ZaM59" />
+          <Link Id="QF1EvDJbzSLMuXLo9Wna7J" Ids="Qs8ubxq9pupOjqwVOhliiX,TtE83KUeCiuPKTnTHW6TWi" IsHidden="true" />
+          <Link Id="DJaVifvOFv4NMdNlZxV2Uo" Ids="SmyeXsvJd5lOCy5lisrhdr,SmBQ4FD2HRqNNhDJeAZJzx" IsHidden="true" />
+          <Link Id="Ba41vjEsSVoLC4Jm0DxK7W" Ids="DAVYDjqKk15Nq1FRebHOCg,EZ8v35jocTnN124cT37mN6" />
+          <Link Id="SkeZjY2RuSjL40anLNBXZ4" Ids="UNOTa0EWPlKOnuf3ghfysU,DAVYDjqKk15Nq1FRebHOCg" IsHidden="true" />
+          <Patch Id="REjZG2onjl2M6NbQfZ0Vpe" Name="Create" ParticipatingElements="CEqFkAabYfaPELxwrZEB8K" />
+          <Patch Id="L2yz1YxEBW7PL9bMkbEUan" Name="Update" ManuallySortedPins="true">
+            <Pin Id="Qs8ubxq9pupOjqwVOhliiX" Name="Key Code" Kind="InputPin" />
+            <Pin Id="SmyeXsvJd5lOCy5lisrhdr" Name="Simulate" Kind="InputPin" Bounds="407,197" />
+            <Pin Id="UNOTa0EWPlKOnuf3ghfysU" Name="Enable" Kind="InputPin" Bounds="107,107" Visibility="Optional" />
+          </Patch>
+          <Link Id="JeW4DHgrm6WOvB4ouTYiwD" Ids="QQG4bKwspa6NLS78NS26uM,HuMST47lMX6LVK5S4qliRO" />
+          <Link Id="NojySewX6FpLprZQLaME24" Ids="V7XxIIRHvmFOm6B3P6cqBE,OEa8RfQLCVfOPuXvAtwi8W" IsFeedback="true" />
+          <Link Id="Pxl2MBEhjbgNn9CoRAbZzE" Ids="V7XxIIRHvmFOm6B3P6cqBE,IJP4AmepNuZO4FPfZ90YKI" />
+          <Link Id="VfPWczdKXTwO5MRKx40bIA" Ids="B0SG6AMlENBOITtGtaW4Gg,OEa8RfQLCVfOPuXvAtwi8W" />
+          <Link Id="PtUXmIq1FynMebKJNDHc3k" Ids="SmBQ4FD2HRqNNhDJeAZJzx,AOHT7IqgRI7LyQHcq7m3RO" />
+          <Link Id="TYr1K8gIXXTOYohMhi9j5C" Ids="MDp3EPcUe16Ov2PcupCCoJ,LeA3YucN3FXNHARsZR5ASX,NaEqfyZboOSQDUVTibahMd" />
+          <Link Id="VBR6wz6NCSHMppA6J0hKxI" Ids="KGTuetHeA5aNPObW5ZaM59,V7XxIIRHvmFOm6B3P6cqBE" />
+          <Link Id="Vu0ObsBMNZcLiBlEeFevkP" Ids="MByUgxlYCP1OsOw5n82p83,G999nKupJSrNKGAWMCoxSH" />
+          <Link Id="OiU3bj3kCxxQA8qwpjHEi8" Ids="BV2lbh7sEb8OZcaC4rC73I,NFQKvaZnz4OLMwhAWVlZ5X" IsFeedback="true" />
+          <Link Id="OJiLqEMMlT7NatHLyWgp9N" Ids="BV2lbh7sEb8OZcaC4rC73I,AfMZS3HwsbCN8W30pdXmNo" />
+          <Link Id="JO6qVlItx9IN64XgYMXj4l" Ids="MDGc6HzjUugN0BEGVk64oA,NFQKvaZnz4OLMwhAWVlZ5X" />
+          <Link Id="AX34eLN9njrLLKrUHE8sRh" Ids="OEa8RfQLCVfOPuXvAtwi8W,BV2lbh7sEb8OZcaC4rC73I" />
+          <Link Id="LIMxXz1d06oLQMjjApC3g3" Ids="LjCvv0ERoVWL9GT3UXhNjR,La2H3WKJYU6OY7tfEXC17P,SgjPGSDGUuQQI9EcKTNBCj" />
+          <Link Id="DYaf0NOhgIgPv0w90E7mvd" Ids="TtE83KUeCiuPKTnTHW6TWi,PO1MEXlXRJgPkbFN2O8F0q" />
+          <Link Id="N1rm8uXliJLNy5kfesWNPT" Ids="TtE83KUeCiuPKTnTHW6TWi,LygOZ2A9UWRNQXfaBtDsly,Q57cfQTcLxuO9wzuP7ccSp" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -1827,7 +2175,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ToZ4kZncMGwO5yBBKRn0le" Location="VL.CoreLib" Version="2021.4.11-1053-g097be61f93" />
+  <NugetDependency Id="ToZ4kZncMGwO5yBBKRn0le" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
   <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="3.1.1" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>
