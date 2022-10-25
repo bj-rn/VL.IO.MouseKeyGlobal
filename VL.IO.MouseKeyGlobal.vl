@@ -2176,6 +2176,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="ToZ4kZncMGwO5yBBKRn0le" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
-  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="3.1.1" />
+  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="3.1.2" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>
