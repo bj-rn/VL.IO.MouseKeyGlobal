@@ -837,7 +837,7 @@ namespace VL.IO.MouseKeyGlobal
     public static class MouseKeyGlobalHelper
     {
 
-        public static MouseButtons ConvertMouseButton(MouseButton mouseButton)
+        public static MouseButtons MouseButtonLookup(MouseButton mouseButton)
         {
             switch (mouseButton)
             {
@@ -864,13 +864,39 @@ namespace VL.IO.MouseKeyGlobal
             }
         }
 
+        public static MouseButton MouseButtonReverseLookup(MouseButtons mouseButton)
+        {
+            switch (mouseButton)
+            {
+                case MouseButtons.None: 
+                    return MouseButton.NoButton;
+
+                case MouseButtons.Left:
+                    return MouseButton.Button1;
+
+                case MouseButtons.Right:
+                    return MouseButton.Button2;
+
+                case MouseButtons.Middle:
+                    return MouseButton.Button3;
+
+                case MouseButtons.XButton1:
+                    return MouseButton.Button4;
+
+                case MouseButtons.XButton2:
+                    return MouseButton.Button5;
+
+                default:
+                    return MouseButton.NoButton;
+            }
+        }
 
         // https://github.com/kwhat/libuiohook/blob/1.2/include/uiohook.h
         // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/windows/qwindowskeymapper.cpp
         // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/xcb/qxcbkeyboard.cpp
         // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/cocoa/qcocoakeymapper.mm
 
-        public static Keys ConvertKeyboardKey(KeyCode keyCode)
+        public static Keys KeyboardKeyLookup(KeyCode keyCode)
         {
             #region Switch Keys
 
@@ -1400,6 +1426,424 @@ namespace VL.IO.MouseKeyGlobal
             }
             #endregion
         }
+
+        public static KeyCode KeyboardReverseKeyLookup(Keys keyCode)
+        {
+            #region Switch Keys
+
+            switch (keyCode)
+            {
+                case Keys.Escape:
+                    return KeyCode.VcEscape;
+
+                case Keys.F1:
+                    return KeyCode.VcF1;
+
+                case Keys.F2:
+                    return KeyCode.VcF2;
+
+                case Keys.F3:
+                    return KeyCode.VcF3;
+
+                case Keys.F4:
+                    return KeyCode.VcF4;
+
+                case Keys.F5:
+                    return KeyCode.VcF5;
+
+                case Keys.F6:
+                    return KeyCode.VcF6;
+
+                case Keys.F7:
+                    return KeyCode.VcF7;
+
+                case Keys.F8:
+                    return KeyCode.VcF8;
+
+                case Keys.F9:
+                    return KeyCode.VcF9;
+
+                case Keys.F10:
+                    return KeyCode.VcF10;
+
+                case Keys.F11:
+                    return KeyCode.VcF11;
+
+                case Keys.F12:
+                    return KeyCode.VcF12;
+
+                case Keys.F13:
+                    return KeyCode.VcF13;
+
+                case Keys.F14:
+                    return KeyCode.VcF14;
+
+                case Keys.F15:
+                    return KeyCode.VcF15;
+
+                case Keys.F16:
+                    return KeyCode.VcF16;
+
+                case Keys.F17:
+                    return KeyCode.VcF17;
+
+                case Keys.F18:
+                    return KeyCode.VcF18;
+
+                case Keys.F19:
+                    return KeyCode.VcF19;
+
+                case Keys.F20:
+                    return KeyCode.VcF20;
+
+                case Keys.F21:
+                    return KeyCode.VcF21;
+
+                case Keys.F22:
+                    return KeyCode.VcF22;
+
+                case Keys.F23:
+                    return KeyCode.VcF23;
+
+                case Keys.F24:
+                    return KeyCode.VcF24;
+
+                case Keys.Oemtilde:
+                    return KeyCode.VcBackquote;
+
+                case Keys.D1:
+                    return KeyCode.Vc1;
+
+                case Keys.D2:
+                    return KeyCode.Vc2;
+
+                case Keys.D3:
+                    return KeyCode.Vc3;
+
+                case Keys.D4:
+                    return KeyCode.Vc4;
+
+                case Keys.D5:
+                    return KeyCode.Vc5;
+
+                case Keys.D6:
+                    return KeyCode.Vc6;
+
+                case Keys.D7:
+                    return KeyCode.Vc7;
+
+                case Keys.D8:
+                    return KeyCode.Vc8;
+
+                case Keys.D9:
+                    return KeyCode.Vc9;
+
+                case Keys.D0:
+                    return KeyCode.Vc0;
+
+                case Keys.OemMinus:
+                    return KeyCode.VcMinus;
+
+                case Keys.Oemplus:
+                    return KeyCode.VcEquals;
+
+                case Keys.Back:
+                    return KeyCode.VcBackspace;
+
+                case Keys.Tab:
+                    return KeyCode.VcTab;
+
+                case Keys.Capital:
+                    return KeyCode.VcCapsLock;
+
+                case Keys.A:
+                    return KeyCode.VcA;
+
+                case Keys.B:
+                    return KeyCode.VcB;
+
+                case Keys.C:
+                    return KeyCode.VcC;
+
+                case Keys.D:
+                    return KeyCode.VcD;
+
+                case Keys.E:
+                    return KeyCode.VcE;
+
+                case Keys.F:
+                    return KeyCode.VcF;
+
+                case Keys.G:
+                    return KeyCode.VcG;
+
+                case Keys.H:
+                    return KeyCode.VcH;
+
+                case Keys.I:
+                    return KeyCode.VcI;
+
+                case Keys.J:
+                    return KeyCode.VcJ;
+
+                case Keys.K:
+                    return KeyCode.VcK;
+
+                case Keys.L:
+                    return KeyCode.VcL;
+
+                case Keys.M:
+                    return KeyCode.VcM;
+
+                case Keys.N:
+                    return KeyCode.VcN;
+
+                case Keys.O:
+                    return KeyCode.VcO;
+
+                case Keys.P:
+                    return KeyCode.VcP;
+
+                case Keys.Q:
+                    return KeyCode.VcQ;
+
+                case Keys.R:
+                    return KeyCode.VcR;
+
+                case Keys.S:
+                    return KeyCode.VcS;
+
+                case Keys.T:
+                    return KeyCode.VcT;
+
+                case Keys.U:
+                    return KeyCode.VcU;
+
+                case Keys.V:
+                    return KeyCode.VcV;
+
+                case Keys.W:
+                    return KeyCode.VcW;
+
+                case Keys.X:
+                    return KeyCode.VcX;
+
+                case Keys.Y:
+                    return KeyCode.VcY;
+
+                case Keys.Z:
+                    return KeyCode.VcZ;
+
+                case Keys.OemOpenBrackets:
+                    return KeyCode.VcOpenBracket;
+
+                case Keys.Oem6:
+                    return KeyCode.VcCloseBracket;
+
+                case Keys.Oem5:
+                    return KeyCode.VcBackSlash;
+
+                case Keys.Oem1:
+                    return KeyCode.VcSemicolon;
+
+                case Keys.Oem7:
+                    return KeyCode.VcQuote;
+
+                case Keys.Return:
+                    return KeyCode.VcEnter;
+
+                case Keys.Oemcomma:
+                    return KeyCode.VcComma;
+
+                case Keys.OemPeriod:
+                    return KeyCode.VcPeriod;
+
+                case Keys.OemQuestion:
+                    return KeyCode.VcSlash;
+
+                case Keys.Space:
+                    return KeyCode.VcSpace;
+
+                case Keys.PrintScreen:
+                    return KeyCode.VcPrintscreen;
+
+                case Keys.Scroll:
+                    return KeyCode.VcScrollLock;
+
+                case Keys.Pause:
+                    return KeyCode.VcPause;
+
+                case Keys.OemBackslash:
+                    return KeyCode.VcLesserGreater;
+
+                case Keys.Insert:
+                    return KeyCode.VcInsert;
+
+                case Keys.Delete:
+                    return KeyCode.VcDelete;
+
+                case Keys.Home:
+                    return KeyCode.VcHome;
+
+                case Keys.End:
+                    return KeyCode.VcEnd;
+
+                case Keys.PageUp:
+                    return KeyCode.VcPageUp;
+
+                case Keys.PageDown:
+                    return KeyCode.VcPageDown;
+
+                case Keys.Up:
+                    return KeyCode.VcUp;
+
+                case Keys.Left:
+                    return KeyCode.VcLeft;
+
+                case Keys.OemClear:
+                    return KeyCode.VcClear;
+
+                case Keys.Right:
+                    return KeyCode.VcRight;
+
+                case Keys.Down:
+                    return KeyCode.VcDown;
+
+                case Keys.NumLock:
+                    return KeyCode.VcNumLock;
+
+                case Keys.Divide:
+                    return KeyCode.VcNumPadDivide;
+
+                case Keys.Multiply:
+                    return KeyCode.VcNumPadMultiply;
+
+                case Keys.Subtract:
+                    return KeyCode.VcNumPadSubtract;
+
+                case Keys.Add:
+                    return KeyCode.VcNumPadAdd;
+
+                case Keys.Decimal:
+                    return KeyCode.VcNumPadSeparator;
+
+                case Keys.NumPad1:
+                    return KeyCode.VcNumPad1;
+
+                case Keys.NumPad2:
+                    return KeyCode.VcNumPad2;
+
+                case Keys.NumPad3:
+                    return KeyCode.VcNumPad3;
+
+                case Keys.NumPad4:
+                    return KeyCode.VcNumPad4;
+
+                case Keys.NumPad5:
+                    return KeyCode.VcNumPad5;
+
+                case Keys.NumPad6:
+                    return KeyCode.VcNumPad6;
+
+                case Keys.NumPad7:
+                    return KeyCode.VcNumPad7;
+
+                case Keys.NumPad8:
+                    return KeyCode.VcNumPad8;
+
+                case Keys.NumPad9:
+                    return KeyCode.VcNumPad9;
+
+                case Keys.NumPad0:
+                    return KeyCode.VcNumPad0;
+
+                case Keys.LShiftKey:
+                    return KeyCode.VcLeftShift;
+
+                case Keys.RShiftKey:
+                    return KeyCode.VcRightShift;
+
+                case Keys.LControlKey:
+                    return KeyCode.VcLeftControl;
+
+                case Keys.RControlKey:
+                    return KeyCode.VcRightControl;
+
+                case Keys.LMenu:
+                    return KeyCode.VcLeftAlt;
+
+                case Keys.RMenu:
+                    return KeyCode.VcRightAlt;
+
+                case Keys.LWin:
+                    return KeyCode.VcLeftMeta;
+
+                case Keys.RWin:
+                    return KeyCode.VcRightMeta;
+
+                case Keys.Sleep:
+                    return KeyCode.VcSleep;
+
+                case Keys.MediaPlayPause:
+                    return KeyCode.VcMediaPlay;
+
+                case Keys.MediaStop:
+                    return KeyCode.VcMediaStop;
+
+                case Keys.MediaPreviousTrack:
+                    return KeyCode.VcMediaPrevious;
+
+                case Keys.MediaNextTrack:
+                    return KeyCode.VcMediaNext;
+
+                case Keys.VolumeMute:
+                    return KeyCode.VcVolumeMute;
+
+                case Keys.VolumeUp:
+                    return KeyCode.VcVolumeUp;
+
+                case Keys.VolumeDown:
+                    return KeyCode.VcVolumeDown;
+
+                case Keys.LaunchMail:
+                    return KeyCode.VcAppMail;
+
+                case Keys.BrowserSearch:
+                    return KeyCode.VcBrowserSearch;
+
+                case Keys.BrowserHome:
+                    return KeyCode.VcBrowserHome;
+
+                case Keys.BrowserBack:
+                    return KeyCode.VcBrowserBack;
+
+                case Keys.BrowserForward:
+                    return KeyCode.VcBrowserForward;
+
+                case Keys.BrowserStop:
+                    return KeyCode.VcBrowserStop;
+
+                case Keys.BrowserRefresh:
+                    return KeyCode.VcBrowserRefresh;
+
+                case Keys.BrowserFavorites:
+                    return KeyCode.VcBrowserFavorites;
+
+                case Keys.KanaMode:
+                    return KeyCode.VcKatakana;
+
+                case Keys.KanjiMode:
+                    return KeyCode.VcKanji;
+
+                case Keys.NoName:
+                    return KeyCode.VcUndefined;
+
+                default:
+                    return KeyCode.VcUndefined;
+            }
+            #endregion
+        }
+
 
     }
 }
