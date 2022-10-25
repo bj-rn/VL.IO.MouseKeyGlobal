@@ -19,6 +19,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Mouse" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="AtD6ZEBJZaJNWuwcMaD9or" Name="Mouse Notifications" Kind="OutputPin" />
           </Node>
           <Node Bounds="111,255,126,75" Id="M01bg3ZBLpNNVB588HxLgC">
@@ -88,6 +89,7 @@
               <Choice Kind="ProcessAppFlag" Name="Keyboard" />
               <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="H2jESK56OZDQRiigrmhMXB" Name="Key Notifications" Kind="OutputPin" />
           </Node>
           <Node Bounds="111,551,81,19" Id="BLvp06RYmZNQUhDyn64CYA">
@@ -163,6 +165,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator (Spread)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="KfY1ZtZRXX3LtcXKbFrLUt" Name="Key Codes" Kind="InputPin" />
             <Pin Id="Q3Hd0YZDe5IMEjbKMZAHeA" Name="Simulate" Kind="InputPin" />
           </Node>
@@ -203,6 +206,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="P63cnJqTt5eMmMsluqKuYm" Name="Key Code" Kind="InputPin" />
             <Pin Id="OaKzh23LckGPV0RrU1CbKK" Name="Simulate" Kind="InputPin" />
           </Node>
