@@ -1133,7 +1133,7 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcSpace:
                     return Keys.Space;
 
-                case KeyCode.VcPrintscreen:
+                case KeyCode.VcPrintScreen:
                     return Keys.PrintScreen;
 
                 case KeyCode.VcScrollLock:
@@ -1665,7 +1665,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcSpace;
 
                 case Keys.PrintScreen:
-                    return KeyCode.VcPrintscreen;
+                    return KeyCode.VcPrintScreen;
 
                 case Keys.Scroll:
                     return KeyCode.VcScrollLock;
