@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="TGg45vPo87BPufuX3vgyMe" LanguageVersion="2021.4.11.1332" Version="0.128">
+<Document xmlns:p="property" Id="TGg45vPo87BPufuX3vgyMe" LanguageVersion="2021.4.11.1341" Version="0.128">
   <Patch Id="Mo4NZ6ZPidaOcfPactohD8">
     <Canvas Id="J4NY6b2M4ufN7iuARolYcr" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -216,14 +216,13 @@
               <Choice Kind="ProcessAppFlag" Name="MouseSimulator" />
             </p:NodeReference>
             <Pin Id="Uf56roortn6Pd4sIjAXf0d" Name="Coordinates" Kind="InputPin" />
-            <Pin Id="UBve6tNi3wuL5xNIoCYEcQ" Name="Update" Kind="InputPin" />
             <Pin Id="IU7VoKot5xpNnVoNYn5VAw" Name="Movement" Kind="ApplyPin" DefaultValue="False" />
             <Pin Id="Ikab324sbA4NACigUYfRnb" Name="Button Down" Kind="InputPin" />
             <Pin Id="G8hjuHsc5q9NOSL9wZqOyQ" Name="Mouse Buttons" Kind="InputPin" />
             <Pin Id="D2wGlJ8jCShPdISAUIRiqF" Name="Amount" Kind="InputPin" />
             <Pin Id="UPxzZsEakphL3qXIpey9t1" Name="Rotation" Kind="InputPin" />
           </Node>
-          <Pad Id="NJrwD3ZmcGeM9VTmypLdUI" Comment="Movement" Bounds="739,148,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NJrwD3ZmcGeM9VTmypLdUI" Comment="Movement" Bounds="723,147,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -232,10 +231,31 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IVbXOayekDTQXH8xDcRlAd" Comment="Coordinates" Bounds="699,108,83,27" ShowValueBox="true" isIOBox="true" Value="3000, 2000">
+          <Pad Id="IVbXOayekDTQXH8xDcRlAd" Comment="Coordinates" Bounds="699,108,83,27" ShowValueBox="true" isIOBox="true" Value="1280, 720">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
+          </Pad>
+          <Overlay Id="J9aEMyhWZoSLcCX0K3OULm" Name="Only works in single monitor setups" Bounds="690,64,360,198">
+            <p:ColorIndex p:Type="Int32">6</p:ColorIndex>
+          </Overlay>
+          <Pad Id="MF1ZvKNeOdrL9eDBZ4Dpuu" Bounds="686,237,348,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/TolikPylypchuk/SharpHook/issues/25">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MMuqFyD8gScPkiiivBlwZj" Bounds="825,206,109,19" ShowValueBox="true" isIOBox="true" Value="&lt;- experimental">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="SFZEU1fy3LBNVUUuGddQnc" Name="Create" />
@@ -268,6 +288,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2021.4.11-1332-g34bbc10a05" />
+  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2021.4.11" />
   <DocumentDependency Id="UKC3jgKgCejOotiKo3kBaS" Location="../VL.IO.MouseKeyGlobal.vl" />
 </Document>
