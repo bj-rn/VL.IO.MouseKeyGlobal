@@ -106,7 +106,7 @@
     ************************ Mouse ************************
 
 -->
-      <Node Name="Mouse" Bounds="117,316" Id="LUIqV6gsGKeOF6Ypqihq2n">
+      <Node Name="Mouse" Bounds="117,311" Id="LUIqV6gsGKeOF6Ypqihq2n">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1646,7 +1646,7 @@
     ************************ PointerInfo ************************
 
 -->
-      <Node Name="PointerInfo" Bounds="269,314" Id="G8IcDU9R4kjMMFdvfePXgJ">
+      <Node Name="PointerInfo" Bounds="269,311" Id="G8IcDU9R4kjMMFdvfePXgJ">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2169,7 +2169,7 @@
     ************************ MouseSimulator ************************
 
 -->
-      <Node Name="MouseSimulator" Category="IO.Global.Experimental" Bounds="849,311" Id="OcgFwZJ6uvUQccrIh3MVQW">
+      <Node Name="MouseSimulator" Category="IO.Global.Experimental" Bounds="644,312" Id="OcgFwZJ6uvUQccrIh3MVQW">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2524,7 +2524,7 @@
     ************************ MouseState ************************
 
 -->
-      <Node Name="MouseState" Bounds="475,342" Id="Mr26H0gtnkgLrrEIPTJ9gb">
+      <Node Name="MouseState" Bounds="456,311" Id="Mr26H0gtnkgLrrEIPTJ9gb">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
