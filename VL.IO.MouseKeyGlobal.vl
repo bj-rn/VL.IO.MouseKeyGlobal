@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2021.4.11.1341" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2021.4.11" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2023.5.0" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2023.5.0" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
 
-    ************************ Events (Advanced) ************************
+    ************************ Events (Async Advanced) ************************
 
 -->
-      <Node Name="Events (Advanced)" Bounds="117,133" Id="VfB8uYXbyvGOiDxMhdQO05">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+      <Node Name="Events (Async Advanced)" Bounds="117,133" Id="VfB8uYXbyvGOiDxMhdQO05">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="Qe6b6vtCKA5LDDIbObKnVc">
           <Canvas Id="G8jXZgNfKGbLwPG3aFh0Ew" CanvasType="Group">
             <Node Bounds="129,90,353,241" Id="JG97m5iRi20LhlBK8rZ7J4">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.Experimental.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationCallFlag" Name="SingleInstance" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -27,12 +27,12 @@
                 <Pin Id="OSFTlfNitk6Ogpwe2yMvmU" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="DUQLPuJNXqcOxrgluSYbi7" Bounds="145,324" />
                 <Pad Id="RB9XEdYTwwnPeUCjQb1Faf" Comment="Parallelism Level" Bounds="145,118,35,15" ShowValueBox="true" isIOBox="true" Value="4">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="143,224,90,26" Id="Js3srgdaEORPWRkJkYXtPv">
-                  <p:NodeReference LastCategoryFullName="SharpHook.TaskPoolGlobalHook" LastSymbolSource="SharpHook.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="SharpHook.TaskPoolGlobalHook" LastDependency="SharpHook.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="SharpHook" />
                     <CategoryReference Kind="AssemblyCategory" Name="TaskPoolGlobalHook" />
@@ -43,7 +43,7 @@
                   <Pin Id="EC6n3rNUrGdObCPteH1TSh" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="143,176,118,26" Id="Uuu6oFkrlm4LLx9BHcej7V">
-                  <p:NodeReference LastCategoryFullName="SharpHook.TaskPoolGlobalHookOptions" LastSymbolSource="SharpHook.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="SharpHook.TaskPoolGlobalHookOptions" LastDependency="SharpHook.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="TaskPoolGlobalHookOptions" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -55,7 +55,7 @@
                   <Pin Id="A6vMjZEH8wQOc4Fzmq3aJ6" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="143,272,74,26" Id="NqGbH1RhYVoNmVkvjy1cyZ">
-                  <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunAsync" />
                     <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -65,7 +65,7 @@
                   <Pin Id="QfXg14hXRF1MMwemP08IMN" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Pad Id="JJ98fldezSjNtJHoRcjcRT" Comment="Run Async On Background Thread" Bounds="258,144,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-                  <p:TypeAnnotation>
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:TypeAnnotation>
@@ -77,7 +77,7 @@
             </Node>
             <ControlPoint Id="U0gmz8Oar2wLu8aMeSIzkz" Bounds="131,372" />
             <Pad Id="VmysL4CkB3yLgiKfbZ45YX" Comment="On Stop" Bounds="479,85,117,15" ShowValueBox="true" isIOBox="true" Value="ReleaseAndDispose">
-              <p:TypeAnnotation LastCategoryFullName="VL.Lib.Experimental" LastSymbolSource="VL.CoreLib.dll">
+              <p:TypeAnnotation LastCategoryFullName="VL.Core" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="SingleInstanceBehaviorOnStop" />
               </p:TypeAnnotation>
             </Pad>
@@ -107,13 +107,13 @@
 
 -->
       <Node Name="Mouse" Bounds="117,311" Id="LUIqV6gsGKeOF6Ypqihq2n">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="O53VK5s5YQrM2ayEg2lOrX">
           <Canvas Id="L3OCA948LyFNdtZlPlYv6p" CanvasType="Group">
             <Node Bounds="168,141,70,77" Id="OOwF4nG3XGsO1LjXp4axjk">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessAppFlag" Name="SingleInstance (PerApp)" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -123,7 +123,7 @@
                 <Pin Id="N0oBXyJvg0ROBO4Yz4G2mN" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="PorHsv711TuOodcxWHlKdu" Bounds="182,211" />
                 <Node Bounds="180,164,46,19" Id="KpbXwV0rV6gP9HtccnSmUP">
-                  <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Mouse" />
                     <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
@@ -134,9 +134,9 @@
               </Patch>
             </Node>
             <Node Bounds="180,103,75,19" Id="KUhxghDwnfYP0TWgbplOsH">
-              <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="GlobalHook.vl">
+              <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Events" />
+                <Choice Kind="ProcessAppFlag" Name="Events (Async)" />
               </p:NodeReference>
               <Pin Id="J7FMT7mV17OPnWOCufCHg3" Name="Output" Kind="OutputPin" />
             </Node>
@@ -163,13 +163,13 @@
 
 -->
       <Node Name="Console" Bounds="117,194" Id="KSCGiBMWkmMPA6T5OTRI2I">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="VRBEWl0j8y4LXzfxmWxHwx">
           <Canvas Id="LKf4DlZ0ym4LQaEcT3lgP3" CanvasType="Group">
             <Node Bounds="154,158,163,200" Id="D5nlfGiVEZuOrSPmutMtwC">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessAppFlag" Name="SingleInstance (PerApp)" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -179,7 +179,7 @@
                 <Pin Id="DlgqN1IGUhRO7Moxq7rqj8" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="HyB2tcsSe5VLFbyKM8oxEo" Bounds="168,351" />
                 <Node Bounds="207,233,56,26" Id="InngD6c1tMMPqx5NFv9Lc8">
-                  <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+                  <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Merge" />
                     <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -189,7 +189,7 @@
                   <Pin Id="S932Ch4dtfUMv2EEEoAq89" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="259,181,46,19" Id="Peb0fbKOndSLCkt7fRXlKL">
-                  <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Mouse" />
                     <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
@@ -198,7 +198,7 @@
                   <Pin Id="SER7bT5Nw75NdZPQh1VYXc" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="168,183,59,19" Id="CWky7DOX3xAOtpeHtjBpul">
-                  <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Keyboard" />
                     <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
@@ -207,7 +207,7 @@
                   <Pin Id="EVQj8rdmSBGMIH6B2ML8gx" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="166,312,45,19" Id="VFs0xfeFXooMKOjF33YbG4">
-                  <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" />
                     <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
@@ -220,15 +220,15 @@
               </Patch>
             </Node>
             <Node Bounds="168,99,75,19" Id="VtpzyRk7NDUNiMccdaMspc">
-              <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="GlobalHook.vl">
+              <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Events" />
+                <Choice Kind="ProcessAppFlag" Name="Events (Async)" />
               </p:NodeReference>
               <Pin Id="POgMhS7j1orPU2e1iz82zV" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="MWGqlj1gJUYLr4Ua1bXwHD" Bounds="176,473" />
             <Node Bounds="154,382,45,19" Id="R6mxM6dOQmwNnPuWX0Z8CP">
-              <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" />
                 <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
@@ -275,12 +275,12 @@
 
 -->
       <Node Name="Mouse (Internal)" Bounds="-2751,96,2727,933" Id="FFDa8ZzB3aWLuOZpe5CBVl">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="HFWg32LCTSAOOMLBdYpPT0">
           <Node Bounds="-2301,812,56,26" Id="Gund3qBJZlqPh8CjQ6TzuI">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -290,7 +290,7 @@
             <Pin Id="IVJBQsqBv1eNxNWXwxxSfg" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="-2708,194,100,26" Id="OfDExNnkBuvOGQnTbyuqR1">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MouseClicked" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -299,7 +299,7 @@
             <Pin Id="Sfxlmqxr1AAM0JmcOYNAek" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="-2708,251,481,533" Id="LczGVz0Wbm7P7pn5ApssZh">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -314,7 +314,7 @@
               <ControlPoint Id="M87J0wRqHgzL6ayCmF1ID2" Bounds="-2552,264" />
               <ControlPoint Id="PILIeDDs9F1NRZFL2VoqvZ" Bounds="-2624,777" />
               <Node Bounds="-2614,274,62,26" Id="TgMCGRwzPFUNpULtS7Ei2Z">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -323,7 +323,7 @@
                 <Pin Id="MRso5LpJHMiNpLXyFNc98W" Name="Event Args" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2300,325,61,26" Id="EscrnUNb40eM4siuh1nuU7">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -332,7 +332,7 @@
                 <Pin Id="Tu3cXvu5pbiNXQjEjyvn8a" Name="Sender" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2626,733,332,26" Id="JFbafECJpfNNq2DnbBDTl6">
-                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseClickNotification" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseClickNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="IO" />
                   <CategoryReference Kind="RecordType" Name="MouseClickNotification" />
@@ -342,11 +342,12 @@
                 <Pin Id="Un1ZPKCeHMTMK7Koak4bLi" Name="Client Area" Kind="InputPin" />
                 <Pin Id="EduO3Z3qUZwOVAxbUa33gn" Name="Buttons" Kind="InputPin" DefaultValue="Left" />
                 <Pin Id="MSHsoljEoFHQE32Fr65BJG" Name="Click Count" Kind="InputPin" DefaultValue="2" />
+                <Pin Id="IIlIP4UUezPMiXX2yymzqm" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="PNQkkv29S7WMDoIrwhsjOm" Name="Sender" Kind="InputPin" />
                 <Pin Id="NT6nmZVXRCLOLn0JLokMW4" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-2626,660,46,19" Id="TSVWI6M6UuiLS8WDqInjfe">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Vector2Type" Name="Vector2" />
                   <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -356,7 +357,7 @@
                 <Pin Id="R5ui9kdcWqRQSEqIFZ5A3c" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-2614,325,94,26" Id="TECtBZdZHKRMOkXLDfPiNZ">
-                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -366,7 +367,7 @@
                 <Pin Id="HGEditTUNZRLoAd6DpWOmv" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2612,380,235,26" Id="EYCr0jAkonzMjJtWCIGdGQ">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Clicks" />
@@ -376,7 +377,7 @@
                 <Pin Id="BJlWTCOLZoqPAFbQHb5HGI" Name="Clicks" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2612,462,156,26" Id="PHdAPXwTbCZMWrKF8fHXuG">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Button" />
@@ -386,7 +387,7 @@
                 <Pin Id="GVFsQlHim1YNSMs94GkpOq" Name="Button" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2696,530,115,26" Id="DiOEJy2VllANeuXVmB1far">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Y" />
@@ -396,7 +397,7 @@
                 <Pin Id="AWKttlQujMnNdFUVfopckK" Name="Y" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2696,583,75,26" Id="CcalQOEQJsAOFVoXuV0hhR">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="X" />
@@ -406,7 +407,7 @@
                 <Pin Id="AYj93OEcFeNN7GjhwxMrlv" Name="X" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2461,580,111,19" Id="EO4THrDiyWnM8KOp5LyX22">
-                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
@@ -416,7 +417,7 @@
                 <Pin Id="HTOGoqLNCuRO9nnBkGwMz7" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2461,627,58,19" Id="O6lTz3dvJSIOJI9Uz9XmX2">
-                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
                 </p:NodeReference>
@@ -426,7 +427,7 @@
             </Patch>
           </Node>
           <Node Bounds="-2166,251,481,530" Id="Bimd1tgljLSM3xjSjsa21s">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -441,7 +442,7 @@
               <ControlPoint Id="J1YgAQJ2X13Lq4hihgLvQs" Bounds="-2010,261" />
               <ControlPoint Id="SwhIw3VZJjFOjnvmQbT8Bo" Bounds="-2082,774" />
               <Node Bounds="-2072,274,62,26" Id="PJGgZq5iciePpQu9F21pxH">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -450,7 +451,7 @@
                 <Pin Id="HQbS51nWb7rLsyRXTGoaQA" Name="Event Args" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1758,325,61,26" Id="A6Th4d20mtlOz2Q4XsGZHK">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -459,7 +460,7 @@
                 <Pin Id="NSCk59okFNUPbi8eCizpDa" Name="Sender" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2084,730,332,26" Id="GZbUb4QeYtzLmMbclWFkda">
-                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseDownNotification" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseDownNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="IO" />
                   <CategoryReference Kind="RecordType" Name="MouseDownNotification" />
@@ -468,11 +469,12 @@
                 <Pin Id="KUNQAGHi7wgM6x8UpJVtI6" Name="Position" Kind="InputPin" />
                 <Pin Id="MGprAMgXm7YPVuI5On4SoV" Name="Client Area" Kind="InputPin" />
                 <Pin Id="TUsBWw2IOUdNT6JYCG03Yq" Name="Buttons" Kind="InputPin" DefaultValue="Left" />
+                <Pin Id="TKRDBlbdeo0LGyPDE46MD5" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="FU1nF0tFIBHMqYkJmDhcUD" Name="Sender" Kind="InputPin" />
                 <Pin Id="MFUlYKmTOdCO6DIkLnHJ6i" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-2084,660,46,19" Id="ALveteC8lH8O8uqVbDIero">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Vector2Type" Name="Vector2" />
                   <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -482,7 +484,7 @@
                 <Pin Id="TDFni0y5vLKMxCccAPYN9l" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-2072,325,94,26" Id="Hu6HB1zKnXaOottWG9uKq6">
-                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -492,7 +494,7 @@
                 <Pin Id="N5SV4HXRAPXQJzNTrEJASr" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1983,380,123,26" Id="ANzjfbjeZsbMTU9BdDYNDq">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Button" />
@@ -502,7 +504,7 @@
                 <Pin Id="D5X1nKMoVm6PwcdUBedEb1" Name="Button" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2154,530,115,26" Id="PJwdqSaAcvbORWBxiY6Tdr">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Y" />
@@ -512,7 +514,7 @@
                 <Pin Id="N7SoxznfY8DNpnBnB8mPXy" Name="Y" Kind="OutputPin" />
               </Node>
               <Node Bounds="-2154,583,75,26" Id="DVAXik9xlDvM7FcgJimZBd">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="X" />
@@ -522,7 +524,7 @@
                 <Pin Id="ROJePm5HQPSNES7W0TDulK" Name="X" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1865,587,111,19" Id="NCXKDHLqK5MLoftkxkO7xv">
-                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
@@ -532,7 +534,7 @@
                 <Pin Id="UsasGBURoS6NuTG1QQhCwW" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1865,634,58,19" Id="HQEPywnofnmMyaiNDvdoc4">
-                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
                 </p:NodeReference>
@@ -542,7 +544,7 @@
             </Patch>
           </Node>
           <Node Bounds="-1088,243,482,528" Id="BCf8W2s1NA4LPgVK2BEjCV">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -557,7 +559,7 @@
               <ControlPoint Id="UYfKbRGddf9N6H3eB0OZXo" Bounds="-931,251" />
               <ControlPoint Id="Dca7IIhTW5vMu6xbtuhyZD" Bounds="-1003,764" />
               <Node Bounds="-993,270,62,26" Id="Fw9D0dwnWNfMtXH0pQLh4z">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -566,7 +568,7 @@
                 <Pin Id="AQj60ywnDsEOgnE8ADUuGT" Name="Event Args" Kind="OutputPin" />
               </Node>
               <Node Bounds="-679,321,61,26" Id="HBXBJV7fdMMLYeby32EkBV">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -575,7 +577,7 @@
                 <Pin Id="Pw7oXPxnFKQOhh5jEYwkH1" Name="Sender" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1005,720,332,26" Id="TqaL89dOnKBM2y1xZYru49">
-                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseMoveNotification" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseMoveNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="IO" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -583,11 +585,12 @@
                 </p:NodeReference>
                 <Pin Id="MypxqVW3Gp6OTyO4avHB0Q" Name="Position" Kind="InputPin" />
                 <Pin Id="P4F4LuMfAa2OGJAhIDur7X" Name="Client Area" Kind="InputPin" />
+                <Pin Id="JqzwwWIVUs4MG2ZbkFyGem" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="NRguHwueSNjPk8ixAusp4d" Name="Sender" Kind="InputPin" />
                 <Pin Id="Sp3mzNA7VoBNCn4Mp9U8LI" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-1005,656,46,19" Id="CsHBFo6PB3NMCV7Dx1tGCk">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Vector2Type" Name="Vector2" />
                   <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -597,7 +600,7 @@
                 <Pin Id="P9e5OG9DnTVOirm6KXdziq" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-992,321,94,26" Id="HBSLhu0DH51PM6Q05V78yS">
-                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -607,7 +610,7 @@
                 <Pin Id="EJfMgYxykNROcB9eQnJgUe" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1076,526,117,26" Id="RZFbuFUvtvKOGlyfgssEat">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Y" />
@@ -617,7 +620,7 @@
                 <Pin Id="CYWq4SivWKjMwcEHG2VuMC" Name="Y" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1076,579,75,26" Id="QqtktMksSWHPxwnGTfWz5c">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="X" />
@@ -629,7 +632,7 @@
             </Patch>
           </Node>
           <Node Bounds="-538,248,502,528" Id="TeTPV0LEVEvP9IUZoX03LE">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -644,7 +647,7 @@
               <ControlPoint Id="IUyahN6Mu4mLC7ENMlx0Ot" Bounds="-361,256" />
               <ControlPoint Id="ElYvWsnY96fPSnISKbMxWo" Bounds="-433,769" />
               <Node Bounds="-423,274,62,26" Id="QTJlL9e6Mm0QDDEKMuI0RG">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -653,7 +656,7 @@
                 <Pin Id="RBJB4GKMe04PtcLOpiyGB1" Name="Event Args" Kind="OutputPin" />
               </Node>
               <Node Bounds="-109,325,61,26" Id="IYWkS4IutxgQA47EXwyi8H">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -662,7 +665,7 @@
                 <Pin Id="FmobfekrZ3sL702qIaErC4" Name="Sender" Kind="OutputPin" />
               </Node>
               <Node Bounds="-435,725,332,26" Id="JL0JepiMmdPOG1ZoKSpRFV">
-                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseWheelNotification" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseWheelNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="IO" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -671,11 +674,12 @@
                 <Pin Id="BjYjuanI1jLQUZcz6YUTE5" Name="Position" Kind="InputPin" />
                 <Pin Id="UjIL0XV5GEIPdQERd1EQfD" Name="Client Area" Kind="InputPin" />
                 <Pin Id="FclV6J7z7efNTSkq1sIYYE" Name="Wheel Delta" Kind="InputPin" />
+                <Pin Id="CEZB7O9JGVPNCB3TSQK7aK" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="QBzYUbsJWklP7ILnbmRA0k" Name="Sender" Kind="InputPin" />
                 <Pin Id="P7AUSDZ4HVqM0QUn6fO0ua" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-435,660,46,19" Id="JDcUSSMbgbOOqBmX3Yjtwb">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Vector2Type" Name="Vector2" />
                   <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -685,7 +689,7 @@
                 <Pin Id="CdOJUo8k7JLOrvODm9bqxZ" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-423,325,115,26" Id="MwWJ3UH9EUYLiFHv3A9Kx3">
-                <p:NodeReference LastCategoryFullName="SharpHook.MouseWheelHookEventArgs" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.MouseWheelHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseWheelHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -695,7 +699,7 @@
                 <Pin Id="QuJihWPOQxxOqC3nlTYrPq" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="-313,380,102,26" Id="Jx5ll1lKDZSOZ5QkF0iUUH">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseWheelEventData" />
                   <Choice Kind="OperationCallFlag" Name="Rotation" />
@@ -705,7 +709,7 @@
                 <Pin Id="O80ClksHVr6QV5hhDedRAW" Name="Rotation" Kind="OutputPin" />
               </Node>
               <Node Bounds="-526,530,136,26" Id="NziqfrnfXEYQBYzba2EawN">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseWheelEventData" />
                   <Choice Kind="OperationCallFlag" Name="Y" />
@@ -715,7 +719,7 @@
                 <Pin Id="AXpv5w5SipUPtWyDlugdEV" Name="Y" Kind="OutputPin" />
               </Node>
               <Node Bounds="-526,583,96,26" Id="LyBt9cSw9OKPMZ8s3WxocN">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseWheelEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseWheelEventData" />
                   <Choice Kind="OperationCallFlag" Name="X" />
@@ -725,7 +729,7 @@
                 <Pin Id="E1wdwPs6XSHMDeCsxfQiVm" Name="X" Kind="OutputPin" />
               </Node>
               <Node Bounds="-216,468,25,19" Id="AIQ7NdpN2hmLckmU48hAuO">
-                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="*" />
                 </p:NodeReference>
@@ -734,12 +738,12 @@
                 <Pin Id="UpTU6TB2SOXL3aCbwnU9nr" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="LfEmwLi3IpzPIzmqqJlOq1" Comment="" Bounds="-194,444,20,15" ShowValueBox="true" isIOBox="true" Value="-1">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer16" />
                 </p:TypeAnnotation>
               </Pad>
               <Pad Id="Ikv0G3z0e8XQY9VWKu2dLX" Bounds="-187,474,126,19" ShowValueBox="true" isIOBox="true" Value="it's opposite to skia">
-                <p:TypeAnnotation>
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
                 <p:ValueBoxSettings>
@@ -750,7 +754,7 @@
             </Patch>
           </Node>
           <Node Bounds="-2301,864,56,26" Id="CaQ2TMGKHsxNDlsDRfcepZ">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -760,7 +764,7 @@
             <Pin Id="Vvf2LkYEu1gPanBCIXvuqQ" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="-2301,912,56,26" Id="Ckz3cMIqNL8NwGtyxs7Vk6">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -770,7 +774,7 @@
             <Pin Id="U5m5NB1O7L5MH96CMchiE0" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="-2301,957,56,26" Id="IKuwpH1YLVUPqWn95hZgDt">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -834,7 +838,7 @@
           <Link Id="VO3FzI9TRnWLzrIetURupF" Ids="OfNxGwyOOaYNg4uMwfcPRa,CWc2wPq2yKHP1Hs3jXuoA7" />
           <Link Id="EQnDgSqF54gN02F9JeoskH" Ids="IVJBQsqBv1eNxNWXwxxSfg,Lyiko9eB5lvNr4RHsO1ba5" />
           <Node Bounds="-2166,194,100,26" Id="ByRzSX2h1UoOikRTjOSRo0">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MousePressed" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -851,7 +855,7 @@
           <Link Id="NPn2kiwNs63P5EJRuaFKhu" Ids="ROJePm5HQPSNES7W0TDulK,PEkYp4ab9RxLDljooYTibc" />
           <Link Id="THKyqGvmvEUPF3NOloeT9J" Ids="N7SoxznfY8DNpnBnB8mPXy,Hrin8pzisEhM4KCybJSxc5" />
           <Node Bounds="-1623,242,481,528" Id="AQJApANmkwwPxmVmMiR8yF">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -866,7 +870,7 @@
               <ControlPoint Id="QxDzxMbsMCGNOrfxhG58xM" Bounds="-1467,250" />
               <ControlPoint Id="PT2U2pDRdPiPNbTG4E6VZ0" Bounds="-1539,763" />
               <Node Bounds="-1529,274,62,26" Id="UI7QqpW1NMYL8AKMpUEQma">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -875,7 +879,7 @@
                 <Pin Id="CKCPlSDD0kgPQEgRT61Dn0" Name="Event Args" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1215,325,61,26" Id="M4DEFQJJqZOMccmeLBXs3i">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -884,7 +888,7 @@
                 <Pin Id="REOv4SwD5NcOUofozGMw38" Name="Sender" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1541,719,332,26" Id="CoIiENFQbLBMz6ZkIKeTQ5">
-                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseUpNotification" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="IO.Mouse.MouseUpNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="IO" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -893,11 +897,12 @@
                 <Pin Id="GT7HwEFm5RkPYbmD6OmR95" Name="Position" Kind="InputPin" />
                 <Pin Id="DtRx1ZhqkJjOkDFvmmwqiI" Name="Client Area" Kind="InputPin" />
                 <Pin Id="CJCGo5jL9CkNwJyWdbVRrp" Name="Buttons" Kind="InputPin" DefaultValue="Left" />
+                <Pin Id="UY48AyWPklSMyvYv6semgU" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="Vk9h2rOJzVqNTPSNRb8QPe" Name="Sender" Kind="InputPin" />
                 <Pin Id="Rc6lGNPUArmNwUhYDrL6CU" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-1541,660,46,19" Id="MX0PsyO0eRvQV287svqJlR">
-                <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Vector2Type" Name="Vector2" />
                   <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -907,7 +912,7 @@
                 <Pin Id="NMBQFUIvlQOPEwW5kNthnZ" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="-1529,325,94,26" Id="Q1boy0ZylbpLP8Pr8PV9sy">
-                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.MouseHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -917,7 +922,7 @@
                 <Pin Id="J6AzSYMsE08OINPib67kIc" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1440,380,123,26" Id="GaP3z0Qxla1PtdlLH2oSEz">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Button" />
@@ -927,7 +932,7 @@
                 <Pin Id="PReqpK4EC5ZLixwi3J4gwd" Name="Button" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1611,530,115,26" Id="P1kSrYsBIPNPG7e1hTRRAN">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="Y" />
@@ -937,7 +942,7 @@
                 <Pin Id="IbScbdjQv0fOExPoimNwQb" Name="Y" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1611,583,75,26" Id="H0ipuA9qZ7dLbiGuGHzos0">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastSymbolSource="SharpHook.dll">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.MouseEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseEventData" />
                   <Choice Kind="OperationCallFlag" Name="X" />
@@ -947,7 +952,7 @@
                 <Pin Id="OfuA0UBdQJ1OvlRRZrLJkW" Name="X" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1323,583,111,19" Id="Qg0f78GnONEPV7pFeGV8r7">
-                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobalHelper" />
@@ -957,7 +962,7 @@
                 <Pin Id="JeTJeEieVd9LLoIGdWMhM5" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="-1323,630,58,19" Id="TjXXfgybz5fPLBPK0ggIE5">
-                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
                 </p:NodeReference>
@@ -981,7 +986,7 @@
           <Link Id="QQJnORYzposPmFwuGgaRAV" Ids="OfuA0UBdQJ1OvlRRZrLJkW,CNN6dnIq4cXPopKgNB1y6f" />
           <Link Id="I5FnFwWBcTqLchsGWdKfb4" Ids="IbScbdjQv0fOExPoimNwQb,PzfNFQmwPOGNxIeXQWs0AP" />
           <Node Bounds="-1623,194,100,26" Id="Ub3ZGbwjp2POs3r0vjSO4H">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MouseReleased" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -993,7 +998,7 @@
           <Link Id="KTRWOJKbDhUL22pAt4o014" Ids="LHuNnodjX5tNV47iH5DUMt,ItyHabFJmMbLNqxzxQQKPZ" />
           <Link Id="T9S1RdSU3HVQUhHVymwmK0" Ids="OhL3JgZIANQLYTbQZ8ctWG,D6w9sDLbYMEN1O6LqriVq3" />
           <Node Bounds="-1088,178,100,26" Id="Ga0zV5OztjsPRZMZBcJABK">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MouseMoved" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1008,7 +1013,7 @@
           <Link Id="I4aoNoymOktLIWcydqwfws" Ids="NEl0FnjuWgMMfLAW1NQbsk,GTAfF4TZ9ZkQWZVuCJkeEP" />
           <Link Id="PNg1dbrECiYPYnOeHrNFoL" Ids="CYWq4SivWKjMwcEHG2VuMC,RBeuiMSWrdtP5LbY3gyuFc" />
           <Node Bounds="-538,194,100,26" Id="HiKsaw6dn7wPIvVN1h8zn3">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MouseWheel" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1037,7 +1042,7 @@
           <Link Id="Sdf3E1NRZ8yOPksAzl9Tty" Ids="PReqpK4EC5ZLixwi3J4gwd,F0wbWddiY9JQISXo73uYBG" />
           <Link Id="JZNz5U9qVyUL32WTwBRWFx" Ids="Ft5wOaZ7cUMQM7Pb0qBs81,CJCGo5jL9CkNwJyWdbVRrp" />
           <Node Bounds="-954,177,100,26" Id="LGw2QkgZ9S6QZRQnTIxqTg">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MouseDragged" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1047,7 +1052,7 @@
           </Node>
           <Link Id="ABG9PSC3juwOJuTrMQsrYD" Ids="LHuNnodjX5tNV47iH5DUMt,DelX0DNcrKnLST3pEjtFb2" />
           <Node Bounds="-1088,210,139,26" Id="SFZ2Blh9TdtNd4IvIVC8XC">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -1068,13 +1073,13 @@
     ************************ Keyboard (Internal) ************************
 
 -->
-      <Node Name="Keyboard (Internal)" Bounds="-914,1094,885,553" Id="JM5MPixxQMcN4FQ07gJilv">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+      <Node Name="Keyboard (Internal)" Bounds="-1543,1107,1467,747" Id="JM5MPixxQMcN4FQ07gJilv">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="KAL9PfXaqGmNy5WxGP9YEq">
-          <Node Bounds="-584,1161,75,26" Id="Fy00aTBdVwSOYkdiH3iVEu">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+          <Node Bounds="-1016,1175,75,26" Id="Fy00aTBdVwSOYkdiH3iVEu">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="KeyTyped" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1082,8 +1087,8 @@
             <Pin Id="FNN1FEegNUXQFpzOE7xQjP" Name="Input" Kind="StateInputPin" />
             <Pin Id="IV1UWLGAqEhOCNJoCfjmvm" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-872,1160,75,26" Id="IAWXtSvoTPxPYu08hFCDiz">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+          <Node Bounds="-1501,1173,75,26" Id="IAWXtSvoTPxPYu08hFCDiz">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="KeyPressed" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1091,8 +1096,8 @@
             <Pin Id="SRrjNesL490MLm89CSoo3c" Name="Input" Kind="StateInputPin" />
             <Pin Id="NFeylVxVVk5MLDc78jiCaf" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-871,1209,251,269" Id="Gztmj1sCjUPNe292IyNzN7">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+          <Node Bounds="-1500,1222,430,451" Id="Gztmj1sCjUPNe292IyNzN7">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1103,11 +1108,11 @@
               <Pin Id="CAq8ftlHcfWMAYQPe6HRa3" Name="Input 1" Kind="InputPin" />
               <Pin Id="Vm9Oz25wkK3OGjXcWhlVuL" Name="Input 2" Kind="InputPin" />
               <Pin Id="AdZmEMvVVySLdfuUWaKE9U" Name="Result" Kind="OutputPin" />
-              <ControlPoint Id="EuExBA7MGAbOgsyFuNwNSe" Bounds="-794,1217" />
-              <ControlPoint Id="HAvFy0oTmV0ORmX90nb58W" Bounds="-734,1217" />
-              <ControlPoint Id="IWAgFIoaGufLQoDYxtCmnc" Bounds="-777,1471" />
-              <Node Bounds="-796,1234,62,26" Id="D8tvmlMNjxpLmGbBYZsNDL">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <ControlPoint Id="EuExBA7MGAbOgsyFuNwNSe" Bounds="-1423,1230" />
+              <ControlPoint Id="HAvFy0oTmV0ORmX90nb58W" Bounds="-1363,1230" />
+              <ControlPoint Id="IWAgFIoaGufLQoDYxtCmnc" Bounds="-1406,1666" />
+              <Node Bounds="-1425,1254,62,26" Id="D8tvmlMNjxpLmGbBYZsNDL">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -1115,18 +1120,19 @@
                 <Pin Id="BG2rRaOcUWnN9sGtqtOPNr" Name="Input" Kind="StateInputPin" />
                 <Pin Id="P67j9mEri9SPMDD5rJwt8X" Name="Event Args" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-779,1429,91,26" Id="AdLQ77tKJZ4MHHZHj4EJJi">
-                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyDownNotification" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-1408,1607,271,26" Id="AdLQ77tKJZ4MHHZHj4EJJi">
+                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyDownNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="KeyDownNotification" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="QsqtI6Q3HCqMKhIBXfiUW4" Name="Key Code" Kind="InputPin" />
+                <Pin Id="KANSLmkq0nTNkHqNgyBaXt" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="FePGCabE18VLobsXZXkQ55" Name="Sender" Kind="InputPin" />
                 <Pin Id="NOEPrH7MtgdNp0QJ1UbkcY" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="-693,1234,61,26" Id="TfzBtboHtktMSG4iK4zKkf">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <Node Bounds="-1143,1257,61,26" Id="TfzBtboHtktMSG4iK4zKkf">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -1134,8 +1140,8 @@
                 <Pin Id="OCJTmNpNI4ULbGAZsC52k9" Name="Input" Kind="StateInputPin" />
                 <Pin Id="PplWKZ97S8jMb5lqo6IxwC" Name="Sender" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-796,1275,104,26" Id="Lf5iP6XUVPGMqJr9h9Pc6P">
-                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-1425,1294,104,26" Id="Lf5iP6XUVPGMqJr9h9Pc6P">
+                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -1144,8 +1150,8 @@
                 <Pin Id="Gh0k91ipwdCM29XBQ0g3Yp" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="DRJJc0xqEGBL1gPBPmHHbb" Name="Data" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-859,1323,85,26" Id="MdRiwjQv8qJLe6GgsbFRIe">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-1488,1501,85,26" Id="MdRiwjQv8qJLe6GgsbFRIe">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardEventData" />
                   <Choice Kind="OperationCallFlag" Name="KeyCode" />
@@ -1154,26 +1160,61 @@
                 <Pin Id="KMHBX3rFj9GQFm0fhhmmYW" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="MMbn9Ly3a2EOVXOX1e5sEW" Name="Key Code" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-779,1357,111,19" Id="PPLHj7IjMPoQadLrNSdEkS">
-                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+              <Node Bounds="-1408,1535,111,19" Id="PPLHj7IjMPoQadLrNSdEkS">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="KeyboardKeyLookup" />
                 </p:NodeReference>
                 <Pin Id="E2YlFDFwifLQVrkSNaCvcd" Name="Key Code" Kind="InputPin" />
                 <Pin Id="AQyIyrEFpSQMmhx83cnnHh" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-779,1391,58,19" Id="Dm5NdzIxPj6MuTsr9k0WYo">
-                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-1408,1569,58,19" Id="Dm5NdzIxPj6MuTsr9k0WYo">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
                 </p:NodeReference>
                 <Pin Id="TYAMGneJLciNiWfeozdoCD" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Hj5KDUVCNCRPIE4StPA2bb" Name="Result" Kind="OutputPin" />
               </Node>
+              <Node Bounds="-1424,1341,92,26" Id="SYchpVLd7zWMiakGVyXVxd">
+                <p:NodeReference LastCategoryFullName="SharpHook.HookEventArgs" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="RawEvent" />
+                </p:NodeReference>
+                <Pin Id="CYLFjCDyxgrPy4PB9yfXkA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Tp92Ek6xj2NP16lfqTUfnf" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="UEGP26zdBdxPbqKVvEVqE3" Name="Raw Event" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-1336,1491,66,26" Id="RlZWi1lvMzLONd6In21j2Z">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHookEvent" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="UioHookEvent" />
+                  <Choice Kind="OperationCallFlag" Name="Mask" />
+                </p:NodeReference>
+                <Pin Id="LHYvMrBvzLVOCKuhvkvDvF" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DgcMUJvLkujNRP7TNltN4A" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="TI4hkH4sA8FQNGSiGOkip7" Name="Mask" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-1275,1535,111,19" Id="HZLjYYd2APBLnL300xlPfr">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ModifierMaskLookup" />
+                </p:NodeReference>
+                <Pin Id="H8E5UWnChTCPb7w5LfJU63" Name="Modifier Mask" Kind="InputPin" />
+                <Pin Id="NMxPJr05MFKP1YuVSDVjzG" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-1275,1568,58,19" Id="NjjTI0u7DhwPjLAwnTiNWr">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="HardCast" />
+                </p:NodeReference>
+                <Pin Id="CQ1yq1tKMLRL7tVknhRXbo" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LpoeJ2Bo8MjO711OHlZhu5" Name="Result" Kind="OutputPin" />
+              </Node>
             </Patch>
           </Node>
-          <Node Bounds="-584,1209,252,270" Id="BD9EiYcAiCGNLlF04DDMrG">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+          <Node Bounds="-1016,1223,434,450" Id="BD9EiYcAiCGNLlF04DDMrG">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1184,11 +1225,11 @@
               <Pin Id="PofbwnjgIR2MFEzgaPnOUe" Name="Input 1" Kind="InputPin" />
               <Pin Id="V0NPayQ55emP7Lbx8dHuaO" Name="Input 2" Kind="InputPin" />
               <Pin Id="VpXzNutfUM5NqmrMMuvQot" Name="Result" Kind="OutputPin" />
-              <ControlPoint Id="ObQbEyzjiBkNgc1wLugVuC" Bounds="-504,1217" />
-              <ControlPoint Id="Rnv8W2Zj1yhPZ2AyP916P2" Bounds="-444,1217" />
-              <ControlPoint Id="T2xkgOIgcEjOWDM8ORp1Fl" Bounds="-490,1472" />
-              <Node Bounds="-506,1241,62,26" Id="J5b4oXXxPQkLdJ5ZhKBmVi">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <ControlPoint Id="ObQbEyzjiBkNgc1wLugVuC" Bounds="-936,1231" />
+              <ControlPoint Id="Rnv8W2Zj1yhPZ2AyP916P2" Bounds="-876,1231" />
+              <ControlPoint Id="T2xkgOIgcEjOWDM8ORp1Fl" Bounds="-922,1666" />
+              <Node Bounds="-938,1255,62,26" Id="J5b4oXXxPQkLdJ5ZhKBmVi">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -1196,18 +1237,19 @@
                 <Pin Id="Et2bSVm5ufRMNllH2V9OFK" Name="Input" Kind="StateInputPin" />
                 <Pin Id="B4wYDzaXbGnOe6tc31VGhP" Name="Event Args" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-492,1418,91,26" Id="A4vFDNCgrgZMDEXWVqilq8">
-                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyPressNotification" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-924,1612,275,26" Id="A4vFDNCgrgZMDEXWVqilq8">
+                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyPressNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                   <CategoryReference Kind="RecordType" Name="KeyPressNotification" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="L9kl0Nhw41eOvaVlRZnXxQ" Name="Key Char" Kind="InputPin" />
+                <Pin Id="CCxEILKmxizOxEpNNg2vQH" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="Po0zUDDB7MwMarypKY2HRy" Name="Sender" Kind="InputPin" />
                 <Pin Id="KgLhbO76xVNMYQ1KGKfv8q" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="-405,1241,61,26" Id="EEFfPs2O145PTiBBZUi50I">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <Node Bounds="-655,1261,61,26" Id="EEFfPs2O145PTiBBZUi50I">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -1215,8 +1257,8 @@
                 <Pin Id="DqihcSRbtt8QIvxi5WzJxr" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HptfaqNcYRTLrG6Su9nUsl" Name="Sender" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-506,1281,104,26" Id="PZt0uGo0zYSOD5fyGK7n4f">
-                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-938,1295,104,26" Id="PZt0uGo0zYSOD5fyGK7n4f">
+                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -1225,8 +1267,8 @@
                 <Pin Id="SHBXicegJgFOR3E9vfc6YC" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="RWQS6fFFAzsOld5dNdBEnx" Name="Data" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-572,1330,85,26" Id="QMBX5iQRes1QMAhlc6At7f">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-1004,1524,85,26" Id="QMBX5iQRes1QMAhlc6At7f">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="KeyChar" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardEventData" NeedsToBeDirectParent="true" />
@@ -1235,18 +1277,53 @@
                 <Pin Id="PDs21Ot9ZaxM3NZvC6wz7f" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="IZ5TTWH5WgNPRgNs06F3nf" Name="Key Char" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-492,1377,49,19" Id="NGG4VVvLMHmOLAGrB6Z7lr">
-                <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-924,1571,49,19" Id="NGG4VVvLMHmOLAGrB6Z7lr">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ToChar" />
                 </p:NodeReference>
                 <Pin Id="M9prWoqU8NsLncSg42LfYf" Name="Input" Kind="InputPin" />
                 <Pin Id="T4GCoNy9cuYPg1qIzVTEgc" Name="Result" Kind="OutputPin" />
               </Node>
+              <Node Bounds="-938,1346,92,26" Id="Rrpsunn2652LVeglkReADX">
+                <p:NodeReference LastCategoryFullName="SharpHook.HookEventArgs" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="RawEvent" />
+                </p:NodeReference>
+                <Pin Id="H0tL4xhU9e7O2o3pQEr0Rl" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HJHG2an67avOTEEPRd7Ft2" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="IpB6t6a9ZdkOl8P5sw0CcK" Name="Raw Event" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-850,1496,66,26" Id="KDIfgIflqNyNuDJkeBkO7k">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHookEvent" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="UioHookEvent" />
+                  <Choice Kind="OperationCallFlag" Name="Mask" />
+                </p:NodeReference>
+                <Pin Id="QHwO0sWADN2PipJZWKR0Sn" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Aw3H2C2Bo37MskOOiu7cTg" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="QbzBa1e7yEjP2Sg2kqU2O6" Name="Mask" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-789,1540,111,19" Id="LVazaSiOH4nMf0fu8iyQGA">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ModifierMaskLookup" />
+                </p:NodeReference>
+                <Pin Id="NO3Vs1FxslBMfPIgc51IVa" Name="Modifier Mask" Kind="InputPin" />
+                <Pin Id="VJHYwXVwEZ2QZoa9WKclqA" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-789,1573,58,19" Id="IH5j7jlRJfANrC1okx4TiY">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="HardCast" />
+                </p:NodeReference>
+                <Pin Id="NrEdRE7wbvFPAaeyykjCGp" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KjKw3vxGGrNMH9Pavb8mTR" Name="Result" Kind="OutputPin" />
+              </Node>
             </Patch>
           </Node>
-          <Node Bounds="-635,1536,56,26" Id="Cp1soB0hX06QZ0E9u7Mu3Q">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+          <Node Bounds="-1499,1743,56,26" Id="Cp1soB0hX06QZ0E9u7Mu3Q">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -1255,8 +1332,8 @@
             <Pin Id="LCi1hRfKOHXPuT0dwJ16DS" Name="Input 2" Kind="InputPin" />
             <Pin Id="HAdfxmGwsHIPnOqTl0Iaoy" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="-635,1580,56,26" Id="Rm1TK90EI8gNd4dR8XPWRz">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+          <Node Bounds="-1499,1787,56,26" Id="Rm1TK90EI8gNd4dR8XPWRz">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Merge" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
@@ -1279,15 +1356,12 @@
           <Link Id="PvKRtFYRXolOSBp44W9a6B" Ids="HptfaqNcYRTLrG6Su9nUsl,Po0zUDDB7MwMarypKY2HRy" />
           <Link Id="BxHgk2AfWPAOLYmsCotPW5" Ids="EuExBA7MGAbOgsyFuNwNSe,OCJTmNpNI4ULbGAZsC52k9" />
           <Link Id="M5Sxp6GN4tQQTZ5felD3FC" Ids="PplWKZ97S8jMb5lqo6IxwC,FePGCabE18VLobsXZXkQ55" />
-          <Link Id="NT7kK5ncY5vQRx3CyTSxoX" Ids="CO3FxbXF8bjNfU8Be6ptAr,Qg9UxgpUCQxPjQL6tT64rR" />
-          <Link Id="GU3FvuXtcBLL1FDq8THLg6" Ids="CiaxCrEAArBP1CRfhjeeDi,LCi1hRfKOHXPuT0dwJ16DS" />
-          <Link Id="SoliF42FXSWL8ldlkwUsLa" Ids="HAdfxmGwsHIPnOqTl0Iaoy,H6PuwmLNuEKOcTE9iA5os3" />
           <Pin Id="EsAjNXMXIFQO0VLNLgjDbs" Name="Input" Kind="InputPin" />
-          <ControlPoint Id="BdVO1FG17YtNVlGRX1oF9P" Bounds="-870,1112" />
+          <ControlPoint Id="BdVO1FG17YtNVlGRX1oF9P" Bounds="-1499,1125" />
           <Link Id="OmZjofhFIXKNwN23WaLC6z" Ids="EsAjNXMXIFQO0VLNLgjDbs,BdVO1FG17YtNVlGRX1oF9P" IsHidden="true" />
           <Link Id="AMIndZnE9WJP1AtHcr1aXH" Ids="BdVO1FG17YtNVlGRX1oF9P,FNN1FEegNUXQFpzOE7xQjP" />
           <Link Id="Sfpc6Mm0QZ6OOoKaAAOKN0" Ids="BdVO1FG17YtNVlGRX1oF9P,SRrjNesL490MLm89CSoo3c" />
-          <ControlPoint Id="L6rqFn1kptwQRjIAPXpMwX" Bounds="-633,1630" />
+          <ControlPoint Id="L6rqFn1kptwQRjIAPXpMwX" Bounds="-1497,1837" />
           <Link Id="VsxlPQyQ0O3OBtyuXWtAg2" Ids="OmhX5EA6z1uNNW1WN2dTna,L6rqFn1kptwQRjIAPXpMwX" />
           <Pin Id="KsL8EUWhuLQObYR9POTX9O" Name="Output" Kind="OutputPin" Bounds="-2828,1737" />
           <Link Id="OYLbE3vGmeSNQusiSiKqSx" Ids="L6rqFn1kptwQRjIAPXpMwX,KsL8EUWhuLQObYR9POTX9O" IsHidden="true" />
@@ -1296,8 +1370,8 @@
           <Link Id="RYdogax15uZLRvR0n6qceC" Ids="MMbn9Ly3a2EOVXOX1e5sEW,E2YlFDFwifLQVrkSNaCvcd" />
           <Link Id="KWeRvFDfqPhOnQnjeGj51Y" Ids="AQyIyrEFpSQMmhx83cnnHh,TYAMGneJLciNiWfeozdoCD" />
           <Link Id="A0FZ1cxvbACQDxbG1pep60" Ids="Hj5KDUVCNCRPIE4StPA2bb,QsqtI6Q3HCqMKhIBXfiUW4" />
-          <Node Bounds="-292,1209,251,266" Id="EO1Ykj4HMqLNZe8VVfKQqb">
-            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
+          <Node Bounds="-517,1224,429,446" Id="EO1Ykj4HMqLNZe8VVfKQqb">
+            <p:NodeReference LastCategoryFullName="Reactive.Observable" LastDependency="VL.CoreLib.vl">
               <Choice Kind="OperationCallFlag" Name="Select" />
               <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" NeedsToBeDirectParent="true" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1308,11 +1382,11 @@
               <Pin Id="RD4Jc2DevGYMthDXry1IKn" Name="Input 1" Kind="InputPin" />
               <Pin Id="R244JalGGEQLB9LKrT4rbe" Name="Input 2" Kind="InputPin" />
               <Pin Id="A8k7zu5UB5INbZOoJuNhBu" Name="Result" Kind="OutputPin" />
-              <ControlPoint Id="L2UkSgZGBF0N6Cs4KNv4c5" Bounds="-215,1217" />
-              <ControlPoint Id="OplP5EnYH6xMjNYwHjsbRi" Bounds="-155,1217" />
-              <ControlPoint Id="RDfkTSoIv88NyET6ctpIq0" Bounds="-198,1468" />
-              <Node Bounds="-217,1234,62,26" Id="D6BZ4O4doaILguNDBSym7I">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <ControlPoint Id="L2UkSgZGBF0N6Cs4KNv4c5" Bounds="-440,1232" />
+              <ControlPoint Id="OplP5EnYH6xMjNYwHjsbRi" Bounds="-380,1232" />
+              <ControlPoint Id="RDfkTSoIv88NyET6ctpIq0" Bounds="-423,1663" />
+              <Node Bounds="-442,1249,62,26" Id="D6BZ4O4doaILguNDBSym7I">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -1320,18 +1394,19 @@
                 <Pin Id="E3wZDMSMiqWL6PtiufYJLn" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Ue7NCopYWljPhK5InFBp81" Name="Event Args" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-200,1429,91,26" Id="KNOjb1v3UAbM7RKxpyz6V3">
-                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyUpNotification" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-425,1612,270,26" Id="KNOjb1v3UAbM7RKxpyz6V3">
+                <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyUpNotification" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                   <CategoryReference Kind="RecordType" Name="KeyUpNotification" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="MHJVgB650ZuLBBYwznFip6" Name="Key Code" Kind="InputPin" />
+                <Pin Id="SLBG3yN7B0sOLn2SHx0AAC" Name="Modifier Keys" Kind="InputPin" />
                 <Pin Id="J8MOVMsrabnO0wGRfyOAWs" Name="Sender" Kind="InputPin" />
                 <Pin Id="V082cC1Q1kkOoKDcJAGRsL" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="-114,1234,61,26" Id="CGaUtD8jj6tQPH3bvH8XAE">
-                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
+              <Node Bounds="-161,1271,61,26" Id="CGaUtD8jj6tQPH3bvH8XAE">
+                <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Sender" />
                   <CategoryReference Kind="RecordType" Name="EventPattern" NeedsToBeDirectParent="true" />
@@ -1339,8 +1414,8 @@
                 <Pin Id="UUCAeyfBQHxPcaTSbjQxjk" Name="Input" Kind="StateInputPin" />
                 <Pin Id="PrShQIKM0wSQTrCtLsKFXv" Name="Sender" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-217,1275,104,26" Id="Jt8YIrAltAiMOzQEd7E1fx">
-                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-442,1290,104,26" Id="Jt8YIrAltAiMOzQEd7E1fx">
+                <p:NodeReference LastCategoryFullName="SharpHook.KeyboardHookEventArgs" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardHookEventArgs" />
                   <Choice Kind="OperationCallFlag" Name="Data" />
@@ -1349,8 +1424,8 @@
                 <Pin Id="NIGHmJwm04wO4lfVKnlLBa" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Hr1gkogF7vkNxdclbdzWjP" Name="Data" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-280,1323,85,26" Id="Llmjql3qc3LO2XeF4cuoFd">
-                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastSymbolSource="SharpHook.dll">
+              <Node Bounds="-505,1506,85,26" Id="Llmjql3qc3LO2XeF4cuoFd">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.KeyboardEventData" LastDependency="SharpHook.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="KeyboardEventData" />
                   <Choice Kind="OperationCallFlag" Name="KeyCode" />
@@ -1359,21 +1434,56 @@
                 <Pin Id="QvpuGpIjRRkLMEAtUgrNZQ" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="TcyrXz78pk0OFigUTaaZ96" Name="Key Code" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-200,1357,111,19" Id="FyAT5AEwlRYLtnUcwzhvx6">
-                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+              <Node Bounds="-425,1540,111,19" Id="FyAT5AEwlRYLtnUcwzhvx6">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="KeyboardKeyLookup" />
                 </p:NodeReference>
                 <Pin Id="OLCZF8MDpweMMiway9yxXm" Name="Key Code" Kind="InputPin" />
                 <Pin Id="LbFmfUP7kR9L5FTJ6QcI0l" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-200,1391,58,19" Id="Dfynh6jBTuoOXnPCYNIsCg">
-                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <Node Bounds="-425,1574,58,19" Id="Dfynh6jBTuoOXnPCYNIsCg">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
                 </p:NodeReference>
                 <Pin Id="Dgsn1SYDNRVN9ntVcUtU1Q" Name="Input" Kind="StateInputPin" />
                 <Pin Id="U5X6C5Iks1DOyt579L6Ryd" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-442,1347,92,26" Id="Jlrl8s2ZNGNMFsxlLNLuN0">
+                <p:NodeReference LastCategoryFullName="SharpHook.HookEventArgs" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="RawEvent" />
+                </p:NodeReference>
+                <Pin Id="B4B493ds83uL7XaQUfeLBz" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CpAZ5YCPM4bO6vsKgb92cB" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="QclNn9P4xG5MyX6PdEKxiz" Name="Raw Event" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-354,1497,66,26" Id="VhjPyLCn15XLoyS5g33x40">
+                <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHookEvent" LastDependency="SharpHook.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="UioHookEvent" />
+                  <Choice Kind="OperationCallFlag" Name="Mask" />
+                </p:NodeReference>
+                <Pin Id="OXgs9cVUF0qOyCsXMtXQ92" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ijv494dphQYOOyhKXyg6sM" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NHoMT7dbU8WPDpmAnWHzud" Name="Mask" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-293,1541,111,19" Id="ICavwiyC1p5PKtVYKqttZC">
+                <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ModifierMaskLookup" />
+                </p:NodeReference>
+                <Pin Id="Otr64C9nlJnQWYbASYZrF7" Name="Modifier Mask" Kind="InputPin" />
+                <Pin Id="PnSA8XDccOILdhwoAt4fuJ" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-293,1574,58,19" Id="GUvSaWtTRlcMs7a4t6kd2r">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="HardCast" />
+                </p:NodeReference>
+                <Pin Id="ATMxgCyRm5OPFZJmvYs54H" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PRRFtLzI7tjLwW1DSftTlV" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
           </Node>
@@ -1389,8 +1499,8 @@
           <Link Id="A6H8wDjWxJ2PUX1Xji8e0u" Ids="TcyrXz78pk0OFigUTaaZ96,OLCZF8MDpweMMiway9yxXm" />
           <Link Id="FgXxrS1tdL9PGYk8giZ5fT" Ids="LbFmfUP7kR9L5FTJ6QcI0l,Dgsn1SYDNRVN9ntVcUtU1Q" />
           <Link Id="OdQAEEPGU83PXeOCFXbG3m" Ids="U5X6C5Iks1DOyt579L6Ryd,MHJVgB650ZuLBBYwznFip6" />
-          <Node Bounds="-292,1160,74,26" Id="JFA60UErw6WOrgEyflcLk8">
-            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastSymbolSource="SharpHook.dll">
+          <Node Bounds="-517,1175,74,26" Id="JFA60UErw6WOrgEyflcLk8">
+            <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="KeyReleased" />
               <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
@@ -1400,13 +1510,31 @@
           </Node>
           <Link Id="QSfEafGtU3KQcOD7PqBXTm" Ids="GuxxQIIG3CcMVCLkN5h4Q6,LVwQoKQzAAjPGx8MP4KRez" />
           <Link Id="HUZvlUTYBbLNmHc6xu72mj" Ids="BdVO1FG17YtNVlGRX1oF9P,GkK0kmaMP8HOm8GHzEU0WA" />
-          <Link Id="EFx8r2bfUd8M5V0keUiJeu" Ids="TVxDel1rbjFNP2IAPKEFqk,TKtDu2EloNkOwPdcU2pOXX" />
           <Link Id="A97wbPuDIKWLlbN845A5yX" Ids="B4wYDzaXbGnOe6tc31VGhP,Ldo3jKPKFGcLtDY6XAvBoh" />
           <Link Id="A6mFKJk3bnJM7cUuPE9rpa" Ids="RWQS6fFFAzsOld5dNdBEnx,OsTR5emydIPQX1SWjzGDYG" />
           <Link Id="JqSe1bkPRq2QTtOKNjgi4M" Ids="NFeylVxVVk5MLDc78jiCaf,OYHSZYBLpwMOCGM2ZWfYsv" />
           <Link Id="V2SK8wWlcK1MKzhtGlWl1A" Ids="IV1UWLGAqEhOCNJoCfjmvm,JEuJNzfJ33QMwprKkttSpD" />
           <Link Id="EQJG5wURl4nLP46Zual9y7" Ids="IZ5TTWH5WgNPRgNs06F3nf,M9prWoqU8NsLncSg42LfYf" />
           <Link Id="OaJFZkQbbvLOBeSKtLHCyf" Ids="T4GCoNy9cuYPg1qIzVTEgc,L9kl0Nhw41eOvaVlRZnXxQ" />
+          <Link Id="JImwAOeb3p6P5iZcBQuOBG" Ids="UEGP26zdBdxPbqKVvEVqE3,LHYvMrBvzLVOCKuhvkvDvF" />
+          <Link Id="GUsxLsKE0uSPm0V6VVvA4d" Ids="TI4hkH4sA8FQNGSiGOkip7,H8E5UWnChTCPb7w5LfJU63" />
+          <Link Id="Bo6YFhNTS0VOpHvZEzFJls" Ids="NMxPJr05MFKP1YuVSDVjzG,CQ1yq1tKMLRL7tVknhRXbo" />
+          <Link Id="VFYJc9E5V8PLrbJBzA5PvQ" Ids="LpoeJ2Bo8MjO711OHlZhu5,KANSLmkq0nTNkHqNgyBaXt" />
+          <Link Id="TTHHfes8pJXPbDUPkft02Z" Ids="Gh0k91ipwdCM29XBQ0g3Yp,CYLFjCDyxgrPy4PB9yfXkA" />
+          <Link Id="Nzg77eTFh2mPyjeHFYYr9O" Ids="IpB6t6a9ZdkOl8P5sw0CcK,QHwO0sWADN2PipJZWKR0Sn" />
+          <Link Id="OenUz2VLy8AOL3uzN0DWFo" Ids="QbzBa1e7yEjP2Sg2kqU2O6,NO3Vs1FxslBMfPIgc51IVa" />
+          <Link Id="P5zFC6Id95rOOAZaj2dDEp" Ids="VJHYwXVwEZ2QZoa9WKclqA,NrEdRE7wbvFPAaeyykjCGp" />
+          <Link Id="LjECI578kU2Lkfq2VK6x9y" Ids="SHBXicegJgFOR3E9vfc6YC,H0tL4xhU9e7O2o3pQEr0Rl" />
+          <Link Id="VNjaAWQdjSNPS7bslefcPE" Ids="KjKw3vxGGrNMH9Pavb8mTR,CCxEILKmxizOxEpNNg2vQH" />
+          <Link Id="RGn5trinHtCNiADxKig5Jc" Ids="QclNn9P4xG5MyX6PdEKxiz,OXgs9cVUF0qOyCsXMtXQ92" />
+          <Link Id="UAMT7cMDxIkMX05ddipP7v" Ids="NHoMT7dbU8WPDpmAnWHzud,Otr64C9nlJnQWYbASYZrF7" />
+          <Link Id="GdQQ52PPhkPQF0TZYL2gGP" Ids="PnSA8XDccOILdhwoAt4fuJ,ATMxgCyRm5OPFZJmvYs54H" />
+          <Link Id="G6NHORV1CTbQAQbDGEYMzF" Ids="NIGHmJwm04wO4lfVKnlLBa,B4B493ds83uL7XaQUfeLBz" />
+          <Link Id="HmdbUT7PdKPM6ykU2w2EHE" Ids="PRRFtLzI7tjLwW1DSftTlV,SLBG3yN7B0sOLn2SHx0AAC" />
+          <Link Id="NPmjp9QvcyZMfKJOYfSUqP" Ids="CiaxCrEAArBP1CRfhjeeDi,Qg9UxgpUCQxPjQL6tT64rR" />
+          <Link Id="GFhf5TWEIjPNb7rgvJf2u4" Ids="CO3FxbXF8bjNfU8Be6ptAr,LCi1hRfKOHXPuT0dwJ16DS" />
+          <Link Id="OM2mLw992PpQceZYd32vRR" Ids="HAdfxmGwsHIPnOqTl0Iaoy,H6PuwmLNuEKOcTE9iA5os3" />
+          <Link Id="EDdiXaCvinsP7B9wSKzwah" Ids="TVxDel1rbjFNP2IAPKEFqk,TKtDu2EloNkOwPdcU2pOXX" />
         </Patch>
       </Node>
       <!--
@@ -1415,13 +1543,13 @@
 
 -->
       <Node Name="Keyboard" Bounds="117,255" Id="R92DoFmo23bMUYNH8bHO8w">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="IIffD9l8VkxOSaBezI7qtO">
           <Canvas Id="ODQwuplp1MiOF0UpRUph3f" CanvasType="Group">
             <Node Bounds="202,154,83,75" Id="HAKQUy2PYFQP0OhADwt0oz">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessAppFlag" Name="SingleInstance (PerApp)" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1431,7 +1559,7 @@
                 <Pin Id="IBHQ1wcYZTEM1GnXkh8nkd" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="HqptkW3DX48MJdJM9Heks5" Bounds="216,222" />
                 <Node Bounds="214,177,59,19" Id="QI4zRNWd206OZ5dNgiCuX9">
-                  <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Keyboard" />
                     <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
@@ -1443,9 +1571,9 @@
             </Node>
             <ControlPoint Id="OtBBIskaTfDOsM83Z0cX7H" Bounds="204,246" />
             <Node Bounds="214,118,75,19" Id="VegIad1duylLvoj5Kj7Dp8">
-              <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="GlobalHook.vl">
+              <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Events" />
+                <Choice Kind="ProcessAppFlag" Name="Events (Async)" />
               </p:NodeReference>
               <Pin Id="DMM5LGM4l6nQTow23gxUb5" Name="Output" Kind="OutputPin" />
             </Node>
@@ -1471,7 +1599,7 @@
 
 -->
       <Node Name="KeyboardState" Bounds="261,255" Id="TOzJdIyGBS6MKq7sIra9Ce">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="PyCQWeaUtcNLI4EXzudYWz">
@@ -1479,7 +1607,7 @@
             <Pad Id="KiOMzxzZqjeLsHtzudIccd" SlotId="DceYZkvXY1bOPbMEWur1wN" Bounds="144,216" />
             <Pad Id="Pyj90tiimwZOzoSKQaJKrQ" SlotId="DceYZkvXY1bOPbMEWur1wN" Bounds="203,638" />
             <Node Bounds="230,131,53,19" Id="R6gQa9AiZpoNY0WexPp4X8">
-              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessNode" Name="Sampler" />
                 <CategoryReference Kind="Category" Name="Reactive" />
               </p:NodeReference>
@@ -1488,7 +1616,7 @@
               <Pin Id="QF0KKFh1CD6Ojw1c9Xcup0" Name="On Data" Kind="OutputPin" />
             </Node>
             <Node Bounds="230,191,49,19" Id="MS27SfxEaLqQYFQQnEzYgH">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="OfType" />
                 <CategoryReference Kind="Category" Name="Sequence" />
               </p:NodeReference>
@@ -1496,7 +1624,7 @@
               <Pin Id="HXybyQXve5MNJ0cp0T9nvM" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="130,240,216,303" Id="ELYBVzJDRdpOwKsrilkAcN">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
@@ -1506,7 +1634,7 @@
               <Pin Id="EdtFM5JQH4rME2tdXHFkcC" Name="Break" Kind="OutputPin" />
               <Patch Id="Lykwq2CEFm9QRpSIYfD93U">
                 <Node Bounds="222,328,89,26" Id="H0Ut9h7dbOWLHGC0qeOSYs">
-                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyCodeNotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyCodeNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="KeyCode" />
                     <CategoryReference Kind="Category" Name="KeyCodeNotification" />
                   </p:NodeReference>
@@ -1514,7 +1642,7 @@
                   <Pin Id="IuGQv74vh7ZQblXFq3XRcr" Name="Key Code" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="201,423,45,26" Id="V2YclPAWT65PH4PMv85nM7">
-                  <p:NodeReference LastCategoryFullName="Collections.HashSet">
+                  <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="Add" />
                     <FullNameCategoryReference ID="Collections.HashSet" />
                   </p:NodeReference>
@@ -1524,7 +1652,7 @@
                   <Pin Id="P4MXDg0X9COOsdtBhavmyt" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="201,489,52,26" Id="AwpXH1Ds193PPBQylkZUZz">
-                  <p:NodeReference LastCategoryFullName="Collections.HashSet">
+                  <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="Remove" />
                     <FullNameCategoryReference ID="Collections.HashSet" />
                   </p:NodeReference>
@@ -1534,7 +1662,7 @@
                   <Pin Id="OpU2Fjz4eGOMDpv43cK47X" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="241,382,71,26" Id="Mso4DNiET5GPX2L7gAdyES">
-                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyNotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="IsKeyDown" />
                     <CategoryReference Kind="Category" Name="KeyNotification" />
                   </p:NodeReference>
@@ -1542,7 +1670,7 @@
                   <Pin Id="QnVkxAqcpbUPdsYAtxodGH" Name="Is Key Down" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="263,429,71,26" Id="BhuBl5jDHKELWDLM7Y7LSh">
-                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyNotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="IsKeyUp" />
                     <CategoryReference Kind="Category" Name="KeyNotification" />
                   </p:NodeReference>
@@ -1559,7 +1687,7 @@
             <ControlPoint Id="JYGJ8pHU2JUP7yCk69fph9" Bounds="230,637,142,0" />
             <ControlPoint Id="OXmXkkzu6KzNyCnUhZh2YE" Bounds="262,291" />
             <Node Bounds="421,238,97,89" Id="Ryc405JWP7GPk3hAoGmRRY">
-              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationCallFlag" Name="Any (Predicate)" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1572,7 +1700,7 @@
                 <ControlPoint Id="QtZWPO9RrmnMEI6XAnENVd" Bounds="435,246" />
                 <ControlPoint Id="HMIiyzVMvzgPpbmlm39wpf" Bounds="435,320" />
                 <Node Bounds="433,271,73,26" Id="DEjK3XxjkosLbtGZfhIcza">
-                  <p:NodeReference LastCategoryFullName="VL.Lib.IO.Notifications.KeyNotification" LastSymbolSource="VL.UI.Core.dll">
+                  <p:NodeReference LastCategoryFullName="IO.Keyboard.KeyNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsDeviceLost" />
                   </p:NodeReference>
@@ -1582,7 +1710,7 @@
               </Patch>
             </Node>
             <Node Bounds="201,579,225,26" Id="NiAiaQY2YGkMXbdmgq1R0s">
-              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Clear" />
                 <CategoryReference Kind="RecordType" Name="HashSet" NeedsToBeDirectParent="true" />
@@ -1593,7 +1721,7 @@
             </Node>
             <ControlPoint Id="KhzyzwHSP3eN6qC3kvVoID" Bounds="232,97" />
             <Pad Id="BoFEEmvjNtbQJMguoo3c85" Bounds="512,244,178,72" ShowValueBox="true" isIOBox="true" Value="most likely not needed for the global Keyboard...">
-              <p:TypeAnnotation>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
@@ -1647,13 +1775,13 @@
 
 -->
       <Node Name="PointerInfo" Bounds="269,311" Id="G8IcDU9R4kjMMFdvfePXgJ">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="HC6w6TwfK93PRGA7BWmLKq">
           <Canvas Id="IKoBa83itfqOWvCkkzreRp" CanvasType="Group">
             <Node Bounds="103,171,700,86" Id="GYjLwGIglvOQEFWvvPDtAD">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -1665,28 +1793,28 @@
                 <Patch Id="IxBMRdpJcH8PnMbNI6Jo8v" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="BzgSfsducqRQBwH4bNHIOK" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="115,199,163,19" Id="Ius1RLTIXbNLVH8aHvZMw5">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetPointerAccelerationMultiplier" />
                   </p:NodeReference>
                   <Pin Id="Ho2fcdHGBVUN7kCGnI6yo7" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="325,199,165,19" Id="HdmZJYYs8WfLBergenEqXf">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetPointerAccelerationThreshold" />
                   </p:NodeReference>
                   <Pin Id="Au7abkpXPgxN4v9gKKlCQ5" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="535,199,109,19" Id="GoOxSLByzeXL2OtctVNzXK">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetPointerSensitivity" />
                   </p:NodeReference>
                   <Pin Id="OOCZwmbAy1zQT3izRHN9i9" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="692,199,99,19" Id="GWGuP1tEQd3NiTeO4reeFj">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetMultiClickTime" />
                   </p:NodeReference>
@@ -1705,7 +1833,7 @@
             <ControlPoint Id="LXzOApMLueIOVCazIGhwKw" Bounds="694,302" />
             <ControlPoint Id="LB0a0D0GvkpN4mkFATD70T" Bounds="105,105" />
             <Node Bounds="103,132,54,19" Id="ELn3Szn0gmfLzPieGNPmaG">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OnOpen" />
               </p:NodeReference>
@@ -1748,13 +1876,13 @@
 
 -->
       <Node Name="KeyboardInfo" Bounds="443,255" Id="M8UblLx6yghPFtkeNNoIyg">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="VEt1y8LxuclPoK1gSe86fv">
           <Canvas Id="T9smrS2Qv6lNzuKUctB13r" CanvasType="Group">
             <Node Bounds="102,173,266,96" Id="FZUzPlvaokpPfaY1PMPLqm">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -1766,14 +1894,14 @@
                 <Patch Id="BQ2fUoKvPJ8LDGFQ4uDANa" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="JX80N2Z8QPuLi7nWVc6A1D" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="114,201,104,19" Id="T7We256G7W0NXy5vNszIF5">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetAutoRepeatRate" />
                   </p:NodeReference>
                   <Pin Id="EErScRokWLHL1GdwLghq4g" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="247,201,109,19" Id="M8S2kdF1ZQBONn5WeQ1uRk">
-                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastSymbolSource="SharpHook.dll">
+                  <p:NodeReference LastCategoryFullName="SharpHook.Native.UioHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="GetAutoRepeatDelay" />
                   </p:NodeReference>
@@ -1787,7 +1915,7 @@
             <ControlPoint Id="QH00fjggvVRP0zjZbqNl5p" Bounds="249,289" />
             <ControlPoint Id="H9NioxIqDExNzjsnt3SIbO" Bounds="104,104" />
             <Node Bounds="102,131,54,19" Id="KycaYuJozo6MmZXihGynwR">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="OnOpen" />
               </p:NodeReference>
@@ -1822,13 +1950,13 @@
 
 -->
       <Node Name="KeyboardSimulator (Spread)" Bounds="850,255" Id="QOj5w8RqsLwQZCPIVi3lIm">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="Fww5WA84KptQZitxvRguYg">
           <Canvas Id="PeTQWXxsTsKLnLu0pWehIo" CanvasType="Group">
             <Node Bounds="228,-58,70,26" Id="JLCEFjLdUqqPMFOx5d8IJP">
-              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1839,7 +1967,7 @@
             <ControlPoint Id="QkfzHAEdtMUQLWyR7TInev" Bounds="500,124" />
             <ControlPoint Id="JyIgZlm9GImNVl7qMhYwRO" Bounds="167,124" />
             <Node Bounds="73,202,440,531" Id="AXUIhDddUVXP6SDLs9EOHN">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -1848,18 +1976,22 @@
                 <Patch Id="HhY9RxFvDgAPJz3Jhmw6Ca" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="MLooOFEiwKGMy2vstSo4Ae" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="193,222,293,206" Id="O0QvFA3EmGpNJwUv9rpSsS">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
                   </p:NodeReference>
                   <Pin Id="D3mPc0UHBVqNlv4ckiCuhI" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="VRnEMsiBV7LPNV2lEXA38s" Bounds="320,228" Alignment="Top" />
+                  <ControlPoint Id="HXlBvzt7kH0MlKY77cnkAA" Bounds="230,228" Alignment="Top" />
+                  <ControlPoint Id="AlBeUE27jj0PRPitS0XKH0" Bounds="230,421" Alignment="Bottom" />
+                  <ControlPoint Id="CqZQ2lCRgR4NpZwLxDiyTp" Bounds="218,228" Alignment="Top" />
                   <Patch Id="Cy9g0X6jN7nPUss4ZD79zl" ManuallySortedPins="true">
                     <Patch Id="LCcMVEWbhzmOTQJ6Gf4Skf" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="GZlcYYVJKlmLe0m28Y0Xns" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="G9bbA0wJ5PDLfy2DVXuPYx" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="216,289,258,102" Id="LB0pofcXkEYO3Zyx6n1jx3">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                         <Choice Kind="ApplicationStatefulRegion" Name="If" />
                         <FullNameCategoryReference ID="Primitive" />
                       </p:NodeReference>
@@ -1868,7 +2000,7 @@
                         <Patch Id="L81zN5QuFUqN4qjyJxBRv1" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="UVZYyr489z3NcEuHzv0ttD" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="228,341,95,26" Id="Ef5nBEhKIJBPO4p4ZLAtN6">
-                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SimulateKeyPress" />
                             <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
@@ -1879,7 +2011,7 @@
                           <Pin Id="MvlpHOw3sX7M9IM2Bm2VLU" Name="Result" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="318,312,144,19" Id="QJAhVdQ9HczNXXXBe85yzF">
-                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
                           </p:NodeReference>
@@ -1893,7 +2025,7 @@
                       <ControlPoint Id="HGIe3QoO9SnLkUHITegcx9" Bounds="337,317" Name="Status" Alignment="Top" />
                     </Node>
                     <Node Bounds="216,262,56,19" Id="NiD3HHmXyrUNJHRaCwv14E">
-                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                      <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="TogEdge" />
                       </p:NodeReference>
@@ -1902,24 +2034,24 @@
                       <Pin Id="HrbmVjhkyLBLuSd0RHRet6" Name="Down Edge" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="VRnEMsiBV7LPNV2lEXA38s" Bounds="320,228" Alignment="Top" />
-                  <ControlPoint Id="HXlBvzt7kH0MlKY77cnkAA" Bounds="230,228" Alignment="Top" />
-                  <ControlPoint Id="AlBeUE27jj0PRPitS0XKH0" Bounds="230,421" Alignment="Bottom" />
-                  <ControlPoint Id="CqZQ2lCRgR4NpZwLxDiyTp" Bounds="218,228" Alignment="Top" />
                 </Node>
                 <Node Bounds="153,500,344,213" Id="UhovODjgAesOs0qSnP0IpI">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
                   </p:NodeReference>
                   <Pin Id="GASdPer69QNPELXSVC1u35" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="LMp2q1eL2dGMSpH9fpl4Mi" Bounds="331,506" Alignment="Top" />
+                  <ControlPoint Id="UXhptgYIR92OhNicgKmfIa" Bounds="230,506" Alignment="Top" />
+                  <ControlPoint Id="HcJdSP8vfSPLrb2JwLdiJq" Bounds="230,705" Alignment="Bottom" />
+                  <ControlPoint Id="LaWXMpjm2AMN33Af0gaYjl" Bounds="167,506" Alignment="Top" />
                   <Patch Id="Gn0y6Hc0T6xPdpFynuKCEL" ManuallySortedPins="true">
                     <Patch Id="P5pJ69HvCL7NTMXNrECrAl" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="LZZ2XdJRxy5OSaUznj40Kw" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="Q7EFBT1ZLJFNjiSZeSTzHR" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="216,573,269,120" Id="AIq28dXM0hCMmi5NQaiufk">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                         <Choice Kind="ApplicationStatefulRegion" Name="If" />
                         <FullNameCategoryReference ID="Primitive" />
                       </p:NodeReference>
@@ -1928,7 +2060,7 @@
                         <Patch Id="SZWhiVus7SkOBzCUPkOq4m" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="EfCnUuYsIFNMPqm6DXLx3i" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="228,631,97,26" Id="PMlSAPGCxpeNbudMNlpFjJ">
-                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                          <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
                             <Choice Kind="OperationCallFlag" Name="SimulateKeyRelease" />
@@ -1939,7 +2071,7 @@
                           <Pin Id="KwSpcGaY8wcQKcm1HRufse" Name="Result" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="329,596,144,19" Id="QIZe7zwAGgPMr4vEZGhyvW">
-                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                          <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
                           </p:NodeReference>
@@ -1953,7 +2085,7 @@
                       <ControlPoint Id="JgrctKWLwGPPAwaaIJeGlu" Bounds="368,605" Name="Status" Alignment="Top" />
                     </Node>
                     <Node Bounds="165,545,56,19" Id="EtyRDkpvGeaLeWgjtqie7b">
-                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                      <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="TogEdge" />
                       </p:NodeReference>
@@ -1962,10 +2094,6 @@
                       <Pin Id="Tzhhi3kEbXHPUSaAJMB73F" Name="Down Edge" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="LMp2q1eL2dGMSpH9fpl4Mi" Bounds="331,506" Alignment="Top" />
-                  <ControlPoint Id="UXhptgYIR92OhNicgKmfIa" Bounds="230,506" Alignment="Top" />
-                  <ControlPoint Id="HcJdSP8vfSPLrb2JwLdiJq" Bounds="230,705" Alignment="Bottom" />
-                  <ControlPoint Id="LaWXMpjm2AMN33Af0gaYjl" Bounds="167,506" Alignment="Top" />
                 </Node>
                 <ControlPoint Id="J7w4unl1HcfMBjJYEe2njr" Bounds="499,436" />
               </Patch>
@@ -2026,13 +2154,13 @@
 
 -->
       <Node Name="KeyboardSimulator" Bounds="644,255" Id="McCkoER7k92OUal8AAS0Oo">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="C3GezOF6GoHLr8Q09QVvdM">
           <Canvas Id="TbJHuRNYkkWPXKJVv1eWOp" CanvasType="Group">
             <Node Bounds="203,-60,70,26" Id="BCqBjOWo40uMlgJyuMWac3">
-              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -2043,7 +2171,7 @@
             <ControlPoint Id="TtE83KUeCiuPKTnTHW6TWi" Bounds="451,126" />
             <ControlPoint Id="SmBQ4FD2HRqNNhDJeAZJzx" Bounds="116,130" />
             <Node Bounds="102,153,368,389" Id="RSC3YlEwpc9MgB3hMEkBo1">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -2052,7 +2180,7 @@
                 <Patch Id="PoTyYpbBjAyQMtkoBCNB8z" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="HdiipscazkOPtlWbr1tydp" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="189,269,258,104" Id="Lwanh3VJGqYNnikDPvcykI">
-                  <p:NodeReference>
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
@@ -2061,7 +2189,7 @@
                     <Patch Id="LUPM9zdtaS4QLGPMBggVfg" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Br0bphsQzz7PJWzsPTGn78" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="201,322,95,26" Id="Vus0ZTGQeIcMDtKELSUHdm">
-                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="SimulateKeyPress" />
                         <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
@@ -2072,7 +2200,7 @@
                       <Pin Id="L3zRY2EGfcvMw8fHmBBvyW" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="291,292,144,19" Id="C56puIAYKDrOPkW6A0gN4E">
-                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
                       </p:NodeReference>
@@ -2084,7 +2212,7 @@
                   <ControlPoint Id="OEa8RfQLCVfOPuXvAtwi8W" Bounds="203,368" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="114,176,56,19" Id="K5Mo7wvd4fZLpn31oKgcyD">
-                  <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="TogEdge" />
                   </p:NodeReference>
@@ -2093,7 +2221,7 @@
                   <Pin Id="LjCvv0ERoVWL9GT3UXhNjR" Name="Down Edge" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="189,408,269,114" Id="RLJ0epmUAdmOJc9FMJqDBI">
-                  <p:NodeReference>
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
@@ -2102,7 +2230,7 @@
                     <Patch Id="MfI7MQuAkaJPAcA2r27anF" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="LqcqzcxfZvsPfFyrVXSy1P" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="201,459,106,26" Id="LcIOtit3mGfPNwVQHc6E6x">
-                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SimulateKeyRelease" />
@@ -2113,7 +2241,7 @@
                       <Pin Id="ToRI35jEvxEOcwiEnbhctE" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="302,431,144,19" Id="S1L30uhBkQWOdqygV8VEzq">
-                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="KeyboardReverseKeyLookup" />
                       </p:NodeReference>
@@ -2170,13 +2298,13 @@
 
 -->
       <Node Name="MouseSimulator" Category="IO.Global.Experimental" Bounds="644,312" Id="OcgFwZJ6uvUQccrIh3MVQW">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="RQs43YqVGKQNzexg0YyJqE">
           <Canvas Id="S7LdxVfYWv6NORgKTcvp7g" CanvasType="Group">
             <Node Bounds="89,-59,70,26" Id="Fu6VB55EYkjODXHjl0yhNr">
-              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -2185,7 +2313,7 @@
             </Node>
             <Pad Id="NIG3mzEk50GNscOKnuSHup" SlotId="MEhdPq6F9UBO48q5PSbWIG" Bounds="91,-15" />
             <Node Bounds="96,159,132,26" Id="CN5JUAyHLsFMEGuZFXos1J">
-              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
                 <Choice Kind="OperationCallFlag" Name="SimulateMouseMovement" />
@@ -2200,7 +2328,7 @@
             <ControlPoint Id="DMlF7o0doZFMr4M7huvOKP" Bounds="226,-114" />
             <Pad Id="L9Qwwk7UzD5PZ1Zi1rVJql" SlotId="MEhdPq6F9UBO48q5PSbWIG" Bounds="98,111" />
             <Node Bounds="327,159,243,26" Id="F1PAj74pMnMLUDtLKWure8">
-              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+              <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" />
                 <Choice Kind="OperationCallFlag" Name="SimulateMouseWheel" />
@@ -2214,7 +2342,7 @@
               <Pin Id="Dp4qmR9swwUMsp2vZOIy8e" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="224,-88,69,19" Id="Pbc2a6VTMhlPYP9Ns38IIw">
-              <p:NodeReference LastCategoryFullName="Primitive.Int2" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Int2 (Split)" />
               </p:NodeReference>
@@ -2223,7 +2351,7 @@
               <Pin Id="TdWvrHYBggrL1cEVWuvanL" Name="Y" Kind="OutputPin" />
             </Node>
             <Node Bounds="224,-58,52,19" Id="UVbWPFXDXB5MjAefpmmnp9">
-              <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToInt16" />
               </p:NodeReference>
@@ -2231,7 +2359,7 @@
               <Pin Id="FxPLdblskm6Pcct4S5uYr7" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="288,-60,52,19" Id="FlAPOnqgcAfO2c2SUuwGc4">
-              <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToInt16" />
               </p:NodeReference>
@@ -2249,18 +2377,26 @@
             <ControlPoint Id="PLPS1cBUdwCOahFczssiMc" Bounds="1042,86" />
             <ControlPoint Id="OfrC4gn09a8NkBntTwSIpi" Bounds="697,101" />
             <Node Bounds="726,139,306,174" Id="LclKPSjv2BBOZcb5EOd8QP">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
               </p:NodeReference>
               <Pin Id="BJaK4cKSC8jMl7V8glzv7c" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="VkVQTn722jTND1zZM1zdLf" Bounds="867,146" Alignment="Top" />
+              <ControlPoint Id="MsGLABZ8AqMOAabCEHg94I" Bounds="763,146" Alignment="Top" />
+              <ControlPoint Id="ELUGByr1b5JPWUV4guw1zM" Bounds="763,308" Alignment="Bottom" />
+              <ControlPoint Id="MmSBOyHo9BkMI87D4yvmz8" Bounds="751,146" Alignment="Top" />
+              <ControlPoint Id="Ntqgw30eUvhMFeedzN6ZCQ" Bounds="797,146" Name="X" Alignment="Top" />
+              <ControlPoint Id="Bdm3r5j4w5qOBGjnKeeqj2" Bounds="799,308" Name="X" Alignment="Bottom" />
+              <ControlPoint Id="LeyadEDCM6lPoqwqZ7w1ta" Bounds="833,146" Name="Y" Alignment="Top" />
+              <ControlPoint Id="SCAbs97ZjxOPciWwYaTYp8" Bounds="832,308" Name="Y" Alignment="Bottom" />
               <Patch Id="GbkflGmd2xULiy5mdR6OTa" ManuallySortedPins="true">
                 <Patch Id="OwE6UkcuTdjOsbf5I8KmbF" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="ITG6uxljh6hQEZ8T2Hjif6" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="J6yhr6c7z8GNH7J4ZnTDGu" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="749,190,271,96" Id="BSlTBef3qBvOvDghLrhLHv">
-                  <p:NodeReference>
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
@@ -2269,7 +2405,7 @@
                     <Patch Id="BYjwV1wPpWtQA8xry5RzFN" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="QPmKZIyCWfjPcJylK693cs" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="761,238,108,26" Id="BwG3FLKIcEkL0Lb43fMZBq">
-                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SimulateMousePress" />
@@ -2282,7 +2418,7 @@
                       <Pin Id="GVtK4I05rIuLNaWIk1r9w7" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="864,215,144,19" Id="Dj27H2odsrSN0Goz1FHxxp">
-                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="MouseButtonReverseLookup" />
                       </p:NodeReference>
@@ -2300,7 +2436,7 @@
                   <ControlPoint Id="Roz4L4nOqkiOzo93UM2V64" Bounds="832,280" Name="Y" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="749,162,56,19" Id="CFD5tXFMVI0LzR671UhcKJ">
-                  <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="TogEdge" />
                   </p:NodeReference>
@@ -2309,28 +2445,32 @@
                   <Pin Id="HzoN0X5V2URQMXyAskbX60" Name="Down Edge" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="VkVQTn722jTND1zZM1zdLf" Bounds="867,146" Alignment="Top" />
-              <ControlPoint Id="MsGLABZ8AqMOAabCEHg94I" Bounds="763,146" Alignment="Top" />
-              <ControlPoint Id="ELUGByr1b5JPWUV4guw1zM" Bounds="763,308" Alignment="Bottom" />
-              <ControlPoint Id="MmSBOyHo9BkMI87D4yvmz8" Bounds="751,146" Alignment="Top" />
-              <ControlPoint Id="Ntqgw30eUvhMFeedzN6ZCQ" Bounds="797,146" Name="X" Alignment="Top" />
-              <ControlPoint Id="Bdm3r5j4w5qOBGjnKeeqj2" Bounds="799,308" Name="X" Alignment="Bottom" />
-              <ControlPoint Id="LeyadEDCM6lPoqwqZ7w1ta" Bounds="833,146" Name="Y" Alignment="Top" />
-              <ControlPoint Id="SCAbs97ZjxOPciWwYaTYp8" Bounds="832,308" Name="Y" Alignment="Bottom" />
             </Node>
             <Node Bounds="685,343,358,190" Id="SNbUemn9uFWOndqai0KGCR">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
               </p:NodeReference>
               <Pin Id="RswCv0EMti9Pak0xY95Kpa" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="LsZssXoyo8KNtSJ4hefF77" Bounds="877,350" Alignment="Top" />
+              <ControlPoint Id="ToAoTFmihaMN5co0r1jMZd" Bounds="763,350" Alignment="Top" />
+              <ControlPoint Id="Kaf8K0BLnxaNWWkTAin4W6" Bounds="762,528" Alignment="Bottom" />
+              <ControlPoint Id="Cy226LannhiOAw2jdyi1eN" Bounds="699,350" Alignment="Top">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </ControlPoint>
+              <ControlPoint Id="HwCY7OYzrLRQUR8UipwH1B" Bounds="799,350" Name="X" Alignment="Top" />
+              <ControlPoint Id="E0uPuyVV7UbL22NfKlE81S" Bounds="799,528" Name="X" Alignment="Bottom" />
+              <ControlPoint Id="CRfPFSe85o7MR82DK0Js0y" Bounds="839,350" Name="Y" Alignment="Top" />
+              <ControlPoint Id="EUdEc9LH4a8OkjZd5qrzEp" Bounds="840,528" Name="Y" Alignment="Bottom" />
               <Patch Id="ULx8CyJyzdwMLV0XUWlvs3" ManuallySortedPins="true">
                 <Patch Id="OLb7keK5lIkMyqDRehZXRi" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="K0fUkLErTzWOrwsTieH4bj" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="TOKRQ70PQ6PPlH8D5mghbc" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="748,394,283,114" Id="D13OMbBBbAxPLaalqJutw0">
-                  <p:NodeReference>
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
@@ -2339,7 +2479,7 @@
                     <Patch Id="QF6fEMpd84eLtunGTCbzWG" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Ihtg1Z8HdNHMbkeFGZhCO0" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="875,430,144,19" Id="EYMnIVgAMJCMseF3h4EycE">
-                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastSymbolSource="MouseKeyGlobal.dll">
+                      <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="MouseButtonReverseLookup" />
                       </p:NodeReference>
@@ -2347,7 +2487,7 @@
                       <Pin Id="J1P0j91neS7M2USpPZnqNs" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="760,457,119,26" Id="GoP3zND3GQ4ML1FsjX6mA1">
-                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastSymbolSource="SharpHook.dll">
+                      <p:NodeReference LastCategoryFullName="SharpHook.EventSimulator" LastDependency="SharpHook.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="EventSimulator" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="SimulateMouseRelease" />
@@ -2370,7 +2510,7 @@
                   <ControlPoint Id="UcFKlgfmdT7NoFkrc6ZBFb" Bounds="840,502" Name="Y" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="697,366,56,19" Id="M1A1Of3oZOuPVlrEaGxFnu">
-                  <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="TogEdge" />
                   </p:NodeReference>
@@ -2379,25 +2519,13 @@
                   <Pin Id="NmebNpWKf6SNbDjZzZXyKX" Name="Down Edge" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="LsZssXoyo8KNtSJ4hefF77" Bounds="877,350" Alignment="Top" />
-              <ControlPoint Id="ToAoTFmihaMN5co0r1jMZd" Bounds="763,350" Alignment="Top" />
-              <ControlPoint Id="Kaf8K0BLnxaNWWkTAin4W6" Bounds="762,528" Alignment="Bottom" />
-              <ControlPoint Id="Cy226LannhiOAw2jdyi1eN" Bounds="699,350" Alignment="Top">
-                <p:TypeAnnotation>
-                  <Choice Kind="TypeFlag" Name="Boolean" />
-                </p:TypeAnnotation>
-              </ControlPoint>
-              <ControlPoint Id="HwCY7OYzrLRQUR8UipwH1B" Bounds="799,350" Name="X" Alignment="Top" />
-              <ControlPoint Id="E0uPuyVV7UbL22NfKlE81S" Bounds="799,528" Name="X" Alignment="Bottom" />
-              <ControlPoint Id="CRfPFSe85o7MR82DK0Js0y" Bounds="839,350" Name="Y" Alignment="Top" />
-              <ControlPoint Id="EUdEc9LH4a8OkjZd5qrzEp" Bounds="840,528" Name="Y" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="F35qci6vnoWNXU7MtfY9lj" Bounds="1040,328" />
             <Pad Id="NYAycJF7GcPPnwCyQ73aoX" SlotId="T2QlNCNsa5mMEMTPjhUiNm" Bounds="797,106" />
             <Pad Id="R4KmSjB2AX2NNbey5YEDjy" SlotId="CTBTJfSZFEHMf2X8rjjUIG" Bounds="833,107" />
             <Pad Id="UhWzMPFEQVpNR1uHWE3elv" SlotId="MEhdPq6F9UBO48q5PSbWIG" Bounds="764,119" />
             <Node Bounds="506,121,58,26" Id="TGPSLYlP4TuP6PDWmNBE1x">
-              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Int32Type" Name="Integer32" />
                 <Choice Kind="OperationCallFlag" Name="ToUInt16" />
@@ -2406,7 +2534,7 @@
               <Pin Id="IlyKqzxXLGuLfY2LrQDfB3" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="565,121,52,19" Id="MNgUuXQ6bhJLRygAMQpbvu">
-              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Int32Type" Name="Integer32" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="ToInt16" />
@@ -2525,31 +2653,31 @@
 
 -->
       <Node Name="MouseState" Bounds="456,311" Id="Mr26H0gtnkgLrrEIPTJ9gb">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="UDV9YyAfLcMPE8KRoHUShU">
           <Canvas Id="KFc1u6zV4hbQalTZcRYcnM" CanvasType="Group">
             <Pad Id="RgsoU6oCmKTNVJwPWcdaVU" Comment="Item" Bounds="743,659,70,19" ShowValueBox="true" isIOBox="true" Value="Left">
-              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="MouseButtons" />
                 <CategoryReference Kind="Category" Name="Mouse" />
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="EExO6IxwaokNlvl1QOca7O" Comment="Item" Bounds="871,660,70,18" ShowValueBox="true" isIOBox="true" Value="Middle">
-              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="MouseButtons" />
                 <CategoryReference Kind="Category" Name="Mouse" />
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="QFydNOBCERVMHpCIq7Z5Ia" Comment="Item" Bounds="1020,660,70,19" ShowValueBox="true" isIOBox="true" Value="Right">
-              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="IO.Mouse" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="MouseButtons" />
                 <CategoryReference Kind="Category" Name="Mouse" />
               </p:TypeAnnotation>
             </Pad>
             <Pad Id="PwVAjb1R5ufQWWQLNPZIiN" Bounds="513,485,30,20" ShowValueBox="true" isIOBox="true" Value="120">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:TypeAnnotation>
@@ -2561,7 +2689,7 @@
             <Pad Id="IC0TKd4qtENNwS3V5b0uWY" SlotId="O0xJxWhlZILOAJ7JQjZmHs" Bounds="548,291" />
             <Pad Id="H2ZvlGBcCx5MIGtW9vBYEI" SlotId="O0xJxWhlZILOAJ7JQjZmHs" Bounds="486,485" />
             <Node Bounds="324,135,53,19" Id="SoHDtN25chgOJ5wjeBeFV5">
-              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessNode" Name="Sampler" />
                 <CategoryReference Kind="Category" Name="Reactive" />
               </p:NodeReference>
@@ -2570,7 +2698,7 @@
               <Pin Id="BiwbTLJkpqqLxJOsaYShBS" Name="On Data" Kind="OutputPin" />
             </Node>
             <Node Bounds="753,261,49,19" Id="Ln2GShQABDpLyxAX2KWCuh">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="OfType" />
                 <CategoryReference Kind="Category" Name="Sequence" />
               </p:NodeReference>
@@ -2578,7 +2706,7 @@
               <Pin Id="VRd6vX9WDZyPmf4XHFxXSL" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="690,690,56,26" Id="UFTvrRXYSVWPpPWmyIpqWt">
-              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="Contains" />
                 <CategoryReference Kind="Category" Name="HashSet" />
               </p:NodeReference>
@@ -2587,7 +2715,7 @@
               <Pin Id="Sn96A6IJgwqMgZbEOfl5N9" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="819,690,56,26" Id="V8SGYJCk9akOtrkpEzy5s1">
-              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="Contains" />
                 <CategoryReference Kind="Category" Name="HashSet" />
               </p:NodeReference>
@@ -2596,7 +2724,7 @@
               <Pin Id="NxblycL9fvmOC1pixOyeyP" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="967,695,56,26" Id="R0JG04uOFkOLIRkzxaxNLs">
-              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="Contains" />
                 <CategoryReference Kind="Category" Name="HashSet" />
               </p:NodeReference>
@@ -2605,7 +2733,7 @@
               <Pin Id="TuzKuR11J6PLHFDWTGnnyt" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="485,258,49,19" Id="NcdMzulhv2tLjtPBJ3EtgF">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="OfType" />
                 <CategoryReference Kind="Category" Name="Sequence" />
               </p:NodeReference>
@@ -2613,7 +2741,7 @@
               <Pin Id="QimVSjzMjBUQLIWb3bFnKU" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="484,517,32,19" Id="VYjLTtdSqwiNWilvFOaALN">
-              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationNode" Name="DIV" />
                 <CategoryReference Kind="Category" Name="Integer32" />
               </p:NodeReference>
@@ -2622,7 +2750,7 @@
               <Pin Id="UXdo8EYWoWHPT1NikLlx44" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="96,308,326,127" Id="IYL93V8R2KtNwAJJOkIGlo">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
@@ -2637,7 +2765,7 @@
                 <Patch Id="EITu2L2zCR2QNlTO1E04K0" Name="Update" IsGeneric="true" />
                 <Patch Id="RWbz7vCwV9nNd0QEWTrSkO" Name="Dispose" IsGeneric="true" />
                 <Node Bounds="231,379,102,26" Id="BC05IMtvIkePMWbLbvcB9q">
-                  <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationWithPosition" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Notifications.NotificationWithPosition" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="NotificationWithPosition" />
                     <Choice Kind="OperationCallFlag" Name="Position" />
@@ -2646,7 +2774,7 @@
                   <Pin Id="GSfIoUcx9r3PgpOPy0IiJM" Name="Position" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="110,378,74,26" Id="Io3IpgEN4uuM5u0DgoZTBZ">
-                  <p:NodeReference LastCategoryFullName="IO.INotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.INotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Sender" />
                     <CategoryReference Kind="Category" Name="INotification" />
@@ -2657,7 +2785,7 @@
               </Patch>
             </Node>
             <Node Bounds="678,308,330,234" Id="Ve06ZOTdOqfPzCUlLQE9g1">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
@@ -2667,7 +2795,7 @@
               <Pin Id="Hzd4wbtLu71LEaGO01Ly4L" Name="Break" Kind="OutputPin" />
               <Patch Id="ASlkfWmoTDmO6f6b05NODz">
                 <Node Bounds="715,355,104,26" Id="Ut7KOeAueKUQY42GHOWMer">
-                  <p:NodeReference LastCategoryFullName="IO.Mouse.MouseButtonNotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Mouse.MouseButtonNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="Buttons" />
                     <CategoryReference Kind="Category" Name="MouseButtonNotification" />
                   </p:NodeReference>
@@ -2675,7 +2803,7 @@
                   <Pin Id="Pti0XbpLQvMLwrbB7fosu4" Name="Buttons" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="690,427,54,26" Id="AoxjyEyg8XsN57XJmhT0BN">
-                  <p:NodeReference LastCategoryFullName="Collections.HashSet">
+                  <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="Add" />
                     <FullNameCategoryReference ID="Collections.HashSet" />
                   </p:NodeReference>
@@ -2685,7 +2813,7 @@
                   <Pin Id="ESPdoHF0wuTLAKKnA3gb8M" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="690,488,52,26" Id="CBTEKxojqUDNDnmV2MFlkT">
-                  <p:NodeReference LastCategoryFullName="Collections.HashSet">
+                  <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="Remove" />
                     <FullNameCategoryReference ID="Collections.HashSet" />
                   </p:NodeReference>
@@ -2695,7 +2823,7 @@
                   <Pin Id="Ep0pe66me8fPEHMn2ZSETw" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="836,354,79,26" Id="OyLbOpQVOP7MGwDn1J3iuk">
-                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationNode" Name="IsMouseDown" />
                   </p:NodeReference>
@@ -2703,7 +2831,7 @@
                   <Pin Id="BYmh9ZfZvcCMyeUtcKXbe4" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="922,356,74,26" Id="P2SJtCQZEScNnZqH7JQvIn">
-                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationNode" Name="IsMouseUp" />
                   </p:NodeReference>
@@ -2716,7 +2844,7 @@
               </Patch>
             </Node>
             <Node Bounds="472,308,140,152" Id="PIirzrNOtR6PHsO1hkRgGT">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
@@ -2726,7 +2854,7 @@
               <Pin Id="UknyymrI1yjOeTzbTyvZmV" Name="Break" Kind="OutputPin" />
               <Patch Id="POarjnuCuSCOvtE6pLLVDu">
                 <Node Bounds="485,344,102,26" Id="U0JLK4V60UeNeghhWRndLK">
-                  <p:NodeReference LastCategoryFullName="IO.Mouse.MouseWheelNotification" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Mouse.MouseWheelNotification" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="WheelDelta" />
                     <CategoryReference Kind="Category" Name="MouseWheelNotification" />
                   </p:NodeReference>
@@ -2734,7 +2862,7 @@
                   <Pin Id="BXQJjQNFybPN4KEBvD2Iiw" Name="Wheel Delta" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="484,411,65,19" Id="KTt1N0wMJeEMHzXacMJEAO">
-                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="OperationNode" Name="+" />
                   </p:NodeReference>
                   <Pin Id="DNDkYN6136NLNBoMpJvOSV" Name="Input" Kind="InputPin" />
@@ -2755,7 +2883,7 @@
             <Pad Id="HkzG8TshAgsQXXvwAKApuh" SlotId="DAVHF68GTpDOjG0M4h7wGt" Bounds="112,470" />
             <Pad Id="RZnql6l57w0L9dgA46gJKX" SlotId="DAVHF68GTpDOjG0M4h7wGt" Bounds="110,285" />
             <Node Bounds="690,572,45,26" Id="JjpK7lNriAtQFRPTrmQkbu">
-              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Clear" />
                 <CategoryReference Kind="RecordType" Name="HashSet" NeedsToBeDirectParent="true" />
@@ -2765,7 +2893,7 @@
               <Pin Id="M0KwfWHG8ZKNt3l800rWBh" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="1105,308,96,71" Id="STpdkjUi7EUPCChKbigWpA">
-              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationCallFlag" Name="Any (Predicate)" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -2778,7 +2906,7 @@
                 <ControlPoint Id="N6yt0lsY6jLP4bcYhuSXGg" Bounds="1118,316" />
                 <ControlPoint Id="Eekj0bNa3RmPirSXape4NW" Bounds="1119,370" />
                 <Node Bounds="1117,332,72,26" Id="E73s79SHC6kO60TrnwrXSc">
-                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="IO.Notifications" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsMouseLost" />
                     <CategoryReference Kind="ClassType" Name="Notifications" NeedsToBeDirectParent="true" />
@@ -2792,11 +2920,6 @@
             <ControlPoint Id="N0H4hRSZzxfOdQUWmrfHJG" Bounds="326,104" />
             <ControlPoint Id="CBPXBZM6MvsNw7DN24uXd9" Bounds="1108,568" />
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="KrgBxONPH5LPBRy59mjqij">
             <Fragment Id="GkejuMO98kqK9oTa4mjT4p" Patch="Kero8YtvtudOYPl5GYl7sZ" Enabled="true" />
             <Fragment Id="PHvaUUzudv4L9q0a7V52zk" Patch="IfJ7frrZKaTOuvgV9jBShY" Enabled="true" />
@@ -2905,7 +3028,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ToZ4kZncMGwO5yBBKRn0le" Location="VL.CoreLib" Version="2021.4.11" />
+  <NugetDependency Id="ToZ4kZncMGwO5yBBKRn0le" Location="VL.CoreLib" Version="2023.5.0" />
   <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="4.0.0" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>
