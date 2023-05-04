@@ -1,7 +1,7 @@
 ﻿using System;
 using MouseButton = SharpHook.Native.MouseButton;
 using KeyCode = SharpHook.Native.KeyCode;
-
+using ModifierMask = SharpHook.Native.ModifierMask;
 
 namespace VL.IO.MouseKeyGlobal
 {
@@ -868,7 +868,7 @@ namespace VL.IO.MouseKeyGlobal
         {
             switch (mouseButton)
             {
-                case MouseButtons.None: 
+                case MouseButtons.None:
                     return MouseButton.NoButton;
 
                 case MouseButtons.Left:
@@ -1266,22 +1266,22 @@ namespace VL.IO.MouseKeyGlobal
                     return Keys.Delete;
 
                 case KeyCode.VcLeftShift:
-                    return Keys.LShiftKey;
+                    return Keys.ShiftKey; //Keys.LShiftKey;
 
                 case KeyCode.VcRightShift:
-                    return Keys.RShiftKey;
+                    return Keys.ShiftKey; //Keys.RShiftKey;
 
                 case KeyCode.VcLeftControl:
-                    return Keys.LControlKey;
+                    return Keys.ControlKey; //Keys.LControlKey;
 
                 case KeyCode.VcRightControl:
-                    return Keys.RControlKey;
+                    return Keys.ControlKey; //Keys.RControlKey;
 
                 case KeyCode.VcLeftAlt:
-                    return Keys.LMenu;
+                    return Keys.Menu; //Keys.LMenu;
 
                 case KeyCode.VcRightAlt:
-                    return Keys.RMenu;
+                    return Keys.Menu; //Keys.RMenu;
 
                 case KeyCode.VcLeftMeta:
                     return Keys.LWin;
@@ -1845,5 +1845,79 @@ namespace VL.IO.MouseKeyGlobal
         }
 
 
+        public static Keys ModifierMaskLookup(ModifierMask modifierMask)
+        {
+            #region Switch ModifierMask
+            switch (modifierMask)
+            {
+                case ModifierMask.Alt:
+                    return Keys.Alt;
+
+                case ModifierMask.Button1:
+                    return Keys.LButton;
+
+                case ModifierMask.Button2:
+                    return Keys.RButton;
+
+                case ModifierMask.Button3:
+                    return Keys.MButton;
+
+                case ModifierMask.Button4:
+                    return Keys.XButton1;
+
+                case ModifierMask.Button5:
+                    return Keys.XButton2;
+
+                case ModifierMask.CapsLock:
+                    return Keys.CapsLock;
+
+                case ModifierMask.Ctrl:
+                    return Keys.ControlKey;
+
+                case ModifierMask.LeftAlt:
+                    return Keys.LMenu;
+
+                case ModifierMask.LeftCtrl:
+                    return Keys.LControlKey;
+
+                case ModifierMask.LeftMeta:
+                    return Keys.LWin;
+
+                case ModifierMask.LeftShift:
+                    return Keys.LShiftKey;
+
+                case ModifierMask.Meta:
+                    return Keys.LWin;
+
+                case ModifierMask.NumLock:
+                    return Keys.NumLock;
+
+                case ModifierMask.RightAlt:
+                    return Keys.RMenu;
+
+                case ModifierMask.RightCtrl:
+                    return Keys.RControlKey;
+
+                case ModifierMask.RightMeta:
+                    return Keys.RWin;
+
+                case ModifierMask.RightShift:
+                    return Keys.RShiftKey;
+
+                case ModifierMask.ScrollLock:
+                    return Keys.Scroll;
+
+                case ModifierMask.Shift:
+                    return Keys.ShiftKey;
+
+                case ModifierMask.None:
+                    return Keys.None;
+
+                default:
+                    return Keys.NoName;
+
+            }
+            #endregion
+        }
     }
 }
