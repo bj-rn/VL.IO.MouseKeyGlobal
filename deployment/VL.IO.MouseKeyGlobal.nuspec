@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.IO.MouseKeyGlobal</id>
-    <version>2.0.0</version>
+    <version>5.0.0</version>
     <title>VL.IO.MouseKeyGlobal</title>
     <authors>bj-rn</authors>
     <owners>bj-rn</owners>
@@ -12,10 +12,10 @@
     <projectUrl>https://github.com/bj-rn/VL.IO.MouseKeyGlobal</projectUrl>
     <summary>Global mouse and keyboard hook for vvvv gamma. </summary>
     <description>Global mouse and keyboard hook for vvvv gamma based on Sharphook by Tolik Pylypchuk</description>
-    <copyright>Copyright © 2022 bj-rn</copyright>
+    <copyright>Copyright © 2023 bj-rn</copyright>
     <tags>VL, vvvv, globalhook, global, hook, mouse, keyboard</tags>
     <dependencies>
-      <dependency id="SharpHook" version="4.0.0" />
+      <dependency id="SharpHook" version="5.0.0" />
     </dependencies>
   </metadata>
    <files>
