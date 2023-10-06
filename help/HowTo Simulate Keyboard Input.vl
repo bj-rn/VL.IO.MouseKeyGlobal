@@ -249,6 +249,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator (TextEntry)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="T2rPgaJJxMQMMFC0dF0fQC" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Ubxz4MhenjOLhqp1aiPTxp" Name="Simulate" Kind="InputPin" />
             <Pin Id="AFyOSZMCZspPAQPHMop1ZQ" Name="Enable" Kind="InputPin" IsHidden="true" />
