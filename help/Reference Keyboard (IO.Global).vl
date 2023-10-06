@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Gx98fNvLSJYNrZbG7niDUr" LanguageVersion="2021.4.11.1112" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Gx98fNvLSJYNrZbG7niDUr" LanguageVersion="2023.5.3-0192-g8dd4ea9c96" Version="0.128">
   <Patch Id="Ab3dmylYdW1L2zhxOWvzJE">
     <Canvas Id="PeaDrlczPysMa7Cz4YKl6o" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,25 +15,73 @@
       <Patch Id="JYRJMvkcVxRM9JwaeqhAOr">
         <Canvas Id="UNR0ukkkTcWLY9YNitpp8V" CanvasType="Group">
           <Node Bounds="97,100,59,19" Id="T4uaEkFiFnDPyIJf3kEI1O">
-            <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Keyboard" />
               <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="J8ZbfYp5FySPDl6VkD5G9s" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Egzuhci3oSjLdPt3X7lI6v" Name="Key Notifications" Kind="OutputPin" />
           </Node>
-          <Node Bounds="97,172,81,19" Id="EhxeKQ0Aos6PmfPbGevT6r">
-            <p:NodeReference LastCategoryFullName="IO.Global" LastSymbolSource="VL.IO.MouseKeyGlobal.vl">
+          <Node Bounds="97,166,81,19" Id="EhxeKQ0Aos6PmfPbGevT6r">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardState" />
               <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="B833mrpOKigNRUTGX8X3PV" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AFFiFWDVbkaMOqTcbIZ5sQ" Name="Keyboard Notifications" Kind="InputPin" />
             <Pin Id="U6ohQjq1M9zOfFBCadH1pb" Name="Pressed Keys" Kind="OutputPin" />
           </Node>
-          <Pad Id="Hz8VL4kZbp1O9SGGKaARuF" Comment="" Bounds="99,247,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Hz8VL4kZbp1O9SGGKaARuF" Comment="Pressed Keys" Bounds="99,247,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="558,100,59,19" Id="PFvlk2mOzT3LyiwQjw1rBd">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="Keyboard" />
+            </p:NodeReference>
+            <Pin Id="JqoyeOZNXACPduhnBZWcVH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JT5iBt21S4aNOEQwEOzICZ" Name="Context" Kind="OutputPin" />
+            <Pin Id="Oa5ePGLsenVNJylP0rmXhR" Name="Keyboard" Kind="OutputPin" />
+            <Pin Id="LGQEopeJcFvOfnY3kGbHVJ" Name="Pressed Keys" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="538,166,145,19" Id="TTJnHrbUSQwMy2dCpj7viP">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="HwvdLPegrBZNV2rd5owldM" Name="Bounds" Kind="InputPin" DefaultValue="1649, 84, 613, 436" IsHidden="true" />
+            <Pin Id="CZ3ddrHz1FGMGFCOjyXRra" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="P76buvhxQinLZJvSR4p4u4" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="B2mywVjyqnqPIiK0NcaTZD" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SwQU5WkIIjwNFZ11QDbMGO" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AkQtYsniIgIQQ3CebYmStG" Name="Input" Kind="InputPin" />
+            <Pin Id="BB7QyWaZRiqNp1MawhaQcv" Name="Color" Kind="InputPin" />
+            <Pin Id="RSE6ZixWEorPOSe0UOjfHi" Name="Clear" Kind="InputPin" />
+            <Pin Id="ITV4Y6EOtc4NkGLtU97Iiv" Name="Space" Kind="InputPin" />
+            <Pin Id="UfV6HvZ9ox7LBsNrjASROe" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="VOpdIhpzXOuLB9NOduNgVs" Name="VSync" Kind="InputPin" />
+            <Pin Id="DqHmdbzywdGLmX2tQAQE2q" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LQmIOoOb7LxNLi1stV8lnQ" Name="Enabled" Kind="InputPin" />
+            <Pin Id="RkwC6apuvROL2jB7L7FhNL" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Sxytko3ebosL9SvFyIumr4" Name="Form" Kind="OutputPin" />
+            <Pin Id="FBmaY1EUosFLXNXFQVRHiI" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="FO032t7tQzLQOnxVQGJ4w8" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FS9w0dDnmFgOxSYdeNa7lI" Comment="Pressed Keys" Bounds="615,247,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OUJhA1HgF1LQOl3SGFUtsE" Bounds="424,175,101,76" ShowValueBox="true" isIOBox="true" Value="Click into the Skia renderer to compare results.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="VUSwrSZE77gNsaXq85i2XM" Name="Create" />
         <Patch Id="R6RdhbOBF9xMCxZNUhKjk2" Name="Update" />
@@ -43,10 +91,12 @@
         </ProcessDefinition>
         <Link Id="KfhTurypjmULmbtwZliUMk" Ids="U6ohQjq1M9zOfFBCadH1pb,Hz8VL4kZbp1O9SGGKaARuF" />
         <Link Id="Pp5JRbMBjGrNUpt4glOpXj" Ids="Egzuhci3oSjLdPt3X7lI6v,AFFiFWDVbkaMOqTcbIZ5sQ" />
+        <Link Id="O5UWsK6KAZuPmbCsAnw60N" Ids="JT5iBt21S4aNOEQwEOzICZ,AkQtYsniIgIQQ3CebYmStG" />
+        <Link Id="GurBEwtZiFBMcA2DDbOLiA" Ids="LGQEopeJcFvOfnY3kGbHVJ,FS9w0dDnmFgOxSYdeNa7lI" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Kq46WwJgQ5jMDUoeOBRGg1" Location="VL.CoreLib" Version="2021.4.11-1112-g53848a3676" />
-  <NugetDependency Id="JTF2GOfIHDBN2MDqWYD5fm" Location="VL.Skia" Version="2021.4.11-1112-g53848a3676" />
+  <NugetDependency Id="Kq46WwJgQ5jMDUoeOBRGg1" Location="VL.CoreLib" Version="2023.5.3-0192-g8dd4ea9c96" />
+  <NugetDependency Id="JTF2GOfIHDBN2MDqWYD5fm" Location="VL.Skia" Version="2023.5.3-0192-g8dd4ea9c96" />
   <DocumentDependency Id="S6GnSegr1a8QWS84WOvY7s" Location="../VL.IO.MouseKeyGlobal.vl" />
 </Document>
