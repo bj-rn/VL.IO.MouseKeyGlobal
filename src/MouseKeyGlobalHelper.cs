@@ -836,7 +836,6 @@ namespace VL.IO.MouseKeyGlobal
 
     public static class MouseKeyGlobalHelper
     {
-
         public static MouseButtons MouseButtonLookup(MouseButton mouseButton)
         {
             switch (mouseButton)
@@ -892,9 +891,9 @@ namespace VL.IO.MouseKeyGlobal
         }
 
         // https://github.com/kwhat/libuiohook/blob/1.2/include/uiohook.h
-        // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/windows/qwindowskeymapper.cpp
-        // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/xcb/qxcbkeyboard.cpp
-        // https://github.com/qt/qtbase/blob/5.6/src/plugins/platforms/cocoa/qcocoakeymapper.mm
+        // https://sharphook.tolik.io/v5.0.0/articles/keycodes.html
+        // https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+        // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-7.0
 
         public static Keys KeyboardKeyLookup(KeyCode keyCode)
         {
@@ -977,7 +976,7 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcF24:
                     return Keys.F24;
 
-                case KeyCode.VcBackquote:
+                case KeyCode.VcBackQuote:
                     return Keys.Oemtilde;
 
                 case KeyCode.Vc1:
@@ -1109,7 +1108,7 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcCloseBracket:
                     return Keys.Oem6;
 
-                case KeyCode.VcBackSlash:
+                case KeyCode.VcBackslash:
                     return Keys.Oem5;
 
                 case KeyCode.VcSemicolon:
@@ -1142,7 +1141,7 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcPause:
                     return Keys.Pause;
 
-                case KeyCode.VcLesserGreater:
+                case KeyCode.Vc102:
                     return Keys.OemBackslash;
 
                 case KeyCode.VcInsert:
@@ -1169,8 +1168,8 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcLeft:
                     return Keys.Left;
 
-                case KeyCode.VcClear:
-                    return Keys.OemClear;
+                case KeyCode.VcNumPadClear:
+                    return Keys.Clear;
 
                 case KeyCode.VcRight:
                     return Keys.Right;
@@ -1191,7 +1190,7 @@ namespace VL.IO.MouseKeyGlobal
                     return Keys.Subtract;
 
                 case KeyCode.VcNumPadEquals:
-                    return Keys.NoName; //?
+                    return Keys.NoName; // =  0x92 Oem specific
 
                 case KeyCode.VcNumPadAdd:
                     return Keys.Add;
@@ -1232,39 +1231,6 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcNumPad0:
                     return Keys.NumPad0;
 
-                case KeyCode.VcNumPadEnd:
-                    return Keys.End;
-
-                case KeyCode.VcNumPadDown:
-                    return Keys.Down;
-
-                case KeyCode.VcNumPadPageDown:
-                    return Keys.Next; //?
-
-                case KeyCode.VcNumPadLeft:
-                    return Keys.Left;
-
-                case KeyCode.VcNumPadClear:
-                    return Keys.NoName; // Mac key ?
-
-                case KeyCode.VcNumPadRight:
-                    return Keys.Right;
-
-                case KeyCode.VcNumPadHome:
-                    return Keys.Home;
-
-                case KeyCode.VcNumPadUp:
-                    return Keys.Up;
-
-                case KeyCode.VcNumPadPageUp:
-                    return Keys.PageUp;
-
-                case KeyCode.VcNumPadInsert:
-                    return Keys.Insert;
-
-                case KeyCode.VcNumPadDelete:
-                    return Keys.Delete;
-
                 case KeyCode.VcLeftShift:
                     return Keys.ShiftKey; //Keys.LShiftKey;
 
@@ -1290,16 +1256,10 @@ namespace VL.IO.MouseKeyGlobal
                     return Keys.RWin;
 
                 case KeyCode.VcContextMenu:
-                    return Keys.NoName; //?
-
-                case KeyCode.VcPower:
-                    return Keys.NoName; // Linux X11?
+                    return Keys.Apps;
 
                 case KeyCode.VcSleep:
                     return Keys.Sleep;
-
-                case KeyCode.VcWake:
-                    return Keys.NoName; // Linux X11?
 
                 case KeyCode.VcMediaPlay:
                     return Keys.MediaPlayPause;
@@ -1314,10 +1274,7 @@ namespace VL.IO.MouseKeyGlobal
                     return Keys.MediaNextTrack;
 
                 case KeyCode.VcMediaSelect:
-                    return Keys.NoName; //?
-
-                case KeyCode.VcMediaEject:
-                    return Keys.NoName; // Linux X11?
+                    return Keys.SelectMedia;
 
                 case KeyCode.VcVolumeMute:
                     return Keys.VolumeMute;
@@ -1329,16 +1286,7 @@ namespace VL.IO.MouseKeyGlobal
                     return Keys.VolumeDown;
 
                 case KeyCode.VcAppMail:
-                    return Keys.LaunchMail; // ?
-
-                case KeyCode.VcAppCalculator:
-                    return Keys.NoName; // Linux X11?
-
-                case KeyCode.VcAppMusic:
-                    return Keys.NoName; // Linux X11?
-
-                case KeyCode.VcAppPictures:
-                    return Keys.NoName; // Linux X11?
+                    return Keys.LaunchMail;
 
                 case KeyCode.VcBrowserSearch:
                     return Keys.BrowserSearch;
@@ -1361,65 +1309,17 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcBrowserFavorites:
                     return Keys.BrowserFavorites;
 
-                case KeyCode.VcKatakana:
-                    return Keys.KanaMode; // not sure ?
+                case KeyCode.VcKana:
+                    return Keys.KanaMode; 
 
                 case KeyCode.VcUnderscore:
-                    return Keys.NoName; // Mac Key?
-
-                case KeyCode.VcFurigana:
-                    return Keys.NoName; // ?
+                    return Keys.NoName; 
 
                 case KeyCode.VcKanji:
-                    return Keys.KanjiMode; // not sure
-
-                case KeyCode.VcHiragana:
-                    return Keys.NoName; // Linux X11?
-
-                case KeyCode.VcYen:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcNumPadComma:
-                    return Keys.Oemcomma; // not sure ?
-
-                case KeyCode.VcSunHelp:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunStop:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunProps:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunFront:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunOpen:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunFind:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunAgain:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunUndo:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunCopy:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunInsert:
-                    return Keys.NoName; // ?
-
-                case KeyCode.VcSunCut:
-                    return Keys.NoName; // ?
+                    return Keys.KanjiMode; 
 
                 case KeyCode.VcUndefined: // KeyCode Unknown
-                    return Keys.NoName; // ?
-
-                case KeyCode.CharUndefined: // CharCode Unknown
-                    return Keys.NoName; // ?
+                    return Keys.NoName;
 
                 default:
                     return Keys.NoName;
@@ -1509,7 +1409,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcF24;
 
                 case Keys.Oemtilde:
-                    return KeyCode.VcBackquote;
+                    return KeyCode.VcBackQuote;
 
                 case Keys.D1:
                     return KeyCode.Vc1;
@@ -1641,7 +1541,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcCloseBracket;
 
                 case Keys.Oem5:
-                    return KeyCode.VcBackSlash;
+                    return KeyCode.VcBackslash;
 
                 case Keys.Oem1:
                     return KeyCode.VcSemicolon;
@@ -1674,7 +1574,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcPause;
 
                 case Keys.OemBackslash:
-                    return KeyCode.VcLesserGreater;
+                    return KeyCode.Vc102;
 
                 case Keys.Insert:
                     return KeyCode.VcInsert;
@@ -1701,7 +1601,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcLeft;
 
                 case Keys.OemClear:
-                    return KeyCode.VcClear;
+                    return KeyCode.VcNumPadClear;
 
                 case Keys.Right:
                     return KeyCode.VcRight;
@@ -1830,7 +1730,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcBrowserFavorites;
 
                 case Keys.KanaMode:
-                    return KeyCode.VcKatakana;
+                    return KeyCode.VcKana;
 
                 case Keys.KanjiMode:
                     return KeyCode.VcKanji;
@@ -1843,7 +1743,6 @@ namespace VL.IO.MouseKeyGlobal
             }
             #endregion
         }
-
 
         public static Keys ModifierMaskLookup(ModifierMask modifierMask)
         {
