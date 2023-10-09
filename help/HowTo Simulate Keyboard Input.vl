@@ -251,16 +251,16 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="T2rPgaJJxMQMMFC0dF0fQC" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OIHjdONS3NIMDW5pV1FZsa" Name="Text" Kind="InputPin" />
             <Pin Id="Ubxz4MhenjOLhqp1aiPTxp" Name="Simulate" Kind="InputPin" />
             <Pin Id="AFyOSZMCZspPAQPHMop1ZQ" Name="Enable" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OIHjdONS3NIMDW5pV1FZsa" Name="Text" Kind="InputPin" />
           </Node>
-          <Pad Id="GARwN990FWTM5tyEAUVXPz" Comment="Text" Bounds="1197,261,151,16" ShowValueBox="true" isIOBox="true" Value="everything you know is wrong">
+          <Pad Id="GARwN990FWTM5tyEAUVXPz" Comment="Text" Bounds="1100,192,151,16" ShowValueBox="true" isIOBox="true" Value="everything you know is wrong">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="ETQYCKOfIxpLvmIQ1dQWOS" Comment="Simulate" Bounds="1100,222,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="ETQYCKOfIxpLvmIQ1dQWOS" Comment="Simulate" Bounds="1198,224,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
