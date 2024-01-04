@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TGg45vPo87BPufuX3vgyMe" LanguageVersion="2023.5.3-0192-g8dd4ea9c96" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="TGg45vPo87BPufuX3vgyMe" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
   <Patch Id="Mo4NZ6ZPidaOcfPactohD8">
     <Canvas Id="J4NY6b2M4ufN7iuARolYcr" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -161,7 +161,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SDvkrD3wo3LM8gaQt6EWX1" Bounds="101,113,394,33" ShowValueBox="true" isIOBox="true" Value="https://sharphook.tolik.io/v5.1.0/">
+          <Pad Id="SDvkrD3wo3LM8gaQt6EWX1" Bounds="101,113,394,33" ShowValueBox="true" isIOBox="true" Value="https://sharphook.tolik.io/v5.2.1/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -347,6 +347,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2023.5.3-0192-g8dd4ea9c96" />
+  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
   <DocumentDependency Id="UKC3jgKgCejOotiKo3kBaS" Location="../VL.IO.MouseKeyGlobal.vl" />
 </Document>
