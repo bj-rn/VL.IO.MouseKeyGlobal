@@ -1198,8 +1198,11 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcNumPadEnter:
                     return Keys.Return;
 
-                case KeyCode.VcNumPadSeparator:
+                case KeyCode.VcNumPadDecimal:
                     return Keys.Decimal;
+
+                case KeyCode.VcNumPadSeparator:
+                    return Keys.Separator;
 
                 case KeyCode.VcNumPad1:
                     return Keys.NumPad1;
@@ -1625,6 +1628,9 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcNumPadAdd;
 
                 case Keys.Decimal:
+                    return KeyCode.VcNumPadDecimal;
+
+                case Keys.Separator:
                     return KeyCode.VcNumPadSeparator;
 
                 case Keys.NumPad1:
