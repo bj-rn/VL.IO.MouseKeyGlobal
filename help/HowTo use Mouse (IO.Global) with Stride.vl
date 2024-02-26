@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MORnctJg5IJM9Ze9RKdXbr" LanguageVersion="2023.5.3-0192-g8dd4ea9c96" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MORnctJg5IJM9Ze9RKdXbr" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
   <Patch Id="Rjxc0j3pTybLssxAy9vqmP">
     <Canvas Id="ImBmuiTBIwnLannfnuDyCq" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -894,7 +894,7 @@
               <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
             </p:NodeReference>
             <Pin Id="JFpb23gYp2oMb4HUpIYUA0" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Cc2o5HlPjjCNzcS9ksIyQd" Name="Bounds" Kind="InputPin" DefaultValue="1963.2, 149.6, 785.6, 432" />
+            <Pin Id="Cc2o5HlPjjCNzcS9ksIyQd" Name="Bounds" Kind="InputPin" DefaultValue="1380.6666, 100.666664, 785.3333, 432" />
             <Pin Id="E3Ihr84MwK9QRWtv1eBQRM" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="KMQVywGd3o8NjyrgY04PX0" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="CVpNn922JYGLoFgBYBeh9R" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -910,6 +910,7 @@
             <Pin Id="UNPlpAvx03ENjg4jn3KK59" Name="Clear Stencil" Kind="InputPin" IsHidden="true" />
             <Pin Id="K3qg30mcddRQdunfeMJGwL" Name="Clear" Kind="InputPin" />
             <Pin Id="PaplaDdoy7EMBpPYSEvAPw" Name="Edit Mode" Kind="InputPin" />
+            <Pin Id="Pbdfnn3i0XmPQwhLprNQPm" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="JA1JM1T6Dc5O9QpVLguifG" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
             <Pin Id="MRhQVKvt35cP6FRZXdhq3m" Name="Enabled" Kind="InputPin" />
             <Pin Id="QJFyeJ3qsEdPN8ic4s7T5w" Name="Present Interval" Kind="InputPin" />
@@ -978,8 +979,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RgUC7JT8DytPG8uDoffX02" Location="VL.CoreLib" Version="2023.5.3-0192-g8dd4ea9c96" />
-  <NugetDependency Id="IjfLHX7gtnUNyUU3FbsMo6" Location="VL.Stride" Version="2023.5.3-0192-g8dd4ea9c96" />
-  <NugetDependency Id="KMDQ9I3ClxuMW5GquYPhDZ" Location="VL.Skia" Version="2023.5.3-0192-g8dd4ea9c96" />
+  <NugetDependency Id="RgUC7JT8DytPG8uDoffX02" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="IjfLHX7gtnUNyUU3FbsMo6" Location="VL.Stride" Version="2024.6.0-0179-g427422701e" />
+  <NugetDependency Id="KMDQ9I3ClxuMW5GquYPhDZ" Location="VL.Skia" Version="2024.6.0-0179-g427422701e" />
   <DocumentDependency Id="AtoIsfrRsNuNGdSk0LT9Ms" Location="../VL.IO.MouseKeyGlobal.vl" />
+  <NugetDependency Id="Kb1igzis7QXL37u9DUumPa" Location="VL.Stride.TextureFX" Version="2024.6.0-0179-g427422701e" />
 </Document>

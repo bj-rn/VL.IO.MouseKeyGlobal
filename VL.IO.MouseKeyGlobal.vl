@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2023.5.3-0192-g8dd4ea9c96" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2023.5.3-0192-g8dd4ea9c96" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
@@ -3186,6 +3186,14 @@
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="MSXe3qKig0dQRwdg8PFfgD" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="T4fQXTcA6VrL6yLsECDWMy" Bounds="241,692" Name="Number" Alignment="Bottom" />
+              <ControlPoint Id="MrH1SROeAzXO9kOf264k4l" Bounds="240,309" Name="Number" Alignment="Top" />
+              <ControlPoint Id="LGkFRtuxcaQLtgbrvk7uuA" Bounds="350,692" Name="Resolution" Alignment="Bottom" />
+              <ControlPoint Id="V0aCR8n9HgiPYm5LseAWyh" Bounds="348,309" Name="Resolution" Alignment="Top" />
+              <ControlPoint Id="DsxSZmO0vLoNmFnQQaaHrG" Bounds="507,692" Name="Position" Alignment="Bottom" />
+              <ControlPoint Id="B970ITTTT43MTaQv2IbtNo" Bounds="509,309" Name="Position" Alignment="Top" />
+              <ControlPoint Id="JKs5lcOWYi7NMI8ruKYXWf" Bounds="640,692" Name="Is Primary" Alignment="Bottom" />
+              <ControlPoint Id="QlQcXLVGlA5PadNL2njFqC" Bounds="643,309" Name="Is Primary" Alignment="Top" />
               <Patch Id="JNdo0VDRsS5P71X1ZwR2cT" ManuallySortedPins="true">
                 <Patch Id="NC9FMQx6FKJP3SAaXaNC68" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Vf0wJFk2aoHO3p48FuFqDC" Name="Then" ManuallySortedPins="true" />
@@ -3198,6 +3206,10 @@
                   <Pin Id="RcERRcVs2JZNKgvpwNRYkd" Name="Force" Kind="InputPin" />
                   <Pin Id="AT1XuSgOo7ON1bsVjMxjpl" Name="Dispose Cached Outputs" Kind="InputPin" />
                   <Pin Id="QeTDd3QWuy9M3pE6FcKZO0" Name="Has Changed" Kind="OutputPin" />
+                  <ControlPoint Id="BHAnLgCFfOzM6sxWdOINWF" Bounds="241,645" Name="Number" Alignment="Bottom" />
+                  <ControlPoint Id="NZFANQ6CQ2rL8UbZTlV1OS" Bounds="350,645" Name="Resolution" Alignment="Bottom" />
+                  <ControlPoint Id="G1IQGyeYVKvLD17K5OmJWK" Bounds="507,645" Name="Position" Alignment="Bottom" />
+                  <ControlPoint Id="LHmNoRpOM4JMJDcRdXsBoF" Bounds="640,645" Name="Is Primary" Alignment="Bottom" />
                   <Patch Id="I206d5qQTC8LIgyO0xFdnW" ManuallySortedPins="true">
                     <Patch Id="GTLp7uvyLE8LluLl9MtZmc" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="FaPoULRF5P2MXPEI4u8FjX" Name="Then" ManuallySortedPins="true" />
@@ -3221,6 +3233,8 @@
                       <ControlPoint Id="Rdr7SItKHfxPZnJLhuYY4Q" Bounds="241,415" Alignment="Top" />
                       <ControlPoint Id="VAGRei4RW6zPExEodVbZvX" Bounds="241,598" Alignment="Bottom" />
                       <ControlPoint Id="B8baWU5SHVXNLkDCGNSDJ2" Bounds="507,598" Alignment="Bottom" />
+                      <ControlPoint Id="QGxXMSZ91fLOhQ6aDkzQsn" Bounds="350,598" Alignment="Bottom" />
+                      <ControlPoint Id="FlJK12Z6BMVLXwr6qJZLVR" Bounds="640,598" Alignment="Bottom" />
                       <Patch Id="GTWNgwic9jhN79QGvqECz7" ManuallySortedPins="true">
                         <Patch Id="OYjmAneDBqsNeUwEXIqjbb" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="NghRdk7GetvOEnEqZc0Wyp" Name="Update" ManuallySortedPins="true" />
@@ -3232,7 +3246,7 @@
                             <Choice Kind="OperationCallFlag" Name="Number" />
                           </p:NodeReference>
                           <Pin Id="BoSA5V496AlPObswekBDea" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="TS6yBkJ7c7PLUjms84EyZL" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="TS6yBkJ7c7PLUjms84EyZL" Name="Output" Kind="OutputPin" />
                           <Pin Id="C2vRgCnWjb2MdzCnL1wgoP" Name="Number" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="239,492,91,26" Id="LIJcAsCnZnPLUDc7IgED2b">
@@ -3251,7 +3265,7 @@
                             <Choice Kind="OperationCallFlag" Name="X" />
                           </p:NodeReference>
                           <Pin Id="R3tHlqNxscMPBvXvHuTVjh" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="S9CSCJ0UkPPLJzHrHDq4BX" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="S9CSCJ0UkPPLJzHrHDq4BX" Name="Output" Kind="OutputPin" />
                           <Pin Id="McuNEcYqY4tMFfahZJbMEW" Name="X" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="575,444,56,26" Id="Vnsf1hs2gEZMQPFSWIzCyo">
@@ -3261,7 +3275,7 @@
                             <Choice Kind="OperationCallFlag" Name="Y" />
                           </p:NodeReference>
                           <Pin Id="IF0zh1WewcsNY6LkQWNKkd" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="I4lS0htkmliMmYQd9IHZvk" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="I4lS0htkmliMmYQd9IHZvk" Name="Output" Kind="OutputPin" />
                           <Pin Id="GSa0nOBUPXNMDuQe96Kpek" Name="Y" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="505,497,75,19" Id="HXo8MZMJZztMB81DNxztco">
@@ -3281,7 +3295,7 @@
                             <Choice Kind="OperationCallFlag" Name="Width" />
                           </p:NodeReference>
                           <Pin Id="Ablk1sj3MkjNfHkLOjepEN" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="N2uljUmRxHyMo4eIPqZSgA" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="N2uljUmRxHyMo4eIPqZSgA" Name="Output" Kind="OutputPin" />
                           <Pin Id="IYlffzTluXUPtu1G17epKZ" Name="Width" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="432,442,56,26" Id="FV2xNvKNVw7Ph648v5UNaH">
@@ -3291,7 +3305,7 @@
                             <Choice Kind="OperationCallFlag" Name="Height" />
                           </p:NodeReference>
                           <Pin Id="Ls8XIf3xXeZNbDawyez5Cf" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="HngaYHAFDJRPt4ENqw5lDV" Name="Output" Kind="OutputPin" IsHidden="true" />
+                          <Pin Id="HngaYHAFDJRPt4ENqw5lDV" Name="Output" Kind="OutputPin" />
                           <Pin Id="Ipm0HYxghUaMPOc2PEbOId" Name="Height" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="348,491,89,19" Id="FNcJ25q9GGhLMRJS1u50bP">
@@ -3319,24 +3333,10 @@
                           </p:TypeAnnotation>
                         </Pad>
                       </Patch>
-                      <ControlPoint Id="QGxXMSZ91fLOhQ6aDkzQsn" Bounds="350,598" Alignment="Bottom" />
-                      <ControlPoint Id="FlJK12Z6BMVLXwr6qJZLVR" Bounds="640,598" Alignment="Bottom" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="BHAnLgCFfOzM6sxWdOINWF" Bounds="241,645" Name="Number" Alignment="Bottom" />
-                  <ControlPoint Id="NZFANQ6CQ2rL8UbZTlV1OS" Bounds="350,645" Name="Resolution" Alignment="Bottom" />
-                  <ControlPoint Id="G1IQGyeYVKvLD17K5OmJWK" Bounds="507,645" Name="Position" Alignment="Bottom" />
-                  <ControlPoint Id="LHmNoRpOM4JMJDcRdXsBoF" Bounds="640,645" Name="Is Primary" Alignment="Bottom" />
                 </Node>
               </Patch>
-              <ControlPoint Id="T4fQXTcA6VrL6yLsECDWMy" Bounds="241,692" Name="Number" Alignment="Bottom" />
-              <ControlPoint Id="MrH1SROeAzXO9kOf264k4l" Bounds="240,309" Name="Number" Alignment="Top" />
-              <ControlPoint Id="LGkFRtuxcaQLtgbrvk7uuA" Bounds="350,692" Name="Resolution" Alignment="Bottom" />
-              <ControlPoint Id="V0aCR8n9HgiPYm5LseAWyh" Bounds="348,309" Name="Resolution" Alignment="Top" />
-              <ControlPoint Id="DsxSZmO0vLoNmFnQQaaHrG" Bounds="507,692" Name="Position" Alignment="Bottom" />
-              <ControlPoint Id="B970ITTTT43MTaQv2IbtNo" Bounds="509,309" Name="Position" Alignment="Top" />
-              <ControlPoint Id="JKs5lcOWYi7NMI8ruKYXWf" Bounds="640,692" Name="Is Primary" Alignment="Bottom" />
-              <ControlPoint Id="QlQcXLVGlA5PadNL2njFqC" Bounds="643,309" Name="Is Primary" Alignment="Top" />
             </Node>
             <Node Bounds="139,262,54,19" Id="MzugaK49s0jM1AHQK7WGih">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -3353,11 +3353,6 @@
             <ControlPoint Id="R88m4lEeKeqQVo5ukHxolt" Bounds="507,732" />
             <ControlPoint Id="QvK8WP908rbL7QKnIVBXJA" Bounds="640,732" />
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="Qk6Nra51CR0MB6zd0BqCkm">
             <Fragment Id="Azb4Q9IQoV2LsYp0xaSiAz" Patch="HoXwbxaheTAPj5GNLMgwOg" Enabled="true" />
             <Fragment Id="HlmR3wosmBON7HqizvamcR" Patch="IprfikgaelsOgPOyIfYcag" Enabled="true" />
@@ -3459,11 +3454,6 @@
           <Patch Id="VF2gGlW4MKlQK52u1JmhHa" Name="Update">
             <Pin Id="L5LBSZg466tPd5xX4iwkFU" Name="Singleton" Kind="OutputPin" Bounds="178,323" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="TqMyyndQeP4LeagVg5gIVV">
             <Fragment Id="AKLxBiMAwFMQTBI7TLNpcV" Patch="IZc7DVfX5W0Na5M29EV2Oe" Enabled="true" />
             <Fragment Id="Lrqhs2wR5p4L58mWtYwH4G" Patch="VF2gGlW4MKlQK52u1JmhHa" Enabled="true" />
@@ -3499,6 +3489,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.1.0" />
+  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.0" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>

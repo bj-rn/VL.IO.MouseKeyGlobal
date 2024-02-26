@@ -10,7 +10,7 @@
       "MouseKeyGlobal/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "SharpHook": "5.2.1"
+          "SharpHook": "5.3.0"
         },
         "runtime": {
           "MouseKeyGlobal.dll": {}
@@ -22,11 +22,11 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "SharpHook/5.2.1": {
+      "SharpHook/5.3.0": {
         "runtime": {
           "lib/netstandard2.0/SharpHook.dll": {
-            "assemblyVersion": "5.2.1.0",
-            "fileVersion": "5.2.1.0"
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.0.0"
           }
         }
       }
@@ -52,12 +52,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "SharpHook/5.2.1": {
+    "SharpHook/5.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JCLR4DidTZoSDQO1GBsChTpIkQqP6svBzoDtRF6c8Yh56bKSNwKxUGIUvBkGmbZNRXys/2AEz9VXJgCTbf05dQ==",
-      "path": "sharphook/5.2.1",
-      "hashPath": "sharphook.5.2.1.nupkg.sha512"
+      "sha512": "sha512-3WIKP6gtUp7EF/5fWz347tgnlb2WOQNggrKtTyQrjhZLchvWqXDQEkw10Trf3RqPh9wk+O4PTVF1Z+qqTiWc9Q==",
+      "path": "sharphook/5.3.0",
+      "hashPath": "sharphook.5.3.0.nupkg.sha512"
     }
   }
 }
