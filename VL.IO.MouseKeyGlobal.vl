@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.0-0179-g427422701e" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2024.6.0-0179-g427422701e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2024.6.0" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
@@ -3489,6 +3489,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.0" />
+  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.2" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>
