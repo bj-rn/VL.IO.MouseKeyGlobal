@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="BsBfK2HdkgsMmwWAuNM6rx" LanguageVersion="2023.5.3-0192-g8dd4ea9c96" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="BsBfK2HdkgsMmwWAuNM6rx" LanguageVersion="2024.6.0" Version="0.128">
   <Patch Id="Mo4NZ6ZPidaOcfPactohD8">
     <Canvas Id="J4NY6b2M4ufN7iuARolYcr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -101,58 +101,6 @@
             <Pin Id="Mcc9odMWfHsL2a8hHCIVeu" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="SwjjVuLzDyFNVBfsKAQV6M" Comment="Stroke" Bounds="241,226,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="345,676,45,26" Id="UeSBhitvfILNveIAfxoj76">
-            <p:NodeReference LastCategoryFullName="Collections.HashSet" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Count" />
-              <CategoryReference Kind="RecordType" Name="HashSet" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="OJefY7zgvNUPCjAfteBUfh" Name="Input" Kind="StateInputPin" />
-            <Pin Id="UIDGZ2eM6iiOVNdvD2KAP8" Name="Output" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="CHsSouQa3YuPlUzyzM8FDh" Name="Count" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="345,720,27,19" Id="QdoA85ru6d3Liv96STflQO">
-            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="!=" />
-            </p:NodeReference>
-            <Pin Id="M77bWmNLXmGQDbMqJsNF0X" Name="Input" Kind="InputPin" />
-            <Pin Id="SQ7aA6i64eUQAXHf8oG76O" Name="Input 2" Kind="InputPin" />
-            <Pin Id="GrNEEtu0XBOQKoOHm5kMK8" Name="Result" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="345,763,56,19" Id="NwrffQsYe4FPU138vCNAEh">
-            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-            </p:NodeReference>
-            <Pin Id="V46pR2Km6o8MXDWqvWPNpe" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GcCpkbKLWjUNW6pa77o9ve" Name="Value" Kind="InputPin" />
-            <Pin Id="IzEof1VpAhdNhiwnNUKVKD" Name="Up Edge" Kind="OutputPin" />
-            <Pin Id="V2dODnBGw0xLlliqiO4tUd" Name="Down Edge" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="294,824,107,19" Id="Ejybdf96atTLfaipJJI8Ov">
-            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Counter" />
-            </p:NodeReference>
-            <Pin Id="Q86iJjLHr62QEAbJXzmlIN" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NOQn12MCbEuNW09aEANANq" Name="Increment" Kind="InputPin" />
-            <Pin Id="BRb6sKL6YFMLw0BwGm7AwH" Name="Default" Kind="InputPin" />
-            <Pin Id="N05rtYYMtCzNfioArICMUo" Name="Up" Kind="ApplyPin" />
-            <Pin Id="T7QadJkBI0xLuguh0NjAC6" Name="Down" Kind="ApplyPin" />
-            <Pin Id="IIu4IwaKEYTNKeTFsvykqp" Name="Reset" Kind="ApplyPin" />
-            <Pin Id="B2G68LGqv5GLuGG1j4xb9X" Name="Value" Kind="OutputPin" />
-          </Node>
-          <Pad Id="UaTO8ltbyZUPITRDUYpUzH" Comment="" Bounds="296,869,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IZpoLbtCTcTL2Zbm4FV8Nu" Comment="Reset" Bounds="398,793,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -292,12 +240,6 @@
         <Link Id="BYrurxhldqmQQRWhSpMVz3" Ids="TiZlZa4Jxb6O6IfHQyr7qJ,RMQ2OvR22zSQaX490B8XyR" />
         <Link Id="LaMhw1HlWTqL7YB5mG9Tfd" Ids="Mcc9odMWfHsL2a8hHCIVeu,OaKzh23LckGPV0RrU1CbKK" />
         <Link Id="ASs2vulZthHM4MeATdnBgb" Ids="SwjjVuLzDyFNVBfsKAQV6M,DIdLfOqHOZfO8jZrMr1Zhv" />
-        <Link Id="EsCelDSWDQILndunOz6Itx" Ids="JEtF2KFMJ7kQDPDSw0sk4F,OJefY7zgvNUPCjAfteBUfh" />
-        <Link Id="HfY6Ck8dzTFMbHwDO3V8b3" Ids="CHsSouQa3YuPlUzyzM8FDh,M77bWmNLXmGQDbMqJsNF0X" />
-        <Link Id="DtolX92N0w9OqwCXk8HR1p" Ids="GrNEEtu0XBOQKoOHm5kMK8,GcCpkbKLWjUNW6pa77o9ve" />
-        <Link Id="BKszCle5ZJ8PbKYYmkJMyF" Ids="IzEof1VpAhdNhiwnNUKVKD,N05rtYYMtCzNfioArICMUo" />
-        <Link Id="RJqNvk41XqrL5iLhFTmFCk" Ids="B2G68LGqv5GLuGG1j4xb9X,UaTO8ltbyZUPITRDUYpUzH" />
-        <Link Id="FGskCKeDwe1QbxuFsiJ54a" Ids="IZpoLbtCTcTL2Zbm4FV8Nu,IIu4IwaKEYTNKeTFsvykqp" />
         <Link Id="G1kU6ZtIeUGPxFkvuDCxuH" Ids="SvMR4A35JYoLdWuBitbviI,AtJWIkMILdXOolpwWEKATs" />
         <Link Id="OaQcOZYKyk4PdlxNteLQDx" Ids="UtYWb10IhbXNldrDlaZZn7,AVIhWtwcYrFLzb6aYRSr7W" />
         <Link Id="D3PHM4N6qluPw4xPdUyJVF" Ids="KUGwkl7m1GfLcLAvCRnbNu,PKtIJtfyVxTNT1emuWT9vY" />
@@ -308,6 +250,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2023.5.3-0192-g8dd4ea9c96" />
+  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2024.6.0" />
   <DocumentDependency Id="UKC3jgKgCejOotiKo3kBaS" Location="../VL.IO.MouseKeyGlobal.vl" />
 </Document>
