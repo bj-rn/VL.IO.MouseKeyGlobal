@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.3" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" Version="2024.6.3" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
@@ -2763,17 +2763,17 @@
               <Pin Id="PQa8mpEKSG4LAxKf6sEthY" Name="Input 2" Kind="InputPin" />
               <Pin Id="UXdo8EYWoWHPT1NikLlx44" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="96,308,326,127" Id="IYL93V8R2KtNwAJJOkIGlo">
+            <Node Bounds="96,308,326,128" Id="IYL93V8R2KtNwAJJOkIGlo">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
-              <ControlPoint Id="UEb2heLEAJDO9PrMCvuTFy" Bounds="326,315" Name="MouseNotification" Alignment="Top" />
-              <ControlPoint Id="NKVeFCxiJVOPjJbT1jGkPG" Bounds="236,315" Name="Position" Alignment="Top" />
+              <ControlPoint Id="UEb2heLEAJDO9PrMCvuTFy" Bounds="326,314" Name="MouseNotification" Alignment="Top" />
+              <ControlPoint Id="NKVeFCxiJVOPjJbT1jGkPG" Bounds="236,314" Name="Position" Alignment="Top" />
               <ControlPoint Id="JpS9QtlGl8vNhtQxno6E3o" Bounds="233,430" Name="Position" Alignment="Bottom" />
               <Pin Id="UfH4f9oMe8MPuXtiI7bi8D" Name="Break" Kind="OutputPin" />
               <ControlPoint Id="GQroKMpyyWmPS7Wy36PwFq" Bounds="112,430" Name="Sender" Alignment="Bottom" />
-              <ControlPoint Id="BxRpbymJxaZNz5IKirDWcd" Bounds="110,315" Name="Sender" Alignment="Top" />
+              <ControlPoint Id="BxRpbymJxaZNz5IKirDWcd" Bounds="110,314" Name="Sender" Alignment="Top" />
               <Patch Id="Jb1LDoh9Qv8NraEpiD28MT">
                 <Patch Id="Pec4rCLrvbxNBJzmkwroN6" Name="Create" IsGeneric="true" />
                 <Patch Id="EITu2L2zCR2QNlTO1E04K0" Name="Update" IsGeneric="true" />
@@ -2800,13 +2800,13 @@
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="678,308,330,234" Id="Ve06ZOTdOqfPzCUlLQE9g1">
+            <Node Bounds="678,308,330,235" Id="Ve06ZOTdOqfPzCUlLQE9g1">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
-              <ControlPoint Id="FwtyinOEdKDPDqOaJm0QcK" Bounds="693,315" Name="Buttons" Alignment="Top" />
-              <ControlPoint Id="DdTFUpeyB4KP11vQUktTp2" Bounds="755,315" Name="MouseButtonNotification" Alignment="Top" />
+              <ControlPoint Id="FwtyinOEdKDPDqOaJm0QcK" Bounds="693,314" Name="Buttons" Alignment="Top" />
+              <ControlPoint Id="DdTFUpeyB4KP11vQUktTp2" Bounds="755,314" Name="MouseButtonNotification" Alignment="Top" />
               <ControlPoint Id="RL0GDBGgSlMLHWWMx5L69w" Bounds="692,537" Name="Buttons" Alignment="Bottom" />
               <Pin Id="Hzd4wbtLu71LEaGO01Ly4L" Name="Break" Kind="OutputPin" />
               <Patch Id="ASlkfWmoTDmO6f6b05NODz">
@@ -2910,7 +2910,7 @@
               <Pin Id="HxfCgk5YG1ROrZVostsZF8" Name="Apply" Kind="InputPin" />
               <Pin Id="M0KwfWHG8ZKNt3l800rWBh" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="1105,308,96,71" Id="STpdkjUi7EUPCChKbigWpA">
+            <Node Bounds="1104,308,96,70" Id="STpdkjUi7EUPCChKbigWpA">
               <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationCallFlag" Name="Any (Predicate)" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
@@ -2923,7 +2923,7 @@
                 <Pin Id="N1KS44SXVGfP2Ed4XwUJTd" Name="Result" Kind="OutputPin" />
                 <ControlPoint Id="N6yt0lsY6jLP4bcYhuSXGg" Bounds="1118,316" />
                 <ControlPoint Id="Eekj0bNa3RmPirSXape4NW" Bounds="1119,370" />
-                <Node Bounds="1117,332,72,26" Id="E73s79SHC6kO60TrnwrXSc">
+                <Node Bounds="1116,332,72,26" Id="E73s79SHC6kO60TrnwrXSc">
                   <p:NodeReference LastCategoryFullName="IO.Notifications" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsMouseLost" />
@@ -3489,6 +3489,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.2" />
+  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.4" />
   <PlatformDependency Id="BUP1D0KK4BUOoAqsCAJN8N" Location="./lib/netstandard2.0/MouseKeyGlobal.dll" />
 </Document>
