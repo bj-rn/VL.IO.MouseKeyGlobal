@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.IO.MouseKeyGlobal</id>
-    <version>5.3.4</version>
+    <version>5.3.5</version>
     <title>VL.IO.MouseKeyGlobal</title>
     <authors>bj-rn</authors>
     <owners>bj-rn</owners>
@@ -15,11 +15,11 @@
     <copyright>Copyright © 2024 bj-rn</copyright>
     <tags>VL, vvvv, globalhook, global, hook, mouse, keyboard, screeninfo</tags>
     <dependencies>
-      <dependency id="SharpHook" version="5.3.4" />
+      <dependency id="SharpHook" version="5.3.5" />
     </dependencies>
   </metadata>
    <files>
-    <file src="..\lib\netstandard2.0\MouseKeyGlobal.dll" target="lib\netstandard2.0" />
+    <file src="..\lib\net8.0\MouseKeyGlobal.dll" target="lib\net8.0" />
     <file src="..\*.vl"/>
     <file src="..\help\*.vl" target="help"/>
     <file src="..\README.md" />
