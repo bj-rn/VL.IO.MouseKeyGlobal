@@ -72,7 +72,7 @@
               <p:stepsize p:Type="Single">1</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="311,560,240,19" Id="QGrJCNJyJ0kMzhAkvy1rkV">
+          <Node Bounds="551,560,240,19" Id="QGrJCNJyJ0kMzhAkvy1rkV">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointerInfo" />
@@ -85,10 +85,10 @@
             <Pin Id="RxFABv0X0SvNotSFOAMGBy" Name="Pointer Sensitivity" Kind="OutputPin" />
             <Pin Id="LaNvQB2beHzQMtZABlX2yS" Name="MultiClick Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="JI74JoYarsAO6KZefDybjs" Comment="Pointer Acceleration Multiplier" Bounds="313,670,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RdaEaLaB0sbO8jrfeIUNkx" Comment="Pointer Acceleration Threshold" Bounds="392,647,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IK6r0QODqqsNomIH1ORqRz" Comment="Pointer Sensitivity" Bounds="470,625,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EXnHbjVtGrDNWqnqvLpLd9" Comment="MultiClick Time" Bounds="548,604,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JI74JoYarsAO6KZefDybjs" Comment="Pointer Acceleration Multiplier" Bounds="553,670,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RdaEaLaB0sbO8jrfeIUNkx" Comment="Pointer Acceleration Threshold" Bounds="632,647,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IK6r0QODqqsNomIH1ORqRz" Comment="Pointer Sensitivity" Bounds="710,625,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EXnHbjVtGrDNWqnqvLpLd9" Comment="MultiClick Time" Bounds="788,604,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="111,859,59,19" Id="JuiJjPrROKUP2yOVmpFPrU">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -110,7 +110,7 @@
             <Pin Id="I66mzVOzY3uNIInIcUszFu" Name="Pressed Keys" Kind="OutputPin" />
           </Node>
           <Pad Id="K3Qdq3FgWOVQOD0o6GHrDp" Comment="" Bounds="113,986,61,88" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="312,859,77,19" Id="IUXOSd8JKHUNeHfbXfoIER">
+          <Node Bounds="552,859,77,19" Id="IUXOSd8JKHUNeHfbXfoIER">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardInfo" />
@@ -121,8 +121,8 @@
             <Pin Id="RYPD27o0L0BQSJmRcJM0G7" Name="Keyboard Auto Repeat Rate" Kind="OutputPin" />
             <Pin Id="E0UqBFG02xxLjnLs0HalSV" Name="Keyboard Auto Repeat Delay" Kind="OutputPin" />
           </Node>
-          <Pad Id="UoqLdnbZhMXLyYfdyQdx9a" Comment="Keyboard Auto Repeat Rate" Bounds="314,939,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BtngQWZHNrSMHqU7YA4iof" Comment="Keyboard Auto Repeat Delay" Bounds="386,911,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UoqLdnbZhMXLyYfdyQdx9a" Comment="Keyboard Auto Repeat Rate" Bounds="554,939,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BtngQWZHNrSMHqU7YA4iof" Comment="Keyboard Auto Repeat Delay" Bounds="626,911,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Tn3KMnUcz9xQOI9JkK6Zbj" Bounds="24,823,35,54" ShowValueBox="true" isIOBox="true" Value="+  ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -161,7 +161,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SDvkrD3wo3LM8gaQt6EWX1" Bounds="101,113,507,33" ShowValueBox="true" isIOBox="true" Value="https://sharphook.tolik.io/v5.3.4">
+          <Pad Id="SDvkrD3wo3LM8gaQt6EWX1" Bounds="101,113,507,33" ShowValueBox="true" isIOBox="true" Value="https://sharphook.tolik.io/v5.3.5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -170,7 +170,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="1091,859,105,19" Id="KL1s5hJJ0EcOElWX0w8psi">
+          <Node Bounds="1211,859,105,19" Id="KL1s5hJJ0EcOElWX0w8psi">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator (Spread)" />
@@ -181,7 +181,7 @@
             <Pin Id="Q3Hd0YZDe5IMEjbKMZAHeA" Name="Simulate" Kind="InputPin" />
             <Pin Id="DmjpryKQkCYMQW7WVE2LFG" Name="Enable" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="1191,828,65,19" Id="SNnC7viAnTQLrm21YRJCOv">
+          <Node Bounds="1311,828,65,19" Id="SNnC7viAnTQLrm21YRJCOv">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromValue" />
@@ -190,7 +190,7 @@
             <Pin Id="PKtIJtfyVxTNT1emuWT9vY" Name="Input" Kind="InputPin" />
             <Pin Id="LAIBSU2WueZOpdGbjPqD1Y" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="TtSS9bNx9hrNJf5uYVBqcr" Comment="" Bounds="1193,791,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TtSS9bNx9hrNJf5uYVBqcr" Comment="" Bounds="1313,791,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -199,7 +199,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="893,859,102,19" Id="FTpiIE5uPSVM9OPo5pkuhX">
+          <Node Bounds="1013,859,102,19" Id="FTpiIE5uPSVM9OPo5pkuhX">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator" />
@@ -210,12 +210,12 @@
             <Pin Id="OaKzh23LckGPV0RrU1CbKK" Name="Simulate" Kind="InputPin" />
             <Pin Id="AEYMXnO4zKKQB1ujM78jph" Name="Enable" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="LbLWZ00B6zTNgKHtjK9IAS" Comment="Key Code" Bounds="895,777,119,15" ShowValueBox="true" isIOBox="true" Value="V">
-            <p:TypeAnnotation LastCategoryFullName="VL.IO.MouseKeyGlobal" LastDependency="MouseKeyGlobal.dll">
+          <Pad Id="LbLWZ00B6zTNgKHtjK9IAS" Comment="Key Code" Bounds="1015,777,119,15" ShowValueBox="true" isIOBox="true" Value="V">
+            <p:TypeAnnotation LastCategoryFullName="IO.Keyboard" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Keys" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TiZlZa4Jxb6O6IfHQyr7qJ" Comment="" Bounds="992,812,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TiZlZa4Jxb6O6IfHQyr7qJ" Comment="" Bounds="1112,812,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -224,7 +224,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="892,560,125,19" Id="AV1PawheERAL1QgKgoAl3w">
+          <Node Bounds="1012,560,125,19" Id="AV1PawheERAL1QgKgoAl3w">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MouseSimulator" />
@@ -238,7 +238,7 @@
             <Pin Id="UPxzZsEakphL3qXIpey9t1" Name="Rotation" Kind="InputPin" />
             <Pin Id="CKXrZlIjJjgO9orJ8AI02H" Name="Direction" Kind="InputPin" />
           </Node>
-          <Pad Id="NJrwD3ZmcGeM9VTmypLdUI" Comment="Movement" Bounds="918,507,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NJrwD3ZmcGeM9VTmypLdUI" Comment="Movement" Bounds="1038,507,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -247,12 +247,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IVbXOayekDTQXH8xDcRlAd" Comment="Coordinates" Bounds="894,468,83,28" ShowValueBox="true" isIOBox="true" Value="1280, 720">
+          <Pad Id="IVbXOayekDTQXH8xDcRlAd" Comment="Coordinates" Bounds="1014,468,83,28" ShowValueBox="true" isIOBox="true" Value="1280, 720">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Int2" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1335,859,102,19" Id="HIlTuV2N0dfLSzEX20jU1s">
+          <Node Bounds="1455,859,102,19" Id="HIlTuV2N0dfLSzEX20jU1s">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KeyboardSimulator (TextEntry)" />
@@ -263,12 +263,12 @@
             <Pin Id="N1NsaVoq0OLO9wAnnmUNvV" Name="Simulate" Kind="InputPin" />
             <Pin Id="NgKrKUHsemPLEad8e8hy0o" Name="Enable" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="VGJwEVJ8U5eL7Z4TzVhuVn" Comment="Text" Bounds="1337,777,151,16" ShowValueBox="true" isIOBox="true" Value="everything you know is wrong">
+          <Pad Id="VGJwEVJ8U5eL7Z4TzVhuVn" Comment="Text" Bounds="1457,777,151,16" ShowValueBox="true" isIOBox="true" Value="everything you know is wrong">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="D5l4TJSjtk6MqOz3WGzYCe" Comment="" Bounds="1434,812,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="D5l4TJSjtk6MqOz3WGzYCe" Comment="" Bounds="1554,812,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -276,7 +276,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="315,250,437,19" Id="ErkaTpV6U9WQDRj2bCDA7G">
+          <Node Bounds="540,250,437,19" Id="ErkaTpV6U9WQDRj2bCDA7G">
             <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ScreenInfo" />
@@ -289,7 +289,7 @@
             <Pin Id="RPFJzjdZ4nKP0eATaNvEm5" Name="Resolution" Kind="OutputPin" />
             <Pin Id="KDbcfCU9xwNN0IMnLWq489" Name="Position" Kind="OutputPin" />
           </Node>
-          <Pad Id="JfUD4jJVuCJQIUPD8eSAN4" Comment="Refresh" Bounds="317,206,38,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="JfUD4jJVuCJQIUPD8eSAN4" Comment="Refresh" Bounds="542,206,38,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -297,17 +297,47 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LQCI1BGaduFPkrgMTfnL3u" Comment="Number" Bounds="317,300,35,49" ShowValueBox="true" isIOBox="true" Value="0" />
-          <Pad Id="Lg72FXEcq5XMutnWU9Bvkk" Comment="Is Primary" Bounds="461,300,35,49" ShowValueBox="true" isIOBox="true" Value="False" />
-          <Pad Id="RFx60s9UD8LM6nd2mkdLxo" Comment="Resolution" Bounds="605,297,70,49" ShowValueBox="true" isIOBox="true">
+          <Pad Id="LQCI1BGaduFPkrgMTfnL3u" Comment="Number" Bounds="542,300,35,49" ShowValueBox="true" isIOBox="true" Value="0" />
+          <Pad Id="Lg72FXEcq5XMutnWU9Bvkk" Comment="Is Primary" Bounds="686,300,35,49" ShowValueBox="true" isIOBox="true" Value="False" />
+          <Pad Id="RFx60s9UD8LM6nd2mkdLxo" Comment="Resolution" Bounds="830,297,70,49" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>0, 0</Item>
             </p:Value>
           </Pad>
-          <Pad Id="IiJtRKHqMesNTYp0c6hRFG" Comment="Position" Bounds="749,296,95,49" ShowValueBox="true" isIOBox="true">
+          <Pad Id="IiJtRKHqMesNTYp0c6hRFG" Comment="Position" Bounds="974,296,95,49" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>0, 0</Item>
             </p:Value>
+          </Pad>
+          <Node Bounds="229,912,165,19" Id="DxNWyEDsahZQUFI6O4cXxK">
+            <p:NodeReference LastCategoryFullName="Text" LastDependency="VL.IO.MouseKeyGlobal.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TypeWriter" />
+              <PinReference Kind="InputPin" Name="Key Notifications" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="OsolCC9roaiOoCHPJFGWtN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FFFDtXdjpARMekbLAQXWr0" Name="Key Notifications" Kind="InputPin" />
+            <Pin Id="NWwpPfnsnmGPy8abJIvGrf" Name="Initial Text" Kind="InputPin" />
+            <Pin Id="UYSZP6SSCC3LZxk1w1amMN" Name="Multiline" Kind="InputPin" />
+            <Pin Id="Jx70Hm1S1bjMq4GaHJrxJW" Name="Max Length" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Vq2k84uJ9oKPRecw8AMxsy" Name="Char Filter" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DxJsFjrbBOlLsKMEEjVhBE" Name="Enable Char Filter" Kind="InputPin" IsHidden="true" />
+            <Pin Id="UWIu8c2RwqJNLQ3zxwRnAk" Name="Reset" Kind="InputPin" />
+            <Pin Id="TQQJ8ws9pRyMzYhPE8HMxH" Name="State" Kind="OutputPin" />
+            <Pin Id="OoMXGp4H7qDLCPlKrz1k0R" Name="Text" Kind="OutputPin" />
+            <Pin Id="VN9p28r3u6FOx2l15dhmKb" Name="Length" Kind="OutputPin" />
+            <Pin Id="PF70KF16lFhN8910oEVTC6" Name="Position" Kind="OutputPin" />
+            <Pin Id="EBsd9Lm4q0MMItD9FkW6CZ" Name="Cursor" Kind="OutputPin" />
+            <Pin Id="UfycQfHRZUCOLncuUCI6Gz" Name="Line" Kind="OutputPin" />
+            <Pin Id="FKOJMcIds51PJNIJKS7V5y" Name="Selected Text" Kind="OutputPin" />
+            <Pin Id="CjkYn7xYmg4M3K4okzX3bP" Name="Selection" Kind="OutputPin" />
+            <Pin Id="Gr524PXhxEDM7SloKnN7Ci" Name="Text Raw" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HkgGw7lt21POFnAGb1yuKJ" Comment="Text" Bounds="250,1016,209,30" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:shownonprintablechars p:Type="Boolean">true</p:shownonprintablechars>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="SFZEU1fy3LBNVUUuGddQnc" Name="Create" />
@@ -344,6 +374,8 @@
         <Link Id="CvcUennvsg8MHWgFgG0OcA" Ids="QZOT6xlJ33vLkBHtPnIz5G,Lg72FXEcq5XMutnWU9Bvkk" />
         <Link Id="JYZAVRt8cPtLWSZqht9j8s" Ids="RPFJzjdZ4nKP0eATaNvEm5,RFx60s9UD8LM6nd2mkdLxo" />
         <Link Id="AnGIqZoPlyuL0aGqI41DhV" Ids="KDbcfCU9xwNN0IMnLWq489,IiJtRKHqMesNTYp0c6hRFG" />
+        <Link Id="KodlXNbSwoVMDyKRiTtb2e" Ids="H2jESK56OZDQRiigrmhMXB,FFFDtXdjpARMekbLAQXWr0" />
+        <Link Id="ISUiiAMix3FOZGVXmmDWtU" Ids="OoMXGp4H7qDLCPlKrz1k0R,HkgGw7lt21POFnAGb1yuKJ" />
       </Patch>
     </Node>
   </Patch>

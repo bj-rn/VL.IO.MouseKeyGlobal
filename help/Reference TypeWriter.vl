@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="TGg45vPo87BPufuX3vgyMe" LanguageVersion="2024.6.3" Version="0.128">
+  <Patch Id="Mo4NZ6ZPidaOcfPactohD8">
+    <Canvas Id="J4NY6b2M4ufN7iuARolYcr" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Fshy4mFWowkLPGUC8sl5yh">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DgTzMmKgL82M4sfsrg9ZCr">
+        <Canvas Id="JGZ5DKAJFnLNGRIJoXLBDG" CanvasType="Group">
+          <Node Bounds="202,109,59,19" Id="JuiJjPrROKUP2yOVmpFPrU">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Keyboard" />
+              <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="I3AVnGf6QBsMF9un1Xm3t2" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="H2jESK56OZDQRiigrmhMXB" Name="Key Notifications" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="84,195,81,19" Id="BLvp06RYmZNQUhDyn64CYA">
+            <p:NodeReference LastCategoryFullName="IO.Global" LastDependency="VL.IO.MouseKeyGlobal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="KeyboardState" />
+              <CategoryReference Kind="Category" Name="Global" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="RBX4yTx6CgiL4annzFyOif" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RToU4kiakQMOfeA8kinT7U" Name="Keyboard Notifications" Kind="InputPin" />
+            <Pin Id="I66mzVOzY3uNIInIcUszFu" Name="Pressed Keys" Kind="OutputPin" />
+          </Node>
+          <Pad Id="K3Qdq3FgWOVQOD0o6GHrDp" Comment="" Bounds="86,270,61,88" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="202,196,165,19" Id="DxNWyEDsahZQUFI6O4cXxK">
+            <p:NodeReference LastCategoryFullName="Text" LastDependency="VL.IO.MouseKeyGlobal.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TypeWriter" />
+              <PinReference Kind="InputPin" Name="Key Notifications" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="OsolCC9roaiOoCHPJFGWtN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FFFDtXdjpARMekbLAQXWr0" Name="Key Notifications" Kind="InputPin" />
+            <Pin Id="NWwpPfnsnmGPy8abJIvGrf" Name="Initial Text" Kind="InputPin" />
+            <Pin Id="UYSZP6SSCC3LZxk1w1amMN" Name="Multiline" Kind="InputPin" />
+            <Pin Id="Jx70Hm1S1bjMq4GaHJrxJW" Name="Max Length" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Vq2k84uJ9oKPRecw8AMxsy" Name="Char Filter" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DxJsFjrbBOlLsKMEEjVhBE" Name="Enable Char Filter" Kind="InputPin" IsHidden="true" />
+            <Pin Id="UWIu8c2RwqJNLQ3zxwRnAk" Name="Reset" Kind="InputPin" />
+            <Pin Id="TQQJ8ws9pRyMzYhPE8HMxH" Name="State" Kind="OutputPin" />
+            <Pin Id="OoMXGp4H7qDLCPlKrz1k0R" Name="Text" Kind="OutputPin" />
+            <Pin Id="VN9p28r3u6FOx2l15dhmKb" Name="Length" Kind="OutputPin" />
+            <Pin Id="PF70KF16lFhN8910oEVTC6" Name="Position" Kind="OutputPin" />
+            <Pin Id="EBsd9Lm4q0MMItD9FkW6CZ" Name="Cursor" Kind="OutputPin" />
+            <Pin Id="UfycQfHRZUCOLncuUCI6Gz" Name="Line" Kind="OutputPin" />
+            <Pin Id="FKOJMcIds51PJNIJKS7V5y" Name="Selected Text" Kind="OutputPin" />
+            <Pin Id="CjkYn7xYmg4M3K4okzX3bP" Name="Selection" Kind="OutputPin" />
+            <Pin Id="Gr524PXhxEDM7SloKnN7Ci" Name="Text Raw" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EhqSW9uOomjNwfatP7YriT" Comment="Text" Bounds="223,288,184,65" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S4D6748mxuUP128zPHjGzo" Comment="Initial Text" Bounds="257,169,35,15" ShowValueBox="true" isIOBox="true" Value="Hello">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="SFZEU1fy3LBNVUUuGddQnc" Name="Create" />
+        <Patch Id="NvxwvJDMeBiLrAaO8Pro1d" Name="Update" />
+        <ProcessDefinition Id="FQQE8uH6FBaPRB30SwSX65">
+          <Fragment Id="NxJxotfQu6vLH5VB7a8oMK" Patch="SFZEU1fy3LBNVUUuGddQnc" Enabled="true" />
+          <Fragment Id="IXMRHNzsNwKLtTx09Rw70h" Patch="NvxwvJDMeBiLrAaO8Pro1d" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="DxdP1ym4GtsNcLVyhFnWcW" Ids="I66mzVOzY3uNIInIcUszFu,K3Qdq3FgWOVQOD0o6GHrDp" />
+        <Link Id="FUDTDgu9C1wODXayubaXTb" Ids="H2jESK56OZDQRiigrmhMXB,RToU4kiakQMOfeA8kinT7U" />
+        <Link Id="KodlXNbSwoVMDyKRiTtb2e" Ids="H2jESK56OZDQRiigrmhMXB,FFFDtXdjpARMekbLAQXWr0" />
+        <Link Id="QR4MUCu9m5pP1dgfhelFib" Ids="OoMXGp4H7qDLCPlKrz1k0R,EhqSW9uOomjNwfatP7YriT" />
+        <Link Id="Mp5BVfslqVUOnIvPowsy1y" Ids="S4D6748mxuUP128zPHjGzo,NWwpPfnsnmGPy8abJIvGrf" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="NEkjZEyzmDqMWvsceupkPM" Location="VL.CoreLib" Version="2024.6.3" />
+  <DocumentDependency Id="UKC3jgKgCejOotiKo3kBaS" Location="../VL.IO.MouseKeyGlobal.vl" />
+</Document>
