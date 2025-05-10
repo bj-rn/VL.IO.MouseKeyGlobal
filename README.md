@@ -13,6 +13,9 @@ In order to use this library with VL you have to install the nuget that is avail
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
 
+---
 ### License
 
 ### [MIT](https://github.com/bj-rn/VL.IO.MouseKeyGlobal/blob/master/LICENSE)
+---
+[Support me on Ko-fi](https://ko-fi.com/Q5Q61EQB8X)
