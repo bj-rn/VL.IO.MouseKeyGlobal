@@ -1,9 +1,6 @@
-﻿using System;
-using Keys = VL.Lib.IO.Keys;
-using MouseButtons = VL.Lib.IO.MouseButtons;
-using MouseButton = SharpHook.Native.MouseButton;
-using KeyCode = SharpHook.Native.KeyCode;
-using ModifierMask = SharpHook.Native.ModifierMask;
+﻿using VL.Lib.IO;
+using SharpHook.Data;
+using ModifierMask = SharpHook.Data.EventMask;
 
 namespace VL.IO.MouseKeyGlobal
 {
@@ -68,7 +65,7 @@ namespace VL.IO.MouseKeyGlobal
         }
 
         // https://github.com/kwhat/libuiohook/blob/1.2/include/uiohook.h
-        // https://sharphook.tolik.io/v5.0.0/articles/keycodes.html
+        // https://sharphook.tolik.io/articles/keycodes.html
         // https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
         // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-7.0
 
@@ -495,7 +492,7 @@ namespace VL.IO.MouseKeyGlobal
                 case KeyCode.VcUnderscore:
                     return Keys.NoName; 
 
-                case KeyCode.VcKanji:
+                case KeyCode.VcHanja:
                     return Keys.KanjiMode; 
 
                 case KeyCode.VcUndefined: // KeyCode Unknown
@@ -916,7 +913,7 @@ namespace VL.IO.MouseKeyGlobal
                     return KeyCode.VcKana;
 
                 case Keys.KanjiMode:
-                    return KeyCode.VcKanji;
+                    return KeyCode.VcHanja;
 
                 case Keys.NoName:
                     return KeyCode.VcUndefined;

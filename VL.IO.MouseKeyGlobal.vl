@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2024.6.3" Version="0.128">
-  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" IsFriend="true" Version="2024.6.3" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FmkSByyTCf4NcTsEy73nVw" LanguageVersion="2025.7.1-0154-ge6c16c963d" Version="0.128">
+  <NugetDependency Id="K5XoaW1zVCHNdod7tyzYtA" Location="VL.CoreLib" IsFriend="true" Version="2025.7.1-0154-ge6c16c963d" />
   <Patch Id="NwCNRBMg3xuORFcrl0som5">
     <Canvas Id="SN5rjylKtOoP6jnSWYhcxL" DefaultCategory="IO.Global" CanvasType="FullCategory">
       <!--
@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="Qe6b6vtCKA5LDDIbObKnVc">
           <Canvas Id="G8jXZgNfKGbLwPG3aFh0Ew" CanvasType="Group">
-            <Node Bounds="129,90,353,241" Id="JG97m5iRi20LhlBK8rZ7J4">
+            <Node Bounds="129,112,325,246" Id="JG97m5iRi20LhlBK8rZ7J4">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="OperationCallFlag" Name="SingleInstance" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -24,9 +24,13 @@
               <Pin Id="LL4KsC3EorpPejtGNt2OQt" Name="On Stop" Kind="InputPin" DefaultValue="ReleaseAndDispose" />
               <Pin Id="B3o4KPciDQPOTdQq9UPUYH" Name="Singleton" Kind="OutputPin" />
               <Patch Id="TbfACbglCqcMJz10aqKOqE" Name="Producer" ManuallySortedPins="true">
-                <Pin Id="OSFTlfNitk6Ogpwe2yMvmU" Name="Result" Kind="OutputPin" />
-                <ControlPoint Id="DUQLPuJNXqcOxrgluSYbi7" Bounds="145,324" />
-                <Pad Id="RB9XEdYTwwnPeUCjQb1Faf" Comment="Parallelism Level" Bounds="145,118,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+                <Pin Id="OSFTlfNitk6Ogpwe2yMvmU" Name="Result" Kind="OutputPin">
+                  <p:TypeAnnotation LastCategoryFullName="SharpHook" LastDependency="SharpHook.dll">
+                    <Choice Kind="TypeFlag" Name="IGlobalHook" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <ControlPoint Id="DUQLPuJNXqcOxrgluSYbi7" Bounds="145,351" />
+                <Pad Id="RB9XEdYTwwnPeUCjQb1Faf" Comment="Parallelism Level" Bounds="145,140,35,15" ShowValueBox="true" isIOBox="true" Value="4">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
@@ -39,32 +43,23 @@
                     <Choice Kind="OperationCallFlag" Name="Create" />
                     <PinReference Kind="InputPin" Name="Options" />
                   </p:NodeReference>
-                  <Pin Id="Gui1w8xEr4eLXNhSjrFT2z" Name="Options" Kind="InputPin" />
+                  <Pin Id="GkvdIoy19WNLH32uBNGT31" Name="Parallelism Level" Kind="InputPin" />
+                  <Pin Id="JTFg4roxW3NQRSO14JduuT" Name="Global Hook Type" Kind="InputPin" />
+                  <Pin Id="BEYE7Z0hpwsNpYE7E3ES86" Name="Global Hook Provider" Kind="InputPin" />
+                  <Pin Id="D7fWRWux9B4NVYraeorPm7" Name="Run Async On Background Thread" Kind="InputPin" />
                   <Pin Id="EC6n3rNUrGdObCPteH1TSh" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="143,176,118,26" Id="Uuu6oFkrlm4LLx9BHcej7V">
-                  <p:NodeReference LastCategoryFullName="SharpHook.TaskPoolGlobalHookOptions" LastDependency="SharpHook.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Node Bounds="143,272,78,26" Id="NqGbH1RhYVoNmVkvjy1cyZ">
+                  <p:NodeReference LastCategoryFullName="SharpHook.IBasicGlobalHook" LastDependency="SharpHook.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="TaskPoolGlobalHookOptions" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <PinReference Kind="InputPin" Name="Parallelism Level" />
-                    <PinReference Kind="InputPin" Name="Run Async On Background Thread" />
-                  </p:NodeReference>
-                  <Pin Id="VMoui3whFbLPkAEZ0Pqsw7" Name="Parallelism Level" Kind="InputPin" />
-                  <Pin Id="FNv0QUKslcqOq12W6mibRm" Name="Run Async On Background Thread" Kind="InputPin" />
-                  <Pin Id="A6vMjZEH8wQOc4Fzmq3aJ6" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Node Bounds="143,272,74,26" Id="NqGbH1RhYVoNmVkvjy1cyZ">
-                  <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="IBasicGlobalHook" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="RunAsync" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IGlobalHook" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="EDHbyFFnETfNnyM6uW6aVJ" Name="Input" Kind="StateInputPin" />
                   <Pin Id="LYBLXFQ2t8aPCK5QSHLUTl" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="QfXg14hXRF1MMwemP08IMN" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Pad Id="JJ98fldezSjNtJHoRcjcRT" Comment="Run Async On Background Thread" Bounds="258,144,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                <Pad Id="JJ98fldezSjNtJHoRcjcRT" Comment="Run Async On Background Thread" Bounds="230,170,35,35" ShowValueBox="true" isIOBox="true" Value="True">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
                     <CategoryReference Kind="Category" Name="Primitive" />
@@ -73,10 +68,21 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
+                <Node Bounds="143,311,48,19" Id="Iv0vHSQDXUqOZ8Lo7UCkuq">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Object" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="CastAs" />
+                  </p:NodeReference>
+                  <Pin Id="IQUx4uPZfH2MxqVlzunCWl" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ax9uMiozQebMzHTtjviSed" Name="Default" Kind="InputPin" />
+                  <Pin Id="DL6p0r4ivIOLygRXvzBaGG" Name="Result" Kind="OutputPin" />
+                  <Pin Id="KE1a68deMRYLghYgLTfllP" Name="Success" Kind="OutputPin" />
+                </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="U0gmz8Oar2wLu8aMeSIzkz" Bounds="131,372" />
-            <Pad Id="VmysL4CkB3yLgiKfbZ45YX" Comment="On Stop" Bounds="479,85,117,15" ShowValueBox="true" isIOBox="true" Value="ReleaseAndDispose">
+            <ControlPoint Id="U0gmz8Oar2wLu8aMeSIzkz" Bounds="131,478" />
+            <Pad Id="VmysL4CkB3yLgiKfbZ45YX" Comment="On Stop" Bounds="451,71,119,15" ShowValueBox="true" isIOBox="true" Value="ReleaseAndDispose">
               <p:TypeAnnotation LastCategoryFullName="VL.Core" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="SingleInstanceBehaviorOnStop" />
               </p:TypeAnnotation>
@@ -91,14 +97,14 @@
             <Fragment Id="UrUghzQCw4vOIbAqxAUXSR" Patch="LvyNEMhJTqDNwXQ7yix2gi" Enabled="true" />
           </ProcessDefinition>
           <Link Id="S07AXrzfDnvQAMCJ51DEMd" Ids="DUQLPuJNXqcOxrgluSYbi7,OSFTlfNitk6Ogpwe2yMvmU" IsHidden="true" />
-          <Link Id="LYnILKKjfXxNdZOVSu3ei5" Ids="A6vMjZEH8wQOc4Fzmq3aJ6,Gui1w8xEr4eLXNhSjrFT2z" />
-          <Link Id="QWTDYzEYKrTND4SnjWmyp2" Ids="RB9XEdYTwwnPeUCjQb1Faf,VMoui3whFbLPkAEZ0Pqsw7" />
           <Link Id="EYL80AkSPy6OGMvVKV3g9N" Ids="EC6n3rNUrGdObCPteH1TSh,EDHbyFFnETfNnyM6uW6aVJ" />
-          <Link Id="E7cF3NuOJhbPCGVZAKbd4N" Ids="LYBLXFQ2t8aPCK5QSHLUTl,DUQLPuJNXqcOxrgluSYbi7" />
           <Link Id="Ov9XXRRKjL4PXljyobFyz9" Ids="B3o4KPciDQPOTdQq9UPUYH,U0gmz8Oar2wLu8aMeSIzkz" />
           <Link Id="U2vCLg8WQVmMbTbzdvpqPw" Ids="U0gmz8Oar2wLu8aMeSIzkz,G0uRD3TUJqKNUzoRXFnJwL" IsHidden="true" />
           <Link Id="UkweM54tbUTPyrNF9n8Lij" Ids="VmysL4CkB3yLgiKfbZ45YX,LL4KsC3EorpPejtGNt2OQt" />
-          <Link Id="K5gObXZDKT0Oz0jOrQqGVO" Ids="JJ98fldezSjNtJHoRcjcRT,FNv0QUKslcqOq12W6mibRm" />
+          <Link Id="UK8S9KivkdIPGTCFLkbjLG" Ids="JJ98fldezSjNtJHoRcjcRT,D7fWRWux9B4NVYraeorPm7" />
+          <Link Id="FvaEIgQMkZJNYlg1Gv7qJO" Ids="RB9XEdYTwwnPeUCjQb1Faf,GkvdIoy19WNLH32uBNGT31" />
+          <Link Id="E2hB06LP6ghQOmvk7XdNBV" Ids="LYBLXFQ2t8aPCK5QSHLUTl,IQUx4uPZfH2MxqVlzunCWl" />
+          <Link Id="Nxsbph0MF4kPGIsJdHJyw1" Ids="DL6p0r4ivIOLygRXvzBaGG,DUQLPuJNXqcOxrgluSYbi7" />
         </Patch>
       </Node>
       <!--
@@ -132,6 +138,7 @@
                 </Node>
               </Patch>
               <Pin Id="DpZD3dvsFYwP4PFTd3JdgM" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="SkLN35JqOK8Lg4mZSHKBdh" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="QhmuKCoJAcDPyGlRzyPrSV" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="180,103,75,19" Id="KUhxghDwnfYP0TWgbplOsH">
@@ -220,6 +227,7 @@
                 </Node>
               </Patch>
               <Pin Id="SbEDWpAD4wHLXSvndu605H" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="NflMLeeIQBtLos6yZ4uEG6" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="LMrAfHrGUS3M8pzzZEyKM8" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="168,99,75,19" Id="VtpzyRk7NDUNiMccdaMspc">
@@ -941,7 +949,7 @@
                 <Pin Id="Qzbqmpml0tBMmVBzgJJppq" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="OfuA0UBdQJ1OvlRRZrLJkW" Name="X" Kind="OutputPin" />
               </Node>
-              <Node Bounds="-1323,583,111,19" Id="Qg0f78GnONEPV7pFeGV8r7">
+              <Node Bounds="-1377,570,111,19" Id="Qg0f78GnONEPV7pFeGV8r7">
                 <p:NodeReference LastCategoryFullName="VL.IO.MouseKeyGlobal.MouseKeyGlobalHelper" LastDependency="MouseKeyGlobal.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="MouseKeyGlobal" />
@@ -1017,9 +1025,7 @@
           <Link Id="F8YwYgiHbUVNhYEMLGLOeU" Ids="O80ClksHVr6QV5hhDedRAW,BkpEaq3DVJnLymVJQ4rKiR" />
           <Link Id="QpJCBxEWR27QESDfqMJ4HZ" Ids="LfEmwLi3IpzPIzmqqJlOq1,FudBoJcpzCmOMrxV8PpYtZ" />
           <Link Id="R2yaFJWJQ07MfVUpIFB4ym" Ids="UpTU6TB2SOXL3aCbwnU9nr,FclV6J7z7efNTSkq1sIYYE" />
-          <Link Id="HzhSjzBaT7PMFkN7lfCXcI" Ids="GVFsQlHim1YNSMs94GkpOq,KFJGQ3HH1x7OEuxRldbEi3" />
           <Link Id="VmJ9bucpIJEMi2Eni57sEJ" Ids="D5X1nKMoVm6PwcdUBedEb1,CGZlBwxbDJYLlZS0DP0Fed" />
-          <Link Id="Sdf3E1NRZ8yOPksAzl9Tty" Ids="PReqpK4EC5ZLixwi3J4gwd,F0wbWddiY9JQISXo73uYBG" />
           <Node Bounds="-954,177,100,26" Id="LGw2QkgZ9S6QZRQnTIxqTg">
             <p:NodeReference LastCategoryFullName="SharpHook.IGlobalHook" LastDependency="SharpHook.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1046,9 +1052,11 @@
           <Link Id="Ho24CDMNjqeNimgoM6TcVl" Ids="JxYHvOevzOrNTjOVqSXEfW,HsVy58uAKWsLGj494orjuH" />
           <Link Id="MQlOQpGuetUQGh7shAdRYX" Ids="FDPjF9Ppr5BNQxcUBor3V6,TFuv54LRZ5pPFdP5g5bDP6" />
           <Link Id="JCc9F9LElMjOf4daN7W6lJ" Ids="EBIyWCzvHVgLsKVqLAg9rO,HDmdvKhT41fOPp15LQlASa" />
-          <Link Id="LTyjat2hJaaNcZdgunBXG7" Ids="HTOGoqLNCuRO9nnBkGwMz7,EduO3Z3qUZwOVAxbUa33gn" />
           <Link Id="Mne6XW7XynaNW00frD36dh" Ids="UsasGBURoS6NuTG1QQhCwW,TUsBWw2IOUdNT6JYCG03Yq" />
           <Link Id="IVaowBNMtyhNUemOrhEWhg" Ids="JeTJeEieVd9LLoIGdWMhM5,CJCGo5jL9CkNwJyWdbVRrp" />
+          <Link Id="HpDrV6ySIEdO889MCTKiYc" Ids="PReqpK4EC5ZLixwi3J4gwd,F0wbWddiY9JQISXo73uYBG" />
+          <Link Id="HqpbaaAd5a8P049b3ZrO2k" Ids="GVFsQlHim1YNSMs94GkpOq,KFJGQ3HH1x7OEuxRldbEi3" />
+          <Link Id="P2NfMLd4c0PPvKeV1i7ZMX" Ids="HTOGoqLNCuRO9nnBkGwMz7,EduO3Z3qUZwOVAxbUa33gn" />
         </Patch>
       </Node>
       <!--
@@ -1509,6 +1517,7 @@
                 </Node>
               </Patch>
               <Pin Id="LG7tdicVaFOPHTBb4NNTDE" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Qzss2wumT9IPZgzRc9bW5K" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="R8FUuJLvw1aPD2VwQx6TBt" Name="Value" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="OtBBIskaTfDOsM83Z0cX7H" Bounds="204,246" />
@@ -1555,6 +1564,7 @@
                 <CategoryReference Kind="Category" Name="Reactive" />
               </p:NodeReference>
               <Pin Id="D2qYsXQ2dmoMujafKiGcRT" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="SZLHQiafj5HQQaBWW3d0FT" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="CsjX6S0cijsP3UDagd3aJn" Name="Notifications" Kind="OutputPin" />
               <Pin Id="QF0KKFh1CD6Ojw1c9Xcup0" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -2633,6 +2643,7 @@
                 <CategoryReference Kind="Category" Name="Reactive" />
               </p:NodeReference>
               <Pin Id="J5wMkTSrJC5P9AcPLK3Z63" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="T92FogMuPqWPsKZinFg2C3" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="GILs8Jg29EpNsnXv9DievR" Name="Notifications" Kind="OutputPin" />
               <Pin Id="BiwbTLJkpqqLxJOsaYShBS" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -3489,6 +3500,7 @@
                       <CategoryReference Kind="Category" Name="Reactive" />
                     </p:NodeReference>
                     <Pin Id="Qyo9HRyADUrL21YSgLegG4" Name="Async Notifications" Kind="InputPin" />
+                    <Pin Id="TOXKM1TaogkO6ukEYlDk0L" Name="Output" Kind="OutputPin" IsHidden="true" />
                     <Pin Id="P1sjcAlzpWdOFXmGPlv0Jq" Name="Notifications" Kind="OutputPin" />
                     <Pin Id="G5S1F4fPnGBMstOoE85MUJ" Name="On Data" Kind="OutputPin" />
                   </Node>
@@ -3645,6 +3657,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="5.3.5" />
+  <NugetDependency Id="J9DBlaJM94WObFqIvRKSbn" Location="SharpHook" Version="7.1.1" />
   <PlatformDependency Id="QekRUBfaaehNLiEEJnfl14" Location="./lib/net8.0/MouseKeyGlobal.dll" />
 </Document>
